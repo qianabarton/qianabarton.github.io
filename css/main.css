@@ -21,7 +21,7 @@ ul {
 }
 
 .hero-image {
-  background-image: url('images/palm-3-bw.jpg');
+  background-image: url('../images/palm-3-bw.jpg');
   height: 50%;
   background-position: center;
   background-repeat: no-repeat;
