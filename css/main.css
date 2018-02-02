@@ -56,13 +56,14 @@ p, ul {
     }
     .bg-img {
       background: url('../images/mars_stock.jpg');
-      max-width: 100%;
-      height: auto;
-      display: block;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
+      -webkit-background-size: 100%;
+          -moz-background-size: 100%;
+          -o-background-size: 100%;
+          background-size: 100%;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
     }
 
     h1{
