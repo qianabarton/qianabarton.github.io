@@ -66,7 +66,7 @@ p, ul {
   max-width: 100%;
   height: auto;
   z-index: 2;
-  /*background-color: rgb(33,40,45);*/
+  background-color: rgb(33,40,45);
   opacity: .8;
 }
 
@@ -113,7 +113,13 @@ hr.star-primary {
     }
     .bg-img {
       background-image: none;
-      background-color: red;
+      background: url("../images/palm-5-bw.png") no-repeat left fixed;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height: auto;
+      overflow: hidden;
     }
 
     h1{
