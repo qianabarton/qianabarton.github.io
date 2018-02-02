@@ -113,9 +113,9 @@ hr.star-primary {
     }
     .bg-img {
       background-image: none;
-      background: url("../images/cube_stock.png") no-repeat right fixed;
-      -webkit-background-size: cover;
-      background-size: cover;
+      display: block;
+      background: url("../images/palm-5-bw-mobile.png") no-repeat center fixed;
+
       height: auto;
       max-width: 100%;
     }
