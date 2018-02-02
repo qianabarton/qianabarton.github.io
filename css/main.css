@@ -55,7 +55,14 @@ p, ul {
       padding: 115px 15px 115px 15px;
     }
     .bg-img {
-      background: url('../images/cube_stock.png');
+      background: url('../images/mars_stock.jpg');
+      max-width: 100%;
+      height: auto;
+      display: block;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
     }
 
     h1{
