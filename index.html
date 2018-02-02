@@ -1,34 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-  <link rel="stylesheet" href="css/main.css">
-<link href="https://fonts.googleapis.com/css?family=Raleway|Work+Sans:100" rel="stylesheet">
-  <title>Qiana Barton</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Qiana Barton's project portfolio">
+  <meta name="author" content="Qiana Barton">
+
+  <title>qianabarton.github.io</title>
+
+  <!-- CSS -->
+  <link href='css/bootstrap.min.css' rel='stylesheet'>
+  <link href='css/main.css' rel='stylesheet'>
+
+  <!-- Fonts -->
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
 </head>
 
-
 <body>
-<header>
-  <div class="hero-text">
-    <h1>Qiana Barton</h1>
-    <h3>Software Engineer</h3>
-  </div>
-</header>
+
+  <!-- Nav Bar -->
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">qianabarton.github.io</a>
+    <div class="row">
+      <a class="nav-item nav-link" href="#about-me">About Me</a>
+      <a class="nav-item nav-link" href="#skills">Skills</a>
+      <a class="nav-item nav-link" href="#projects">Projects</a>
+      <a class="nav-item nav-link" href="#contact">Contact</a>
+    </div>
+  </nav>
 
 
-<div class="about-me">
-    <h2>About me</h2>
-    <p>Hi I"m Qiana, I need to write something things about myself here.
-    Not really sure what yet so we will see. Probably multiple sentences
-    to fill the space.</p>
-</div>
+  <!-- Header -->
+  <section id="header">
+    <div class="overlay container-fluid text-center">
+        <h1>Qiana Barton</h1>
+        <h4>Software Engineer</h4>
+    </div>
+  </section>
 
- <div class="skills">
+
+
+
+  <section id="about-me">
+    <div class="container text-center">
+      <h2>About Me</h2>
+      <p>Hi I'm Qiana, I need to write something things about myself here. Not really sure what yet so we will see. Probably multiple sentences to fill the space.</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="container text-center">
       <h2>Skills</h2>
       <p>Here are some of the technologies I enjoy writing day-to-day:</p>
-      <ul>
+      <ul class="list-unstyled">
         <li>Java</li>
         <li>C#</li>
         <li>JavaScript</li>
@@ -39,23 +67,43 @@
         <li>Xcode</li>
         <li>Swift</li>
       </ul>
-  </div>
+    </div>
+  </section>
 
-<div class="projects">
-  <h2>Projects</h2>
-  <p>Projects will go here and include project info, photos,
-    demos, downloads, etc..</p>
-  <ul>
-    <li><a href="">Rubik's Cube</a></li>
-    <li><a href="">Planets App</a></li>
-    <li></li>
-    <li></li>
-  </ul>
-</div>
+  <section id="projects">
+    <div class="container text-center">
+      <h2>Projects</h2>
+      <p>Projects will go here and include project info, photos, demos, downloads, etc..</p>
 
-  <div class="footer">
-    <p>Footer, maybe webpage copyright and contact info here.</p>
-  </div>
-<body>
+      <ul class="row list-unstyled justify-content-center">
+        <li class="list-item col-md-5 col-xs-6">
+          <a href="">Rubik's Cube</a>
+          <p>Brief summary of this project</p>
+          <img class="app-image d-none d-md-block" src='images/cube_stock.png'>
+        </li>
+        <li class="list-item col-md-5 col-xs-6">
+          <a href="">Planets App</a>
+          <p>Brief summary of this project</p>
+          <img class="app-image d-none d-md-block" src='images/mars_stock.jpg'>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+
+  <section id="contact">
+    <div class="container text-center">
+      <p>Contact info here.</p>
+    </div>
+  </section>
+
+
+
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+  <script src="scripts/bootstrap.min.js"></script>
+
+</body>
+
+
 
 </html>
