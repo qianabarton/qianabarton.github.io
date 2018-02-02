@@ -51,10 +51,13 @@ p, ul {
     .container{
       padding: 70px 15px 70px 15px;
     }
-
     .container-fluid{
       padding: 115px 15px 115px 15px;
     }
+    .bg-img {
+      background: url('../images/cube_stock.png');
+    }
+
     h1{
       font-size: 3em;
     }
