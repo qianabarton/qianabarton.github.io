@@ -120,7 +120,7 @@ hr.star-primary {
     }
     .bg-img {
       background-image: none;
-      background: linear-gradient(to bottom right, #2eb8b8, #00e68a);
+      background: linear-gradient(to bottom right, #29a3a3, #00cc7a);
       height: auto;
       max-width: 100%;
     }
