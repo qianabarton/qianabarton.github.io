@@ -1,3 +1,5 @@
+
+
 body {
   background-color: #00b38f;
 }
@@ -47,37 +49,12 @@ p, ul {
   margin-left: auto;
 }
 
-@media(max-width:768px) {
-    .container{
-      padding: 70px 15px 70px 15px;
-    }
-    .container-fluid{
-      padding: 115px 15px 115px 15px;
-    }
-    .bg-img {
-      background-color: red;
-    }
-
-    h1{
-      font-size: 3em;
-    }
-    h2{
-      font-size: 25px;
-    }
-    h3{
-      font-size: 42px;
-    }
-    p,ul{
-      font-size:19px;
-      font-weight: lighter;
-    }
-}
 
 .bg-img {
   max-width: 100%;
   height: auto;
   display: block;
-  background: url("../images/palm-5-bw.png");
+  background-image: url("../images/palm-5-bw.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -125,4 +102,31 @@ hr.star-primary {
 #contact {
   color: white;
   background-color: #2c3e50;
+}
+
+@media(max-width:768px) {
+    .container{
+      padding: 70px 15px 70px 15px;
+    }
+    .container-fluid{
+      padding: 115px 15px 115px 15px;
+    }
+    .bg-img {
+      background-image: none;
+      background-color: red;
+    }
+
+    h1{
+      font-size: 3em;
+    }
+    h2{
+      font-size: 25px;
+    }
+    h3{
+      font-size: 42px;
+    }
+    p,ul{
+      font-size:19px;
+      font-weight: lighter;
+    }
 }
