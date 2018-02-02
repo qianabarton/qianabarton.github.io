@@ -15,21 +15,24 @@
   <link href='css/main.css' rel='stylesheet'>
 
   <!-- Fonts -->
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel="stylesheet" type="text/css">
-  <link href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300|Open+Sans|Roboto:100|Lato:100" rel="stylesheet">
 </head>
 
 <body>
 
   <!-- Nav Bar -->
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
     <a class="navbar-brand" href="#">qianabarton.github.io</a>
-    <div class="row">
-      <a class="nav-item nav-link" href="#about-me">About Me</a>
-      <a class="nav-item nav-link" href="#skills">Skills</a>
-      <a class="nav-item nav-link" href="#projects">Projects</a>
-      <a class="nav-item nav-link" href="#contact">Contact</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav text-right">
+        <a class="nav-item nav-link" href="#about-me">About Me</a>
+        <a class="nav-item nav-link" href="#skills">Skills</a>
+        <a class="nav-item nav-link" href="#projects">Projects</a>
+        <a class="nav-item nav-link" href="#contact">Contact</a>
+      </div>
     </div>
   </nav>
 
@@ -37,25 +40,29 @@
   <!-- Header -->
   <section id="header">
     <div class="overlay container-fluid text-center">
-        <h1>Qiana Barton</h1>
-        <h4>Software Engineer</h4>
+      <h1>Qiana Barton</h1>
+      <h2>Software Engineer</h2>
     </div>
   </section>
 
 
-
-
+  <!-- About Me -->
   <section id="about-me">
-    <div class="container text-center">
-      <h2>About Me</h2>
-      <p>Hi I'm Qiana, I need to write something things about myself here. Not really sure what yet so we will see. Probably multiple sentences to fill the space.</p>
+    <div class="container-fluid text-center col-md-8 col-md-offset-2
+    col-sm-8 col-sm-offset-2 col-10 col-offset-0">
+      <h3>About Me</h3>
+      <hr class="star-light">
+      <p>Hi I'm Qiana, I need to write something things about myself here. Not really sure what yet so we will see. Probably just a couple sentences to fill the space.</p>
     </div>
   </section>
 
+
+  <!-- Skills -->
   <section id="skills">
-    <div class="container text-center">
-      <h2>Skills</h2>
-      <p>Here are some of the technologies I enjoy writing day-to-day:</p>
+    <div class="container text-center col-sm-8 col-sm-offset-2 col-10 col-offset-0">
+      <h3>Skills</h3>
+      <hr class="star-light">
+      <p></p>
       <ul class="list-unstyled">
         <li>Java</li>
         <li>C#</li>
@@ -70,19 +77,22 @@
     </div>
   </section>
 
+
+  <!-- Projects -->
   <section id="projects">
-    <div class="container text-center">
-      <h2>Projects</h2>
-      <p>Projects will go here and include project info, photos, demos, downloads, etc..</p>
+    <div class="container text-center col-sm-8 col-sm-offset-2 col-10 col-offset-0">
+      <h3>Projects</h3>
+      <hr class="star-primary">
+      <p></p>
 
       <ul class="row list-unstyled justify-content-center">
         <li class="list-item col-md-5 col-xs-6">
-          <a href="">Rubik's Cube</a>
+          <a href="/RubiksCube/">Rubik's Cube</a>
           <p>Brief summary of this project</p>
           <img class="app-image d-none d-md-block" src='images/cube_stock.png'>
         </li>
         <li class="list-item col-md-5 col-xs-6">
-          <a href="">Planets App</a>
+          <a href="/Planets-iOS/">Planets App</a>
           <p>Brief summary of this project</p>
           <img class="app-image d-none d-md-block" src='images/mars_stock.jpg'>
         </li>
@@ -91,6 +101,7 @@
   </section>
 
 
+  <!-- Contact -->
   <section id="contact">
     <div class="container text-center">
       <p>Contact info here.</p>

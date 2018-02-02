@@ -2,18 +2,42 @@ body {
   background-color: #00b38f;
 }
 
-h1, h4 {
-  color: white;
+h1, h2 {
+  color: #ffffff;
 }
 
 h1{
-  padding-top:250px;
+  padding-top:150px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 55px;
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 25px;
+}
+
+h3{
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+}
+
+p, ul {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
 }
 
 .app-image {
   width: 85%;
 }
 
+.container-fluid {
+  padding: 100px 0 100px 0;
+}
 .container {
   padding: 100px 0 100px 0;
 }
@@ -27,6 +51,20 @@ h1{
   opacity: .8;
 }
 
+hr.star-light, hr.star-primary  {
+    margin: 25px auto 30px;
+    padding: 0;
+    max-width: 250px;
+    border: 0;
+    border-top: solid 3px;
+    text-align: center;
+    border-color: #fff;
+}
+
+hr.star-primary {
+    border-color: #2c3e50;
+}
+
 #header {
   width: 100%;
   height: 600px;
@@ -37,22 +75,21 @@ h1{
   background-attachment: fixed;
 }
 
-
 #about-me {
-  color: white;
+  color: #ffffff;
 }
 
 #skills {
-  color: white;
-  background-color: rgb(44, 62, 80);
+  color: #ffffff;
+  background-color: #2c3e50;
 }
 
 #projects {
-  background: white;
+  background: #ffffff;
   color: black;
 }
 
 #contact {
   color: white;
-  background-color: rgb(44, 62, 80);
+  background-color: #2c3e50;
 }
