@@ -55,12 +55,11 @@ p, ul {
       padding: 115px 15px 115px 15px;
     }
     .bg-img {
-      background: url(../images/mars_stock.jpg) no-repeat center center fixed;
+      background: url("../images/mars_stock.jpg") no-repeat center center fixed;
       -webkit-background-size: cover;
       -moz-background-size: cover;
       -o-background-size: cover;
       background-size: cover;
-      height: 100%;
       overflow: hidden;
     }
 
@@ -83,7 +82,7 @@ p, ul {
   max-width: 100%;
   height: auto;
   display: block;
-  background: url('../images/palm-5-bw.png');
+  background: url("../images/palm-5-bw.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
