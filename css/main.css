@@ -115,7 +115,8 @@ hr.star-primary {
       background-image: none;
       display: block;
       background: url("../images/palm-5-bw-mobile.png") no-repeat center fixed;
-
+      -webkit-background-size: cover;
+      background-size: cover;
       height: auto;
       max-width: 100%;
     }
