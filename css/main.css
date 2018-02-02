@@ -113,13 +113,11 @@ hr.star-primary {
     }
     .bg-img {
       background-image: none;
-      background: url("../images/palm-5-bw.png") no-repeat left fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      background: url("../images/palm-5-bw.png") no-repeat center center fixed;
+      -webkit-background-size: contain;
+      background-size: contain;
       height: auto;
-      overflow: hidden;
+      max-width: 100%
     }
 
     h1{
