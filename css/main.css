@@ -49,7 +49,6 @@ p, ul {
   margin-left: auto;
 }
 
-
 .bg-img {
   max-width: 100%;
   height: auto;
@@ -66,7 +65,7 @@ p, ul {
   max-width: 100%;
   height: auto;
   z-index: 2;
-  /*background-color: rgb(33,40,45);*/
+  *background-color: rgb(33,40,45);*
   opacity: .8;
 }
 
@@ -125,10 +124,11 @@ hr.star-primary {
       max-width: 100%;
     }
 
-    h1{
+    h1 {
       font-size: 3em;
       opacity: 1;
     }
+
     h2{
       font-size: 25px;
       font-weight: bold;
@@ -143,8 +143,6 @@ hr.star-primary {
       font-weight: lighter;
       color: #8c8c8c;
     }
-
-
 
     #about-me {
       background-color: #ffffff;
