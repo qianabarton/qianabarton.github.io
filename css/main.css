@@ -94,7 +94,7 @@ p, ul {
   max-width: 100%;
   height: auto;
   z-index: 2;
-  background-color: rgb(33,40,45);
+  /*background-color: rgb(33,40,45);*/
   opacity: .8;
 }
 
