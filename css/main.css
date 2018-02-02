@@ -66,7 +66,7 @@ p, ul {
   max-width: 100%;
   height: auto;
   z-index: 2;
-  background-color: rgb(33,40,45);
+  /*background-color: rgb(33,40,45);*/
   opacity: .8;
 }
 
@@ -77,7 +77,10 @@ hr.star-light, hr.star-primary  {
     border: 0;
     border-top: solid 3px;
     text-align: center;
-    border-color: #fff;
+}
+
+hr.star-light{
+  border-color: #ffffff;
 }
 
 hr.star-primary {
@@ -111,27 +114,73 @@ hr.star-primary {
     .container-fluid{
       padding: 115px 15px 115px 15px;
     }
+
+    .overlay{
+
+    }
     .bg-img {
       background-image: none;
-      display: block;
-      background: url("../images/palm-5-bw-mobile.png") no-repeat left fixed;
-      -webkit-background-size: cover;
-      background-size: cover;
+      background: linear-gradient(to bottom right, #2eb8b8, #00e68a);
       height: auto;
       max-width: 100%;
     }
 
     h1{
       font-size: 3em;
+      opacity: 1;
     }
     h2{
       font-size: 25px;
+      font-weight: bold;
+      opacity: 1;
     }
     h3{
       font-size: 42px;
     }
-    p,ul{
+
+    p, ul, {
       font-size:19px;
       font-weight: lighter;
+      color: #8c8c8c;
     }
+
+
+
+    #about-me {
+      background-color: #ffffff;
+      color:#8c8c8c;
+    }
+
+    #skills, #skills ul {
+      color: #ffffff;
+      background-color: #2c3e50;
+    }
+
+    #projects {
+      background: #ffffff;
+      color: #8c8c8c;
+    }
+
+    #projects a {
+      color: #00cc99;
+    }
+
+    #contact, #contact p {
+      color: white;
+      background-color: #2c3e50;
+    }
+
+    hr.star-light,hr.star-primary{
+      background-image: url("../images/blue-green-gradient.png");
+      background-size: contain;
+      background-position: left;
+      border: none;
+      height: 2px;
+    }
+
+
+
+
+
+
 }
