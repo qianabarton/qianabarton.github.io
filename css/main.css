@@ -86,28 +86,15 @@ hr.star-primary {
   border-color: #2c3e50;
 }
 
-.btn-no-fill {
+.btn-red {
 	color: #ffffff;
 	border-color: #ffffff;
 }
-
-.btn-no-fill:hover {
+.btn-red:hover {
   background: #ffffff;
   color: #00b38f;
   border-color: #ffffff;	
 }
-
-.btn-fill {
-   background: #ffffff;
-	color: #00b38f;
-	border-color: #ffffff;
-}
-.btn-fill:hover {
-  background: #B22222;
-  color: #fff;
-  border-color: #B22222;	
-}
-
 
 
 #about-me {
