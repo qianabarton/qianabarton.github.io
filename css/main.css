@@ -86,6 +86,17 @@ hr.star-primary {
   border-color: #2c3e50;
 }
 
+button .fill{
+    background: #ffffff;
+    color: rgb(33, 40, 45);
+}
+
+button .no-fill{
+    color: #ffffff;
+}
+
+
+
 #about-me {
     color: #ffffff;
 }
