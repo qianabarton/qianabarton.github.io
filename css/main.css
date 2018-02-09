@@ -85,6 +85,9 @@ hr.star-light {
 hr.star-primary {
   border-color: #2c3e50;
 }
+a.btn,.btn {
+	border: 1px solid;
+}
 
 .btn-red {
 	color: #ffffff;
