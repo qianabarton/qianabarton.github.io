@@ -93,9 +93,10 @@ a.btn,.btn {
 	color: #ffffff;
 	border-color: #ffffff;
 }
+
 .btn-red:hover {
   background: #ffffff;
-  color: #00b38f;
+  color: #ffffff;
   border-color: #ffffff;	
 }
 
