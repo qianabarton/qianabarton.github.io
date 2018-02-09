@@ -30,6 +30,11 @@ p, ul {
   font-weight: bold;
 }
 
+a {
+  color: #00cc99;
+}
+
+
 .app-image {
   width: 85%;
 }
@@ -82,7 +87,7 @@ hr.star-primary {
 }
 
 #about-me {
-  color: #ffffff;
+    color: #ffffff;
 }
 
 #skills {
@@ -107,54 +112,50 @@ hr.star-primary {
     height: auto;
     max-width: 100%;
   }
-  
+
   .container {
     padding: 70px 15px 70px 15px;
   }
-  
+
   .container-fluid {
     padding: 115px 15px 115px 15px;
   }
-  
+
   h1 {
     font-size: 3em;
   }
-  
+
   h2 {
     font-family: 'Roboto', sans-serif;
     font-size: 25px;
     font-weight: bold;
   }
-  
+
   h3 {
     font-size: 42px;
   }
-  
+
   p, ul, {
     font-size: 19px;
     font-weight: lighter;
     color: #8c8c8c;
   }
-  
+
   #about-me {
     background-color: #ffffff;
     color: #8c8c8c;
   }
-  
+
   #skills, #skills ul, #contact, #contact p {
     color: #ffffff;
     background-color: #2c3e50;
   }
-  
+
   #projects {
     background: #ffffff;
     color: #8c8c8c;
   }
-  
-  #projects a {
-    color: #00cc99;
-  }
-  
+
   hr.star-light, hr.star-primary {
     background-image: url("../images/blue-green-gradient.png");
     background-size: contain;
