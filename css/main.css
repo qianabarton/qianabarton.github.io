@@ -86,12 +86,14 @@ hr.star-primary {
   border-color: #2c3e50;
 }
 
-a .fill{
-
+.btn-red {
+	color: #B22222;
+	border-color: #B22222;
 }
-
-a .no-fill{
-
+.btn-red:hover {
+  background: #B22222;
+  color: #fff;
+  border-color: #B22222;	
 }
 
 
