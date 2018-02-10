@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 body {
   background-color: #00b38f;
 }
@@ -60,7 +60,7 @@ a {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-    
+
 }
 
 .overlay {
@@ -109,7 +109,7 @@ a.btn,.btn {
 .btn-no-fill:hover {
   background: #ffffff;
   color: #00cc7a;
-  border-color: #ffffff;	
+  border-color: #ffffff;
 }
 
 .btn-fill {
@@ -122,7 +122,7 @@ a.btn,.btn {
 .btn-fill:hover {
   background: #8c8c8c;
   color: #ffffff;
-  border-color: #8c8c8c;	
+  border-color: #8c8c8c;
 }
 
 
@@ -186,190 +186,8 @@ a.btn,.btn {
     font-weight: lighter;
     color: #8c8c8c;
   }
-    
 
 
-  #about-me {
-    background-color: #ffffff;
-    color: #8c8c8c;
-  }
-
-  #skills, #skills ul, #contact, #contact p {
-    color: #ffffff;
-    background-color: #2c3e50;
-  }
-
-  #projects {
-    background: #ffffff;
-    color: #8c8c8c;
-  }
-
-  hr.star-light, hr.star-primary {
-    background-image: url("../images/blue-green-gradient.png");
-    background-size: contain;
-    background-position: left;
-    border: none;
-    height: 2px;
-  }
-}
-=======
-body {
-  background-color: #00b38f;
-}
-
-h1 {
-  padding-top: 10%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 66px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-h2 {
-  font-family: 'Lato', sans-serif;
-  font-size: 25px;
-  color: #ffffff;
-}
-
-h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 42px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-p, ul {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-a {
-  color: #00cc99;
-}
-
-
-.app-image {
-  width: 85%;
-}
-
-.container-fluid {
-  padding: 70px 0 70px 0;
-}
-
-.container {
-  padding: 100px 15px 100px 15px;
-  margin-right: auto;
-  margin-left: auto;
-}
-
-.bg-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  background-image: url("../images/palm-5-bw.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.overlay {
-  position: relative;
-  max-width: 100%;
-  height: auto;
-  z-index: 2;
-  background-color: rgb(33, 40, 45);
-  opacity: .8;
-}
-
-hr.star-light, hr.star-primary {
-  margin: 25px auto 30px;
-  padding: 0;
-  max-width: 250px;
-  border: 0;
-  border-top: solid 3px;
-  text-align: center;
-}
-
-hr.star-light {
-  border-color: #ffffff;
-}
-
-hr.star-primary {
-  border-color: #2c3e50;
-}
-a.btn,.btn {
-	border: 1px solid;
-}
-
-.btn-red {
-	color: #ffffff;
-	border-color: #ffffff;
-  padding-bottom: 10%;
-}
-
-.btn-red:hover {
-  background: #ffffff;
-  color: #ffffff;
-  border-color: #ffffff;	
-}
-
-
-#about-me {
-    color: #ffffff;
-}
-
-#skills {
-  color: #ffffff;
-  background-color: #2c3e50;
-}
-
-#projects {
-  background: #ffffff;
-  color: black;
-}
-
-#contact {
-  color: #ffffff;
-  background-color: #2c3e50;
-}
-
-@media(max-width:768px) {
-  .overlay {
-    opacity: 1;
-    background: linear-gradient(to bottom right, #29a3a3, #00cc7a);
-    height: auto;
-    max-width: 100%;
-  }
-
-  .container {
-    padding: 70px 15px 70px 15px;
-  }
-
-  .container-fluid {
-    padding: 115px 15px 115px 15px;
-  }
-
-  h1 {
-    font-size: 3em;
-  }
-
-  h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 25px;
-    font-weight: bold;
-  }
-
-  h3 {
-    font-size: 42px;
-  }
-
-  p, ul, {
-    font-size: 19px;
-    font-weight: lighter;
-    color: #8c8c8c;
-  }
 
   #about-me {
     background-color: #ffffff;
@@ -394,4 +212,3 @@ a.btn,.btn {
     height: 2px;
   }
 }
->>>>>>> a83dfc28935fff15cf64ea98d84e587f4f1dc304
