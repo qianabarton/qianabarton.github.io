@@ -3,18 +3,19 @@ body {
 }
 
 h1 {
-  padding-top: 10%;
   font-family: 'Roboto', sans-serif;
   font-size: 66px;
   font-weight: 600;
   color: #ffffff;
+
 }
 
 h2 {
-  padding-bottom: 10%;
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
+  font-size: 25px;
+font-weight: 600;
   color: #ffffff;
+    padding-bottom: 2%;
 }
 
 h3 {
@@ -58,6 +59,7 @@ a {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
+    
 }
 
 .overlay {
@@ -68,6 +70,11 @@ a {
   background-color: rgb(33, 40, 45);
   opacity: .8;
 }
+
+.header{
+    padding: 10% 0 10% 0;
+}
+
 
 hr.star-light, hr.star-primary {
   margin: 25px auto 30px;
@@ -83,8 +90,46 @@ hr.star-light {
 }
 
 hr.star-primary {
-  border-color: #2c3e50;
+  border-color: #8c8c8c;
 }
+
+a.btn,.btn {
+	border: 2px solid;
+    margin: 0 1% 0 1%;
+      border-radius: 0px;
+}
+
+.btn-no-fill {
+	color: #ffffff;
+	border-color: #ffffff;
+    text-transform: uppercase;
+}
+
+.btn-no-fill:hover {
+  background: #ffffff;
+  color: #00cc7a;
+  border-color: #ffffff;	
+}
+
+.btn-fill {
+    background: #ffffff;
+	color: #00cc7a;
+	border-color: #ffffff;
+    text-transform: uppercase;
+}
+
+.btn-fill:hover {
+  background: #8c8c8c;
+  color: #ffffff;
+  border-color: #8c8c8c;	
+}
+
+
+.btn-large {
+	font-size: 17px;
+    padding: 12px 34px 12px 34px;
+}
+
 
 #about-me {
     color: #ffffff;
@@ -97,7 +142,7 @@ hr.star-primary {
 
 #projects {
   background: #ffffff;
-  color: black;
+  color: #8c8c8c;
 }
 
 #contact {
@@ -122,12 +167,12 @@ hr.star-primary {
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 48px;
   }
 
   h2 {
     font-family: 'Roboto', sans-serif;
-    font-size: 25px;
+    font-size: 17px;
     font-weight: bold;
   }
 
@@ -140,6 +185,8 @@ hr.star-primary {
     font-weight: lighter;
     color: #8c8c8c;
   }
+    
+
 
   #about-me {
     background-color: #ffffff;
