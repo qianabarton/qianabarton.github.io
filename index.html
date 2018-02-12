@@ -21,103 +21,127 @@
 <body>
 
   <!-- Nav Bar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top ">
-    <a class="navbar-brand" href="#">
-      qianabarton.github.io</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+  <nav id="navbar" class="navbar navbar-dark navbar-expand-md fixed-top">
+    <img class="navbar-brand" href="#" src='images/qb-4.png'></img>
+    <button id="menu-toggle" class="navbar-toggler" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav text-right">
-        <a class="nav-item nav-link" href="#about-me">About Me</a>
-        <a class="nav-item nav-link" href="#skills">Skills</a>
-        <a class="nav-item nav-link" href="#projects">Projects</a>
-        <a class="nav-item nav-link" href="#contact">Contact</a>
-      </div>
-    </div>
+    <ul class="nav navbar-nav ml-auto w-100 d-none d-md-flex justify-content-end">
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
+    </ul>
   </nav>
 
 
-  <!-- Header -->
-  <div class="bg-img">
-    <div class="overlay">
-      <div class="container-fluid text-center">
-        <div class="header">
-      <h1>Qiana Barton</h1>
-      <h2>Software Engineer</h2>
-      <a class="btn btn-large btn-fill" href="#projects">Projects</a>
-      <a class="btn btn-large btn-no-fill" href="#contact">Contact</a>
-        </div>
-    </div>
-  </div>
-  </div>
-
-  <!-- Projects -->
-  <section id="projects">
-    <div class="container text-center col-sm-8 col-sm-offset-2 col-10 col-offset-0">
-      <h3>Projects</h3>
-      <hr class="star-primary">
-      <p></p>
-
-      <ul class="row list-unstyled justify-content-center">
-        <li class="list-item col-md-5 col-xs-6">
-          <a href="https://qianabarton.github.io/RubiksCube/">Rubik's Cube</a>
-          <p>Brief summary of this project</p>
-          <img class="app-image d-none d-md-block" src='images/cube_stock.png'>
-        </li>
-        <li class="list-item col-md-5 col-xs-6">
-          <a href="https://qianabarton.github.io/Planets-iOS/">Planets App</a>
-          <p>Brief summary of this project</p>
-          <img class="app-image d-none d-md-block" src='images/mars_stock.jpg'>
-        </li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <div class="container text-center col-sm-8 col-sm-offset-2 col-10 col-offset-0">
-      <h3>Skills</h3>
-      <hr class="star-light">
-      <p></p>
-      <ul class="list-unstyled">
-        <li>Java</li>
-        <li>C#</li>
-        <li>JavaScript</li>
-        <li>HTML &amp; CSS</li>
-        <li>Adobe Photoshop</li>
-        <li>Unity</li>
-        <li>Blender</li>
-        <li>Xcode</li>
-        <li>Swift</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- About Me -->
-  <section id="about-me">
-    <div class="container text-center">
-      <h3>About</h3>
-      <hr class="star-light">
-      <p>Hi I'm Qiana, I need to write something things about myself here. Not really sure what yet so we will see. Probably just a couple sentences to fill the space.</p>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact">
-    <div class="container text-center">
-      <h3>Contact Me</h3>
-      <hr class="star-light">
-      <ul class="list-unstyled">
-      <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> barton.qiana@gmail.com</li>
-      <li><a href="https://github.com/qianabarton">GitHub</a></li>
+  <div id="side-menu">
+  <ul class="nav navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#about-me">About Me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#skills">Skills</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#projects">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#contact">Contact</a>
+    </li>
     </ul>
-    </div>
-  </section>
+  </ul>
+</div>
 
+
+  <div id="slide-content">
+
+    <!-- Header -->
+    <div class="bg-img">
+      <div class="overlay">
+        <div class="container header text-center">
+          <h1>Qiana Barton</h1>
+          <h2>Software Engineer</h2>
+          <a class="btn btn-large btn-no-fill" href="#projects">Projects</a>
+          <a class="btn btn-large btn-fill" href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Projects -->
+    <section id="projects">
+      <div class="container text-center">
+        <h3>Projects</h3>
+        <hr class="star-primary">
+        <ul class="row list-unstyled justify-content-center">
+          <li class="list-item col-md-5 col-xs-6">
+            <a href="https://qianabarton.github.io/RubiksCube/">Rubik's Cube</a>
+            <p>Brief summary of this project</p>
+            <img class="app-image d-none d-md-block" src='images/cube_stock.png'>
+          </li>
+          <li class="list-item col-md-5 col-xs-6">
+            <a href="https://qianabarton.github.io/Planets-iOS/">Planets App</a>
+            <p>Brief summary of this project</p>
+            <img class="app-image d-none d-md-block" src='images/mars_stock.jpg'>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <div class="container text-center">
+        <h3>Skills</h3>
+        <hr class="star-light">
+        <p></p>
+        <ul class="list-unstyled">
+          <li>Java</li>
+          <li>C#</li>
+          <li>JavaScript</li>
+          <li>HTML &amp; CSS</li>
+          <li>Adobe Photoshop</li>
+          <li>Unity</li>
+          <li>Blender</li>
+          <li>Xcode</li>
+          <li>Swift</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- About Me -->
+    <section id="about-me">
+      <div class="container text-center">
+        <h3>About</h3>
+        <hr class="star-light">
+        <p>Hi I'm Qiana, I need to write something things about myself here. Not really sure what yet so we will see. Probably just a couple sentences to fill the space.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container text-center">
+        <h3>Contact Me</h3>
+        <hr class="star-light">
+        <ul class="list-unstyled">
+          <li><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> barton.qiana@gmail.com</li>
+          <li><a href="https://github.com/qianabarton">GitHub</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
 
 
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
   <script src="scripts/bootstrap.min.js"></script>
+  <script src="scripts/script.js"></script>
 
 </body>
