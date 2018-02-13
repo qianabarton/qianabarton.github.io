@@ -85,7 +85,7 @@ a:hover {
 /* ---> Navbar <------------------------------ */
 
 .navbar-brand {
-  max-width: 5%;
+  max-width: 8%;
 }
 
 
@@ -103,7 +103,7 @@ a:hover {
 
 .navbar-nav .nav-item .nav-link {
   font-family: 'Roboto', sans-serif;
-  color: #000000;
+  color: #ffffff;
 }
 
 .navbar-nav .nav-item .nav-link:hover {
@@ -111,7 +111,7 @@ a:hover {
 }
 
 .solid {
-  background: #00cc99;
+  background: #3f5973;
   transition: background 1s ease 0s;
 }
 
@@ -283,9 +283,13 @@ hr.star-primary {
   /* ---> Navbar <---------------------------------- */
 
   .navbar-brand {
-    max-width: 15%;
+    max-width: 20%;
   }
 
+  .navbar-nav .nav-item .nav-link {
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+  }
 
   /* ---> Other <-------------------------- */
 
