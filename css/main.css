@@ -1,6 +1,9 @@
 body {
   background-color: #000000;
 }
+/* ---> Opacity 0 for Fade In <---------------------- */
+
+
 
 
 /* ---> Fonts & Font Sizing <---------------------- */
@@ -53,14 +56,12 @@ a:hover {
 }
 
 .header {
-  opacity: 0;
   padding: 20% 0 20% 0;
 }
 
 /* ---> Image Sizing <------------------------- */
 
 .bg-img {
-  opacity: 0;
   max-width: 100%;
   height: auto;
   display: block;
@@ -166,7 +167,7 @@ a:hover {
   -moz-transform: translateX(-200px);
   -ms-transform: translateX(-200px);
   -o-transform: translateX(-200px);
-  transform: translateX(=200px);
+  transform: translateX(-200px);
 }
 
 #navbar {
@@ -340,11 +341,11 @@ hr.star-primary {
   /* ---> Navbar <---------------------------------- */
 
   .navbar-brand {
-    max-width: 15%;
+    max-width: 20%;
   }
 
   .shrink{
-    max-width: 10%;
+    max-width: 15%;
   }
 
   .navbar-nav .nav-item .nav-link {
@@ -378,6 +379,9 @@ hr.star-primary {
     color: #8c8c8c;
   }
 
+  .app-list {
+    display: block;
+  }
 
 
 }

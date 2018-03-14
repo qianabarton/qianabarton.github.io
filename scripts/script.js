@@ -7,7 +7,7 @@ qb.App = (function() {
   var $visibleApp;
 
   function initApp() {
-    fadeInHeader();
+    //fadeInHeader();
     fadeInDivs();
     menuSlide();
     transparentNav();
@@ -151,7 +151,7 @@ qb.App = (function() {
     } else if ($visibleApp == clickedApp[0].id) { // clicked element is already open
       clickedApp.slideToggle(200);
       $("html, body").animate({
-        scrollTop: ($("#planets-toggle").offset().top - 300)
+        scrollTop: ($("#rubiks-toggle").offset().top - 300)
       }, 400);
 
     } else { // another element is already visible
