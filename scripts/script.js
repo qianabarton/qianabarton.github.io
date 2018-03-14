@@ -18,8 +18,7 @@ qb.App = (function() {
 
   /* ---> Event Functions <-------------------------- */
 
-  function fadeInHeader(){
-
+  function fadeInHeader() {
 
     $(".bg-img").animate({
       'opacity': '1'
@@ -44,7 +43,8 @@ qb.App = (function() {
         $("#skills-content").animate({
           'opacity': '1'
         }, 1200);
-      }
+        $('.skillBars').addClass('enabled');
+       }
 
       if ($(this).scrollTop() > ($("#about-me").offset().top - 550)) {
         $("#about-me-content").animate({
@@ -115,11 +115,10 @@ qb.App = (function() {
     scrollToSection($(".nav-link"));
   }
 
-  function callToAction(){
+  function callToAction() {
     console.log("CATA");
     scrollToSection($(".cta-button"));
   }
-
 
 
 
