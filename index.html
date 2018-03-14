@@ -47,22 +47,22 @@
 
 
   <div id="side-menu">
-  <ul class="nav navbar-nav">
-    <li class="nav-item">
-      <a class="nav-link" href="#about-me">About Me</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#skills">Skills</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#projects">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#contact">Contact</a>
-    </li>
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#about-me">About Me</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#skills">Skills</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
+      </li>
     </ul>
-  </ul>
-</div>
+    </ul>
+  </div>
 
 
   <div id="slide-content">
@@ -81,27 +81,62 @@
 
     <!-- Projects -->
     <section id="projects">
-      <div class="container text-center">
+      <div id="projects-content" class="container text-center">
         <h3>Projects</h3>
-        <hr class="star-primary">
-        <ul class="row list-unstyled justify-content-center">
-          <li class="list-item col-md-5 col-xs-6">
-            <a href="https://qianabarton.github.io/RubiksCube/">Rubik's Cube</a>
-            <p>Brief summary of this project</p>
-            <img class="app-image d-none d-md-block" src='images/cube_stock.png'>
+        <hr class="star-primary"></hr>
+        <ul class="app-list list-unstyled justify-content-center">
+          <li id="planets-content" class="app-info d-md-block">
+            <div id="planets-toggle" class="app-toggle">
+              <img class="app-image" src="images/work-samples/Planets-icon.png"></img>
+              <p><a id="planets" href="#" onclick="return false;">Planets App</a></p>
+            </div>
           </li>
-          <li class="list-item col-md-5 col-xs-6">
-            <a href="https://qianabarton.github.io/Planets-iOS/">Planets App</a>
-            <p>Brief summary of this project</p>
-            <img class="app-image d-none d-md-block" src='images/mars_stock.jpg'>
+          <li id="rubiks-content" class="app-info d-md-block">
+            <div id="rubiks-toggle" class="app-toggle">
+              <img class="app-image" src="images/work-samples/Rubiks-icon.png"></img>
+              <p><a id="rubiks" href="#" onclick="return false;">Rubik's Cube App</a></p>
+            </div>
+          </li>
+          <li id="logos-content" class="app-info d-md-block">
+            <div id="logos-toggle" class="app-toggle">
+              <img class="app-image" src="images/work-samples/Upholstery-icon.png"></img>
+              <p><a id="logos" href="#" onclick="return false;">Logos</a></p>
+            </div>
           </li>
         </ul>
+        <div id="planets-info" class="row">
+          <div class="col-md-3 offset-md-2">
+            <br><a href="">GITHUB PAGE LINK</a>
+            <p>A sentence about my planets app.</p>
+          </div>
+          <div class="col-md-4">
+            <img class="work-sample img-fluid" src="images/work-samples/Venus.png"></img>
+          </div>
+        </div>
+        <div id="rubiks-info" class="row">
+          <div class="col-md-3 offset-md-2">
+            <br><a href="">GITHUB PAGE LINK</a>
+            <p>A sentence about my rubiks app.</p>
+          </div>
+          <div class="col-md-4">
+          <img class="work-sample img-fluid" src="images/work-samples/cube_stock.png"></img>
+        </div>
+        </div>
+        <div id="logos-info" class="row">
+          <div class="col-md-3 offset-md-2">
+            <br><a href="">GITHUB PAGE LINK</a>
+            <p>A sentence about my logos.</p>
+          </div>
+          <div class="col-md-4">
+          <img class="work-sample img-fluid" src="images/work-samples/Upholstery-Logo.png"></img>
+        </div>
+        </div>
       </div>
     </section>
 
     <!-- Skills -->
     <section id="skills">
-      <div class="container text-center">
+      <div id="skills-content" class="container text-center">
         <h3>Skills</h3>
         <hr class="star-light">
         <p></p>
@@ -121,16 +156,16 @@
 
     <!-- About Me -->
     <section id="about-me">
-      <div class="container text-center">
+      <div id="about-me-content" class="container text-center">
         <h3>About</h3>
-        <hr class="star-light">
+        <hr class="star-primary">
         <p>Hi I'm Qiana, I need to write something things about myself here. Not really sure what yet so we will see. Probably just a couple sentences to fill the space.</p>
       </div>
     </section>
 
     <!-- Contact -->
     <section id="contact">
-      <div class="container text-center">
+      <div id="contact-content" class="container text-center">
         <h3>Contact Me</h3>
         <hr class="star-light">
         <ul class="list-unstyled">
@@ -146,5 +181,4 @@
   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
   <script src="scripts/bootstrap.min.js"></script>
   <script src="scripts/script.js"></script>
-
-</body>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
