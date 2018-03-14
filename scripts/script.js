@@ -26,7 +26,6 @@ function transparentNav(){
   });
 }
 
-
 var $visibleApp;
 
 function openAppInfo(){
@@ -38,15 +37,12 @@ function openAppInfo(){
   $("#planets-toggle").click(function(){
     checkVisible($("#planets-info"));
   });
-
   $("#rubiks-toggle").click(function(){
     checkVisible($("#rubiks-info"));
   });
-
   $("#logos-toggle").click(function(){
     checkVisible($("#logos-info"));
   });
-
 }
 
 function slideOrHide(clickedApp){
@@ -98,19 +94,19 @@ function checkVisible(clickedApp){
 function fadeInDivs(){
 
   $(window).scroll(function() {
-    if($(this).scrollTop() > 400) {
+    if($(this).scrollTop() > ($("#projects").offset().top - 450)) {
       $("#projects-content").animate({'opacity':'1'},1200);
     }
 
-    if($(this).scrollTop() > 900) {
+    if($(this).scrollTop() > ($("#skills").offset().top - 500)) {
       $("#skills-content").animate({'opacity':'1'},1200);
     }
 
-    if($(this).scrollTop() > 1300) {
+    if($(this).scrollTop() > ($("#about-me").offset().top - 550)) {
       $("#about-me-content").animate({'opacity':'1'},1200);
     }
 
-    if($(this).scrollTop() > 1700) {
+    if($(this).scrollTop() > ($("#contact").offset().top - 550)) {
       $("#contact-content").animate({'opacity':'1'},1200);
     }
 
