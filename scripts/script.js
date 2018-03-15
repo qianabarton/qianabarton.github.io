@@ -66,6 +66,18 @@ qb.App = (function() {
       $mobileNav = true;
       slideNavMenu();
     });
+
+    $(".close").click(function() {
+      slideNavMenu();
+    });
+
+    $(".page-content").click(function(){
+
+      if($("#slide-content").hasClass("slideOver")){
+        slideNavMenu();
+      }
+
+    });
   }
 
   function transparentNav() {
@@ -82,8 +94,6 @@ qb.App = (function() {
       }
     });
   }
-
-
 
   function openAppInfo() {
 

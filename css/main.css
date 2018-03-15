@@ -30,18 +30,18 @@ h3 {
   text-transform: uppercase;
 }
 
-p, ul {
+p, ul, a {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: bold;
 }
 
 a {
-  color: #00cc99;
+  color: #2eb8b8;
 }
 
 a:hover {
-  color: #ba4562;
+  color: #5A7BC6;
   text-decoration: none;
 }
 
@@ -115,8 +115,10 @@ a:hover {
   color: #ffffff;
 }
 
+
+
 .navbar-nav .nav-item .nav-link:hover {
-  color: #ba4562;
+  color: #5A7BC6;
 }
 
 .solid {
@@ -194,19 +196,19 @@ a.btn, .btn {
 
 .btn-no-fill:hover {
   color: #ffffff;
-  background: #ba4562;
-  border-color: #ba4562;
+  background: #1D47A8;
+  border-color: #1D47A8;
 }
 
 .btn-fill {
   color: #ffffff;
-  background: #ba4562;
-  border-color: #ba4562 !important;
+  background: #1D47A8;
+  border-color: #1D47A8 !important;
   text-transform: uppercase;
 }
 
 .btn-fill:hover {
-  color: #ba4562;
+  color: #1D47A8;
   background: #ffffff;
   border-color: #ffffff !important;
 }
@@ -233,6 +235,15 @@ hr.star-primary {
   border-color: #999999;
 }
 
+.close {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-left: 80px;
+}
+
+.close:hover{
+  color: #5A7BC6;
+}
 /* ---> Page Sections <------------------------------- */
 
 #about-me {
@@ -351,6 +362,10 @@ hr.star-primary {
   .navbar-nav .nav-item .nav-link {
     font-family: 'Roboto', sans-serif;
     color: #000000;
+  }
+
+  .slide-link {
+    font-size: 40px;
   }
 
   /* ---> Other <-------------------------- */
