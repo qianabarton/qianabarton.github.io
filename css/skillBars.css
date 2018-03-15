@@ -1,153 +1,38 @@
-
-/*
-@skills01: 90%;
-@skills02: 90%;
-@skills03: 80%;
-@skills04: 70%;
-@skills05: 75%;
-@skills06: 60%;
-@skills07: 80%;
-@skills08: 75%;
-
-*/
-
-.skills {
+@import url(http://fonts.googleapis.com/css?family=Droid+Serif:400, 400italic|Montserrat:400, 700);
 
 
+
+
+.extra {
+    font-family:"Montserrat", sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.5em;
+    padding: .5em 0;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #dadada;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-/*
-.skills {
 
-  p {
-    z-index: 2;
+.bar {
+    background: #29a3a3;
+    width: 0;
+    margin: .25em 0;
     color: #fff;
-    padding: 10px;
     position: relative;
-    box-sizing: border-box;
-  }
-
-  .bar {
-    span:nth-child(1) {
-      z-index: -2;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      background: #fff;
-      height: 100%;
-      width: 100%;
-    }
-
-    .skills {
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #5E95E8;
-      height: 100%;
-    }
-  }
-  */
-
-  .bar:nth-child(1) {
-    span:nth-child(2) {
-      width: 50%;
-      animation-delay: 0;
-      color: blue;
-    }
-  }
-
-  .bar:nth-child(2) {
-    span:nth-child(2) {
-      width: 50%;
-      animation-delay: 0.05s;
-      color: blue;
-    }
-  }
-
-  .bar:nth-child(3) {
-    span:nth-child(2) {
-      width: 50%;
-      animation-delay: 0.1s;
-      color: blue;
-    }
-  }
-
-  .bar:nth-child(4) {
-    span:nth-child(2) {
-      width: 50%;
-      animation-delay: 0.15s;
-      color: blue;
-    }
-  }
-
-  .bar:nth-child(5) {
-    span:nth-child(2) {
-      width: 50%;
-      animation-delay: 0.2s;
-      color: blue;
-    }
-  }
-
-  .bar:nth-child(6) {
-    span:nth-child(2) {
-      width: 50%;
-      animation-delay: 0.25s;
-      color: blue;
-    }
-  }
-
-  .bar:nth-child(7) {
-    span:nth-child(2) {
-      width: 50%;
-      animation-delay: 0.3s;
-      color: blue;
-    }
-  }
-
-  .bar:nth-child(8) {
-    span:nth-child(2) {
-      width: 50%;
-      animation-delay: 0.35s;
-      color: blue;
-    }
-  }
-
+    transition: width 2s, background .2s;
+    clear: both;
 }
 
-.skills {
-  animation: skills 2s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes skills {
-  0% {
-    left: -500px;
-    opacity: 0;
-  }
-  100% {
-    left: 0;
-    opacity: 1;
-  }
-}
-
-@keyframes mymove {
-    0% {
-        color: blue;
-    }
-
-    100% {
-        color: red;
-    }
-}
-
-/*
-#skills {
-    animation: mymove 2s;
-    animation-iteration-count: infinite;
+.bar .label {
+    font-size: .75em;
+    padding: 1em;
+    width: 8em;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-weight: bold;
+    font-family:"Montserrat", sans-serif;
 }

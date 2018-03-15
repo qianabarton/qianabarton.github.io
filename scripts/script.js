@@ -7,7 +7,7 @@ qb.App = (function() {
   var $visibleApp;
 
   function initApp() {
-    //fadeInHeader();
+    fadeInHeader();
     fadeInDivs();
     menuSlide();
     transparentNav();
@@ -43,7 +43,7 @@ qb.App = (function() {
         $("#skills-content").animate({
           'opacity': '1'
         }, 1200);
-        $('.skillBars').addClass('enabled');
+        barChart();
        }
 
       if ($(this).scrollTop() > ($("#about-me").offset().top - 550)) {
@@ -121,6 +121,15 @@ qb.App = (function() {
   }
 
 
+  function barChart() {
+
+      $('.bar').each(function (i) {
+          var $bar = $(this);
+          setTimeout(function () {
+              $bar.css('width', $bar.attr('data-percent'));
+          }, i * 100);
+      });
+  }
 
 
   /* ---> Helper Functions <-------------------------- */
