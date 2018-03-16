@@ -4,7 +4,6 @@ body {
 
 /* ---> Opacity 0 for Fade In <---------------------- */
 
-
 /* ---> Fonts & Font Sizing <---------------------- */
 
 h1 {
@@ -95,9 +94,12 @@ a:hover {
 /* ---> Navbar <------------------------------ */
 
 .navbar-brand {
-  max-width: 5%;
   transition: all 1s ease-in;
   opacity: 0;
+}
+
+.navbar-brand img {
+  max-width: 18%;
 }
 
 .navbar-fadeIn {
@@ -125,9 +127,9 @@ a:hover {
   color: #5A7BC6;
 }
 
- .nav-link-desktop {
-   padding-left: 10px;
- }
+.nav-link-desktop {
+  padding-left: 10px;
+}
 
 .solid {
   background: #53575A;
@@ -191,16 +193,14 @@ a.btn, .btn {
   border: 2px solid;
   margin: 0 0.5% 0 0.5%;
   border-radius: 0px;
-
 }
 
-a:visited {
-
-}
+a:visited {}
 
 a:active {
-    color: red;
+  color: red;
 }
+
 .btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
   color: #ffffff;
   border-color: #ffffff;
@@ -218,7 +218,6 @@ a:active {
   background: #1D47A8;
   border-color: #1D47A8 !important;
   text-transform: uppercase;
-
 }
 
 .btn-fill:hover {
@@ -259,7 +258,6 @@ hr.star-primary {
   color: #5A7BC6;
 }
 
-
 /* ---> Page Sections <------------------------------- */
 
 #about-me {
@@ -293,9 +291,9 @@ hr.star-primary {
   display: inline-flex;
 }
 
-.app-active {
-  transform: scale(2.5);
-  transition: 0.5s;
+.info-text {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 #contact {

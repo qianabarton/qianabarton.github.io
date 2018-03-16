@@ -205,9 +205,6 @@ qb.App = (function() {
   function scrollToSection(sourceClick) {
 
     sourceClick.click(function(event) {
-
-      // prevent default anchor click behavior
-
       // animate scroll
       $('html, body').animate({
         scrollTop: ($(this.hash).offset().top - 75)
