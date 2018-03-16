@@ -23,7 +23,7 @@
   /* ---> Container & Image Sizing <---------------- */
   .overlay {
     opacity: 1;
-    background: linear-gradient(to bottom right, #36CCC8, #238481);
+    background: linear-gradient(to right, #238481, #36CCC8);
     height: auto;
     max-width: 100%;
   }
