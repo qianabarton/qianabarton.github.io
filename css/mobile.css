@@ -4,6 +4,8 @@
   /* ---> Font Size <----------------------------- */
   h1 {
     font-size: 38px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
   }
   h2 {
     font-family: 'Roboto', sans-serif;
@@ -40,6 +42,7 @@
   .header-logo {
     max-width: 60%;
   }
+
   /* ---> Navbar <---------------------------------- */
   .navbar-brand {
     max-width: 12%;
@@ -55,9 +58,10 @@
   }
 
   .solid {
-    background: #2CA8A5;
-    opacity: .8;
+    background: #4FB7B4;
+    opacity: .9;
   }
+
   /* ---> Other <-------------------------- */
   hr.star-light, hr.star-primary {
     background-image: url("../images/blue-green-gradient.png");
