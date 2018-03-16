@@ -4,6 +4,7 @@ body {
 
 /* ---> Opacity 0 for Fade In <---------------------- */
 
+
 /* ---> Fonts & Font Sizing <---------------------- */
 
 h1 {
@@ -34,7 +35,7 @@ p, ul, a {
   font-weight: bold;
 }
 
-a {
+a, a:active, a:visited {
   color: #2eb8b8;
 }
 
@@ -53,7 +54,7 @@ a:hover {
 }
 
 .header {
-  padding: 20% 0 20% 0;
+  padding: 10% 0 15% 0;
 }
 
 /* ---> Image Sizing <------------------------- */
@@ -73,13 +74,13 @@ a:hover {
   position: relative;
   max-width: 100%;
   height: auto;
-  z-index: 2;
+  z-index: 0;
   background-color: rgb(33, 40, 45);
   opacity: .7;
 }
 
 .app-image {
-  width: 50%;
+  width: 60%;
 }
 
 .img-fluid {
@@ -87,13 +88,20 @@ a:hover {
   padding-top: 0;
 }
 
-.header-logo {}
+.header-logo {
+  max-width: 30%;
+}
 
 /* ---> Navbar <------------------------------ */
 
 .navbar-brand {
-  max-width: 8%;
-  transition: all 0.5s ease-in;
+  max-width: 5%;
+  transition: all 1s ease-in;
+  opacity: 0;
+}
+
+.navbar-fadeIn {
+  opacity: 1;
 }
 
 .navbar {
@@ -117,8 +125,12 @@ a:hover {
   color: #5A7BC6;
 }
 
+ .nav-link-desktop {
+   padding-left: 10px;
+ }
+
 .solid {
-  background: #4d4d4d;
+  background: #53575A;
   opacity: .8;
   transition: all 2s ease-in;
 }
@@ -179,9 +191,17 @@ a.btn, .btn {
   border: 2px solid;
   margin: 0 0.5% 0 0.5%;
   border-radius: 0px;
+
 }
 
-.btn-no-fill {
+a:visited {
+
+}
+
+a:active {
+    color: red;
+}
+.btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
   color: #ffffff;
   border-color: #ffffff;
   text-transform: uppercase;
@@ -193,11 +213,12 @@ a.btn, .btn {
   border-color: #1D47A8;
 }
 
-.btn-fill {
+.btn-fill, .btn-fill:active, .btn-fill:visited {
   color: #ffffff;
   background: #1D47A8;
   border-color: #1D47A8 !important;
   text-transform: uppercase;
+
 }
 
 .btn-fill:hover {
@@ -230,13 +251,14 @@ hr.star-primary {
 
 .close {
   font-size: 60px;
-  margin-top: 20px;
+  margin-top: 9;
   margin-left: 80px;
 }
 
 .close:hover {
   color: #5A7BC6;
 }
+
 
 /* ---> Page Sections <------------------------------- */
 

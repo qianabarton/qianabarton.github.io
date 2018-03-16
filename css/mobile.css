@@ -43,13 +43,9 @@
   /* ---> Navbar <---------------------------------- */
   .navbar-brand {
     max-width: 12%;
-    opacity: 0;
-    animation: all 2s ease-in;
   }
 
-  .navbar-fadeIn {
-    opacity: 1;
-  }
+
 
   .navbar-nav .nav-item .nav-link {
     font-family: 'Roboto', sans-serif;
