@@ -21,7 +21,7 @@
   /* ---> Container & Image Sizing <---------------- */
   .overlay {
     opacity: 1;
-    background: linear-gradient(to bottom right, #29a3a3, #00cc7a);
+    background: linear-gradient(to bottom right, #36CCC8, #238481);
     height: auto;
     max-width: 100%;
   }
@@ -52,6 +52,11 @@
 
   .slide-link {
     font-size: 30px;
+  }
+
+  .solid {
+    background: #2CA8A5;
+    opacity: .8;
   }
   /* ---> Other <-------------------------- */
   hr.star-light, hr.star-primary {

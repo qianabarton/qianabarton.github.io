@@ -126,7 +126,6 @@ qb.App = (function() {
   }
 
   function callToAction() {
-    console.log("CATA");
     scrollToSection($(".cta-button"));
   }
 
@@ -208,15 +207,12 @@ qb.App = (function() {
     sourceClick.click(function(event) {
 
       // prevent default anchor click behavior
-      event.preventDefault();
 
       // animate scroll
       $('html, body').animate({
         scrollTop: ($(this.hash).offset().top - 75)
-      }, 600, function() {
-        // when done, add hash to url
-        window.location.hash = this.hash;
-      });
+      }, 600
+    );
     });
   }
 
