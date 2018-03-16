@@ -84,13 +84,13 @@ qb.App = (function() {
     // Transition effect for navbar
     $(window).scroll(function() {
       // checks if window is scrolled more than x, adds/removes solid class
-      if ($(this).scrollTop() > 350) {
+      if ($(this).scrollTop() > 450) {
         $('.navbar').addClass('solid');
-        $('.navbar-brand').addClass('shrink');
-
+        $(".navbar-brand").addClass('navbar-fadeIn');
       } else {
         $('.navbar').removeClass('solid');
-        $('.navbar-brand').removeClass('shrink');
+        $(".navbar-brand").removeClass('navbar-fadeIn');
+
       }
     });
   }
@@ -164,21 +164,21 @@ qb.App = (function() {
       // open clicked element
       $visibleApp = clickedApp[0].id;
       $("html, body").animate({
-        scrollTop: (clickedApp.offset().top - 150)
+        scrollTop: (clickedApp.offset().top - 200)
       }, 600);
 
     } else if ($visibleApp == clickedApp[0].id) { // clicked element is already open
       clickedApp.slideToggle(200);
       $("html, body").animate({
-        scrollTop: ($("#rubiks-toggle").offset().top - 300)
-      }, 400);
+        scrollTop: ($("#rubiks-toggle").offset().top - 350)
+      }, 600);
 
     } else { // another element is already visible
       $("#" + $visibleApp).hide();
       clickedApp.fadeIn(1000);
 
       $("html, body").animate({
-        scrollTop: (clickedApp.offset().top - 150)
+        scrollTop: (clickedApp.offset().top - 200)
       }, 600);
     }
   }
