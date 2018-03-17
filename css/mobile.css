@@ -27,7 +27,12 @@
   /* ---> Container & Image Sizing <---------------- */
   .overlay {
     opacity: 1;
-    background: linear-gradient(to bottom right, #575F9F, #FFE5A2);
+    background: linear-gradient(to bottom right, #575F9F, #ecf8ec);
+
+			/*
+			FFE5A2
+			e6ffcc
+			*/
     height: auto;
     max-width: 100%;
   }
@@ -53,36 +58,76 @@
   }
 
   .info{
-
     padding: 45px 0 0 0;
   }
 
   /* ---> Navbar <---------------------------------- */
-  .navbar-brand img {
-    max-width: 75px;
-  }
 
-  .navbar-nav .nav-item .nav-link {
-    font-family: 'Roboto', sans-serif;
-    color: #000000;
-  }
-
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #545792;
-  }
 
   .slide-link {
-    font-size: 30px;
+		font-family: 'Roboto', sans-serif;
+		font-size: 30px;
+		color: #8c8c8c;
   }
+
+	.slide-link:hover {
+		color: #c8bbdd;
+	}
 
   .solid {
     /* background: #898CC1; */
-    background: none;
-
-    opacity: .9;
+		background: #d9d9d9;
+	  opacity: .7;
   }
 
+	.nav-close {
+	  color: #545792;
+	  font-size: 60px;
+	  margin-top: 9;
+	  margin-left: 80px;
+	}
+
+	.nav-close:hover {
+	  color: #c8bbdd;
+	}
+
+	.info-close {
+		position: relative;
+
+	}
+
+	.info-close:hover {
+
+	}
+
   /* ---> Other <-------------------------- */
+
+  .btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
+    color: #ffffff;
+    border-color: #ffffff;
+    text-transform: uppercase;
+  }
+
+  .btn-no-fill:hover {
+    color: #fff;
+    background: #5F62A4;
+    border-color: #5F62A4;
+  }
+
+  .btn-fill, .btn-fill:active, .btn-fill:visited {
+    color: #5F62A4;
+    background: #fff;
+    border-color: #fff !important;
+    text-transform: uppercase;
+  }
+
+  .btn-fill:hover {
+    color: #fff;
+    background: #5F62A4;
+    border-color: #5F62A4 !important;
+  }
+
+
   hr.star-light {
     background: #fff;
     background-size: contain;
@@ -100,13 +145,24 @@
     height: 15px;
   }
   /* ---> Page Sections <-------------------------- */
+
+	#projects {
+		background: #ffffff;
+		color: #8c8c8c;
+	}
+	.app-list {
+		display: block;
+	}
+
   #about-me {
     background-color: #ffffff;
     color: #8c8c8c;
   }
+
   #skills, #skills ul, #contact, #contact p{
     color: #fff;
-    background-color: #9b9dca;
+    background-color: #abadd3;
+		/*  9b9dca */
   }
  #contact a {
    color: #dedeed;
@@ -116,11 +172,5 @@
    text-decoration: underline;
  }
 
-  #projects {
-    background: #ffffff;
-    color: #8c8c8c;
-  }
-  .app-list {
-    display: block;
-  }
+
 }

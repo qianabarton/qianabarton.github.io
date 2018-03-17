@@ -2,8 +2,6 @@ body {
   background-color: #000000;
 }
 
-/* ---> Opacity 0 for Fade In <---------------------- */
-
 /* ---> Fonts & Font Sizing <---------------------- */
 
 h1 {
@@ -35,11 +33,11 @@ p, ul, a {
 }
 
 a, a:active, a:visited {
-  color: #c8bbdd;
+  color: #adadd2;
 }
 
 a:hover {
-  color: #EFE389;
+  color: #c8bbdd;
   text-decoration: none;
 }
 
@@ -89,7 +87,7 @@ a:hover {
 
 .header-logo {
   max-width: 30%;
-  transition: all 0.2s linear;
+  transition: all 0.3s linear;
 
 }
 
@@ -100,23 +98,25 @@ a:hover {
 /* ---> Navbar <------------------------------ */
 
 .navbar-brand {
-  transition: all 1s ease-in;
+  transition: all 0.3s linear;
   opacity: 0;
 }
 
 .navbar-brand img {
-  max-width: 16%;
+    max-width: 75px;
 }
 
-.navbar-fadeIn {
+.fadeIn {
   opacity: 1;
 }
 
 .navbar {
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
   background-color: transparent;
-  color: white;
+  color: green;
+  transition: 0.3s linear;
+
 }
 
 .navbar-nav {
@@ -124,32 +124,35 @@ a:hover {
   padding-left: 30px;
 }
 
-.navbar-nav .nav-item .nav-link {
-  font-family: 'Roboto', sans-serif;
-  color: #ffffff;
-}
-
-
-.navbar-nav .nav-item .nav-link:hover {
-  color: #bcbedc;
-}
-
-.nav-link-desktop {
+.nav-item-desktop {
   padding-left: 10px;
 }
 
+.desktop-link {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  transition: all 0.3s linear;
+}
+
+.desktop-link:hover {
+  color: #b3b3ff;
+}
+
+.darken-link {
+  color: #262626;
+}
+
+.darken-link:hover {
+  color: #8080ff;
+}
+
 .solid {
-  background: none;
-  opacity: .8;
-  transition: all 2s ease-in;
-  color: #464b86;
+  background: #d9d9d9;
+  opacity: .7;
+  transition: all 1s ease-in;
 }
 
-.shrink {
-  max-width: 4%;
-}
-
-#side-menu {
+#slide-menu {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
   background-color: #ffffff;
   position: fixed;
@@ -166,7 +169,7 @@ a:hover {
   z-index: 3;
 }
 
-.sideMenuToggle {
+.slideMenuToggle {
   -webkit-transform: translateX(0) !important;
   -moz-transform: translateX(0) !important;
   -ms-transform: translateX(0) !important;
@@ -187,10 +190,6 @@ a:hover {
   transform: translateX(-200px);
 }
 
-#navbar {
-  transition: 0.3s linear;
-}
-
 .nav-slide {
   margin: 0 200px 0 -200px;
 }
@@ -203,12 +202,6 @@ a.btn, .btn {
   border-radius: 0px;
 }
 
-a:visited {}
-
-a:active {
-  color: red;
-}
-
 .btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
   color: #ffffff;
   border-color: #ffffff;
@@ -216,22 +209,22 @@ a:active {
 }
 
 .btn-no-fill:hover {
-  color: #fff;
-  background: #5F62A4;
-  border-color: #5F62A4;
+  color: #5F62A4;
+  background: #fff;
+  border-color: #fff;
 }
 
 .btn-fill, .btn-fill:active, .btn-fill:visited {
-  color: #5F62A4;
-  background: #fff;
-  border-color: #fff !important;
+  color: #fff;
+  background: #5F62A4;
+  border-color: #5F62A4 !important;
   text-transform: uppercase;
 }
 
 .btn-fill:hover {
-  color: #fff;
-  background: #5F62A4;
-  border-color: #5F62A4 !important;
+  color: #5F62A4;
+  background: #fff;
+  border-color: #fff !important;
 }
 
 .btn-text {
@@ -260,16 +253,7 @@ hr.star-primary {
   border-color: #999999;
 }
 
-.close {
-  color: #545792;
-  font-size: 60px;
-  margin-top: 9;
-  margin-left: 80px;
-}
 
-.close:hover {
-  color: #5F62A4;
-}
 
 /* ---> Page Sections <------------------------------- */
 
@@ -318,6 +302,14 @@ hr.star-primary {
   opacity: 0;
 }
 
+#contact a {
+  color: #dedeed;
+}
+
+#contact a:hover{
+  text-decoration: underline;
+}
+
 /* ---> Skills Bars <------------------------------- */
 
 .bars{
@@ -329,7 +321,7 @@ hr.star-primary {
   background: #fff;
   width: 0;
   margin: .25em 0;
-  color: #292e56;
+  color: #999999;
   position: relative;
   transition: width 2s, background .2s;
   clear: both;

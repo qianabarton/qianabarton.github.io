@@ -24,7 +24,6 @@
   <!-- Nav Bar -->
   <nav id="navbar" class="navbar navbar-dark navbar-expand-md fixed-top">
 
-
     <a href="#" class="navbar-brand">
       <img src="images/logo/qb-4-black.png">
     </a>
@@ -34,27 +33,35 @@
     </button>
 
     <ul class="nav navbar-nav ml-auto w-100 d-none d-md-flex justify-content-end">
-      <li class="nav-item  nav-link-desktop">
-        <a class="nav-link" href="#projects">Projects</a>
+      <li class="nav-item nav-item-desktop">
+        <a class="nav-link" href="#projects">
+          <span class="desktop-link">Projects</span>
+        </a>
       </li>
-      <li class="nav-item  nav-link-desktop">
-        <a class="nav-link" href="#skills">Skills</a>
+      <li class="nav-item  nav-item-desktop">
+        <a class="nav-link" href="#skills">
+          <span class="desktop-link">Skills</span>
+        </a>
       </li>
-      <li class="nav-item  nav-link-desktop">
-        <a class="nav-link" href="#about-me">About</a>
+      <li class="nav-item  nav-item-desktop">
+        <a class="nav-link" href="#about-me">
+          <span class="desktop-link">About</span>
+        </a>
       </li>
-      <li class="nav-item  nav-link-desktop">
-        <a class="nav-link" href="#contact">Contact</a>
+      <li class="nav-item  nav-item-desktop">
+        <a class="nav-link" href="#contact">
+          <span class="desktop-link">Contact</span>
+        </a>
       </li>
     </ul>
   </nav>
 
-  <div id="side-menu">
+  <div id="slide-menu">
     <ul class="nav navbar-nav">
-      <button type="button" class="close">
+      <button type="button" class="close nav-close">
         <span>&times;</span>
       </button>
-            <li class="nav-item">
+      <li class="nav-item">
         <a class="nav-link slide-link" href="#projects">Projects</a>
       </li>
       <li class="nav-item">
@@ -72,9 +79,6 @@
 
 
   <div id="slide-content">
-
-
-<div class="page-content">
 
     <!-- Header -->
     <div class="bg-img">
@@ -97,59 +101,65 @@
       <div id="projects-content" class="container text-center">
         <h3>Projects</h3>
         <hr class="star-primary"></hr>
+
         <ul class="app-list list-unstyled justify-content-center">
-          <li id="planets-content" class="app-info d-md-block">
-            <div id="planets-toggle" class="app-toggle">
-              <img class="app-image" src="images/work-samples/Planets-icon.png"></img>
-              <p><a id="planets" href="#" onclick="return false;">Planets App</a></p>
-            </div>
+
+          <li id="planets-content" class="d-md-block">
+            <a class="planets-toggle" href="#" onclick="return false;">
+                <img class="app-image" src="images/work-samples/Planets-icon.png">
+              </a>
+            <p><a id="planets" class="planets-toggle" href="#" onclick="return false;">Planets App</a></p>
           </li>
-          <li id="rubiks-content" class="app-info d-md-block">
-            <div id="rubiks-toggle" class="app-toggle">
-              <img class="app-image" src="images/work-samples/Rubiks-icon.png"></img>
-              <p><a id="rubiks" href="#" onclick="return false;">Rubik's Cube App</a></p>
-            </div>
+
+          <li id="rubiks-content" class="d-md-block">
+            <a class="rubiks-toggle" href="#" onclick="return false;">
+                <img class="app-image"src="images/work-samples/Rubiks-icon.png">
+              </a>
+            <p><a id="rubiks" class="rubiks-toggle" href="#" onclick="return false;">Rubik's Cube App</a></p>
           </li>
-          <li id="logos-content" class="app-info d-md-block">
-            <div id="logos-toggle" class="app-toggle">
-              <img class="app-image" src="images/work-samples/Upholstery-icon.png"></img>
-              <p><a id="logos" href="#" onclick="return false;">Logos</a></p>
-            </div>
+
+          <li id="logos-content" class="d-md-block">
+            <a class="logos-toggle" href="#" onclick="return false;">
+              <img class="app-image" src="images/work-samples/Upholstery-icon.png">
+            </a>
+            <p><a id="logos" class="logos-toggle" href="#" onclick="return false;">Logos</a></p>
           </li>
+
         </ul>
+
         <div id="planets-info" class="info row">
-          <div class="col-md-3 offset-md-2 info-text">
-            <p>A interactive 3D Visualization of
-              the planets in our solar system. Created
-              in Xcode using Swift and SceneKit for iOS.
+          <button type="button" class="close">
+            <span>&times;</span>
+          </button>
+          <div class="info-text col-lg-4 offset-lg-2">
+            <p>A interactive 3D Visualization of the planets in our solar system. Created in Xcode using Swift and SceneKit for iOS.
             </p>
             <a href="https://github.com/qianabarton/Planets-iOS">View on Github</a>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <img class="work-sample img-fluid" src="images/work-samples/Venus.png"></img>
           </div>
         </div>
+
         <div id="rubiks-info" class="info row">
-          <div class="col-md-3 offset-md-2 info-text">
+          <div class="info-text col-lg-4 offset-lg-2">
             <br>
-            <p>A multiplatform interactive 3x3 Rubiks
-              Cube. Created in C# using Unity.
+            <p>A multiplatform interactive 3x3 Rubiks Cube. Created in C# using Unity.
             </p>
             <a href="https://github.com/qianabarton/RubiksCube">View on Github</a>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <img class="work-sample img-fluid" src="images/work-samples/cube_stock.png"></img>
           </div>
         </div>
         <div id="logos-info" class="info row">
-          <div class="col-md-3 offset-md-2 info-text">
+          <div class="info-text col-lg-4 offset-lg-2">
             <br>
-            <p>Logos and other graphics I've created and
-              customized using Adobe Photoshop and
-              Illustrator.</p>
+            <p>Logos and other graphics I've created and customized using Adobe Photoshop and Illustrator.
+            </p>
             <a href=""></a>
           </div>
-          <div class="col-md-4">
+          <div class="col-lg-4">
             <img class="work-sample img-fluid" src="images/work-samples/Upholstery-Logo.png"></img>
           </div>
         </div>
@@ -163,28 +173,28 @@
         <hr class="star-light">
         <p></p>
         <div class="bars">
-            <div class="bar cf" data-percent="90%"><span class="label">HTML</span>
-            </div>
-            <div class="bar cf" data-percent="90%"><span class="label ">CSS</span>
-            </div>
-            <div class="bar cf" data-percent="80%"><span class="label">Photoshop</span>
-            </div>
-            <div class="bar cf" data-percent="70%"><span class="label">Illustrator</span>
-            </div>
-            <div class="bar cf" data-percent="65%"><span class="label">Angular</span>
-            </div>
-            <div class="bar cf" data-percent="75%"><span class="label">JS/jQuery</span>
-            </div>
-            <div class="bar cf" data-percent="80%"><span class="label">Bootstrap</span>
-            </div>
-            <div class="bar cf" data-percent="90%"><span class="label">Java</span>
-            </div>
-            <div class="bar cf" data-percent="50%"><span class="label">Swift/iOS</span>
-            </div>
-            <div class="bar cf" data-percent="60%"><span class="label">C#</span>
-            </div>
-            <div class="bar cf" data-percent="40%"><span class="label">Unity</span>
-            </div>
+          <div class="bar cf" data-percent="90%"><span class="label">HTML</span>
+          </div>
+          <div class="bar cf" data-percent="90%"><span class="label ">CSS</span>
+          </div>
+          <div class="bar cf" data-percent="80%"><span class="label">Photoshop</span>
+          </div>
+          <div class="bar cf" data-percent="70%"><span class="label">Illustrator</span>
+          </div>
+          <div class="bar cf" data-percent="65%"><span class="label">Angular</span>
+          </div>
+          <div class="bar cf" data-percent="75%"><span class="label">JS/jQuery</span>
+          </div>
+          <div class="bar cf" data-percent="80%"><span class="label">Bootstrap</span>
+          </div>
+          <div class="bar cf" data-percent="90%"><span class="label">Java</span>
+          </div>
+          <div class="bar cf" data-percent="50%"><span class="label">Swift/iOS</span>
+          </div>
+          <div class="bar cf" data-percent="60%"><span class="label">C#</span>
+          </div>
+          <div class="bar cf" data-percent="40%"><span class="label">Unity</span>
+          </div>
         </div>
       </div>
     </section>
@@ -194,13 +204,9 @@
       <div id="about-me-content" class="container text-center">
         <h3>About</h3>
         <hr class="star-primary">
-        <p>Hi, I’m Qiana and I’m a web developer! My interests
-          span a wide range from iOS to flat graphic design to
-          3D game development. I have professional experience
-          working in QA at Intel and Grass Valley but in my free
-          time I’ve been working on independent web and graphic
-          development projects.
-          </p>
+        <p>Hi, I’m Qiana and I’m a web developer! My interests span a wide range from iOS to flat graphic design to 3D game development. I have professional experience working in QA at Intel and Grass Valley but in my free time I’ve been working on independent
+          web and graphic development projects.
+        </p>
       </div>
     </section>
 
