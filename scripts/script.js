@@ -14,6 +14,7 @@ qb.App = (function() {
     openAppInfo();
     navClick();
     callToAction();
+    purpleLogo();
   }
 
   /* ---> Event Functions <-------------------------- */
@@ -33,7 +34,7 @@ qb.App = (function() {
   function fadeInDivs() {
 
     $(window).scroll(function() {
-      if ($(this).scrollTop() > ($("#projects").offset().top - 550)) {
+      if ($(this).scrollTop() > ($("#projects").offset().top - 540)) {
         $("#projects-content").animate({
           'opacity': '1'
         }, 1200);
@@ -112,8 +113,6 @@ qb.App = (function() {
     });
   }
 
-
-
   function navClick() {
 
     $(".nav-link").click(function() {
@@ -129,7 +128,6 @@ qb.App = (function() {
     scrollToSection($(".cta-button"));
   }
 
-
   function barChart() {
 
       $('.bar').each(function (i) {
@@ -138,6 +136,29 @@ qb.App = (function() {
               $bar.css('width', $bar.attr('data-percent'));
           }, i * 100);
       });
+  }
+
+  function purpleLogo(){
+    purple = new Image(100,100);
+    purple.src = "images/logo/qb-4-purple.png";
+    white = new Image(100,100);
+    white.src = "images/logo/qb-4-round-new.png";
+
+    $(".header-logo").hover(
+      function(){
+      $(".header-logo").addClass("grow");
+      // if !mobile do this
+      if ($(window).width() > 768){
+        $(".header-logo").attr("src", purple.src);
+      }
+      },
+      function(){
+        $(".header-logo").removeClass("grow");
+      $(".header-logo").attr("src", white.src);
+      }
+  );
+  //$("#pic1").attr("src", searchPic.src);
+
   }
 
 
@@ -207,7 +228,7 @@ qb.App = (function() {
     sourceClick.click(function(event) {
       // animate scroll
       $('html, body').animate({
-        scrollTop: ($(this.hash).offset().top - 75)
+        scrollTop: ($(this.hash).offset().top - 100)
       }, 600
     );
     });

@@ -35,11 +35,11 @@ p, ul, a {
 }
 
 a, a:active, a:visited {
-  color: #2eb8b8;
+  color: #c8bbdd;
 }
 
 a:hover {
-  color: #5A7BC6;
+  color: #EFE389;
   text-decoration: none;
 }
 
@@ -89,6 +89,12 @@ a:hover {
 
 .header-logo {
   max-width: 30%;
+  transition: all 0.2s linear;
+
+}
+
+.grow {
+  max-width: 33%;
 }
 
 /* ---> Navbar <------------------------------ */
@@ -99,7 +105,7 @@ a:hover {
 }
 
 .navbar-brand img {
-  max-width: 18%;
+  max-width: 16%;
 }
 
 .navbar-fadeIn {
@@ -123,8 +129,9 @@ a:hover {
   color: #ffffff;
 }
 
+
 .navbar-nav .nav-item .nav-link:hover {
-  color: #5A7BC6;
+  color: #bcbedc;
 }
 
 .nav-link-desktop {
@@ -132,9 +139,10 @@ a:hover {
 }
 
 .solid {
-  background: #53575A;
+  background: none;
   opacity: .8;
   transition: all 2s ease-in;
+  color: #464b86;
 }
 
 .shrink {
@@ -190,7 +198,7 @@ a:hover {
 /* ---> Button & Other <--------------------------- */
 
 a.btn, .btn {
-  border: 2px solid;
+  border: 1px solid;
   margin: 0 0.5% 0 0.5%;
   border-radius: 0px;
 }
@@ -208,22 +216,26 @@ a:active {
 }
 
 .btn-no-fill:hover {
-  color: #ffffff;
-  background: #1D47A8;
-  border-color: #1D47A8;
+  color: #fff;
+  background: #5F62A4;
+  border-color: #5F62A4;
 }
 
 .btn-fill, .btn-fill:active, .btn-fill:visited {
-  color: #ffffff;
-  background: #1D47A8;
-  border-color: #1D47A8 !important;
+  color: #5F62A4;
+  background: #fff;
+  border-color: #fff !important;
   text-transform: uppercase;
 }
 
 .btn-fill:hover {
-  color: #1D47A8;
-  background: #ffffff;
-  border-color: #ffffff !important;
+  color: #fff;
+  background: #5F62A4;
+  border-color: #5F62A4 !important;
+}
+
+.btn-text {
+  opacity: 0.9;
 }
 
 .btn-large {
@@ -249,13 +261,14 @@ hr.star-primary {
 }
 
 .close {
+  color: #545792;
   font-size: 60px;
   margin-top: 9;
   margin-left: 80px;
 }
 
 .close:hover {
-  color: #5A7BC6;
+  color: #5F62A4;
 }
 
 /* ---> Page Sections <------------------------------- */
@@ -271,7 +284,7 @@ hr.star-primary {
 
 #skills {
   color: #ffffff;
-  background-color: #2c3e50;
+  background-color: #797db9;
 }
 
 #skills-content {
@@ -298,7 +311,7 @@ hr.star-primary {
 
 #contact {
   color: #ffffff;
-  background-color: #2c3e50;
+  background-color: #797db9;
 }
 
 #contact-content {
@@ -307,11 +320,16 @@ hr.star-primary {
 
 /* ---> Skills Bars <------------------------------- */
 
+.bars{
+}
+
+
+
 .bar {
-  background: #29a3a3;
+  background: #fff;
   width: 0;
   margin: .25em 0;
-  color: #fff;
+  color: #292e56;
   position: relative;
   transition: width 2s, background .2s;
   clear: both;
