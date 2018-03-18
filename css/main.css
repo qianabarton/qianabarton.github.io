@@ -34,10 +34,10 @@ p, ul, a {
 
 a, a:active, a:visited {
   color: #adadd2;
+  transition: all 0.2s ease-in;
 }
 
 a:hover {
-  color: #c8bbdd;
   text-decoration: none;
 }
 
@@ -78,6 +78,12 @@ a:hover {
 
 .app-image {
   width: 60%;
+  transition: width 0.5s ease-in, 0.1s ease-out;
+}
+
+.app-hover {
+  width: calc(75%);
+  color: #8080ff  !important;
 }
 
 .img-fluid {
@@ -114,14 +120,16 @@ a:hover {
   padding-left: 20px;
   padding-right: 20px;
   background-color: transparent;
-  color: green;
-  transition: 0.3s linear;
-
+  transition: all 0.3s linear;
 }
 
 .navbar-nav {
   padding-top: 15px;
   padding-left: 30px;
+}
+
+.navbar-toggler {
+  transition: all 0.3s linear;
 }
 
 .nav-item-desktop {
@@ -131,11 +139,12 @@ a:hover {
 .desktop-link {
   font-family: 'Roboto', sans-serif;
   color: white;
-  transition: all 0.3s linear;
+  transition: all 0.2s ease-in;
 }
 
 .desktop-link:hover {
   color: #b3b3ff;
+  font-size: calc(110%);
 }
 
 .darken-link {
@@ -144,12 +153,12 @@ a:hover {
 
 .darken-link:hover {
   color: #8080ff;
+  font-size: calc(110%);
 }
 
 .solid {
   background: #d9d9d9;
   opacity: .7;
-  transition: all 1s ease-in;
 }
 
 #slide-menu {
@@ -257,12 +266,12 @@ hr.star-primary {
 
 /* ---> Page Sections <------------------------------- */
 
-#about-me {
+#about {
   color: #8c8c8c;
   background: #ffffff;
 }
 
-#about-me-content {
+#about-content {
   opacity: 0;
 }
 
@@ -287,6 +296,7 @@ hr.star-primary {
 .app-list {
   display: inline-flex;
 }
+
 
 .info-text {
   margin-top: auto;

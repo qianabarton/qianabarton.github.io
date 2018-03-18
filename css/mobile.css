@@ -92,7 +92,6 @@
 	}
 
 	.info-close {
-		position: relative;
 
 	}
 
@@ -154,14 +153,14 @@
 		display: block;
 	}
 
-  #about-me {
+  #about {
     background-color: #ffffff;
     color: #8c8c8c;
   }
 
   #skills, #skills ul, #contact, #contact p{
     color: #fff;
-    background-color: #abadd3;
+    background-color: #8c92c0;
 		/*  9b9dca */
   }
  #contact a {

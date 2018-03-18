@@ -28,7 +28,7 @@
       <img src="images/logo/qb-4-black.png">
     </a>
 
-    <button id="menu-toggle" class="navbar-toggler" type="button">
+    <button id="mobile-nav-toggler" class="navbar-toggler" type="button">
       <span class="navbar-toggler-icon"></span>
     </button>
 
@@ -104,40 +104,42 @@
 
         <ul class="app-list list-unstyled justify-content-center">
 
-          <li id="planets-content" class="d-md-block">
-            <a class="planets-toggle" href="#" onclick="return false;">
-                <img class="app-image" src="images/work-samples/Planets-icon.png">
+          <li class="d-md-block">
+            <a class="planets" href="#" onclick="return false;">
+                <img class="planets-icon app-image" src="images/work-samples/Planets-icon.png">
               </a>
-            <p><a id="planets" class="planets-toggle" href="#" onclick="return false;">Planets App</a></p>
+            <p><a  class="planets planets-icon" href="#" onclick="return false;">Planets App</a></p>
           </li>
 
-          <li id="rubiks-content" class="d-md-block">
-            <a class="rubiks-toggle" href="#" onclick="return false;">
-                <img class="app-image"src="images/work-samples/Rubiks-icon.png">
+          <li class="d-md-block">
+            <a class="rubiks" href="#" onclick="return false;">
+                <img class="rubiks-icon app-image"src="images/work-samples/Rubiks-icon.png">
               </a>
-            <p><a id="rubiks" class="rubiks-toggle" href="#" onclick="return false;">Rubik's Cube App</a></p>
+            <p><a class="rubiks rubiks-icon" href="#" onclick="return false;">Rubik's Cube App</a></p>
           </li>
 
-          <li id="logos-content" class="d-md-block">
-            <a class="logos-toggle" href="#" onclick="return false;">
-              <img class="app-image" src="images/work-samples/Upholstery-icon.png">
+          <li class="d-md-block">
+            <a class="logos" href="#" onclick="return false;">
+              <img class="logos-icon app-image" src="images/work-samples/Upholstery-icon.png">
             </a>
-            <p><a id="logos" class="logos-toggle" href="#" onclick="return false;">Logos</a></p>
+            <p><a class="logos logos-toggle" href="#" onclick="return false;">Logos</a></p>
           </li>
 
         </ul>
 
-        <div id="planets-info" class="info row">
-          <button type="button" class="close">
-            <span>&times;</span>
-          </button>
-          <div class="info-text col-lg-4 offset-lg-2">
-            <p>A interactive 3D Visualization of the planets in our solar system. Created in Xcode using Swift and SceneKit for iOS.
-            </p>
-            <a href="https://github.com/qianabarton/Planets-iOS">View on Github</a>
-          </div>
-          <div class="col-lg-4">
-            <img class="work-sample img-fluid" src="images/work-samples/Venus.png"></img>
+        <div id="planets-info">
+          <button type="button" class="close info-close">
+        <span>&times;</span>
+      </button>
+          <div class="info row">
+            <div class="info-text col-lg-4 offset-lg-2">
+              <p>A interactive 3D Visualization of the planets in our solar system. Created in Xcode using Swift and SceneKit for iOS.
+              </p>
+              <a href="https://github.com/qianabarton/Planets-iOS">View on Github</a>
+            </div>
+            <div class="col-lg-4">
+              <img class="work-sample img-fluid" src="images/work-samples/Venus.png"></img>
+            </div>
           </div>
         </div>
 
@@ -200,8 +202,8 @@
     </section>
 
     <!-- About Me -->
-    <section id="about-me">
-      <div id="about-me-content" class="container text-center">
+    <section id="about">
+      <div id="about-content" class="container text-center">
         <h3>About</h3>
         <hr class="star-primary">
         <p>Hi, I’m Qiana and I’m a web developer! My interests span a wide range from iOS to flat graphic design to 3D game development. I have professional experience working in QA at Intel and Grass Valley but in my free time I’ve been working on independent

@@ -1,23 +1,29 @@
 var qb = {};
 
-
 qb.App = (function() {
 
   var $mobileNav;
-  var $visibleApp;
 
   function initApp() {
     fadeInHeader();
-    fadeInDivs();
-    menuSlide();
+    showAllSections();
+
+    navLinkClick();
+    navMenuClick();
+
+
     transparentNav();
-    openAppInfo();
-    navClick();
+
     callToAction();
+
+
+    project();
+
     purpleLogo();
+
   }
 
-  /* ---> Event Functions <-------------------------- */
+  /* ---> FADE IN Functions <-------------------------- */
 
   function fadeInHeader() {
     // only on desktop
@@ -30,53 +36,61 @@ qb.App = (function() {
     }, 4000);
   }
 
-  function fadeInDivs() {
-
-    $(window).scroll(function() {
-      if ($(this).scrollTop() > ($("#projects").offset().top - 500)) {
-        $("#projects-content").animate({
-          'opacity': '1'
-        }, 1200);
-      }
-
-      if ($(this).scrollTop() > ($("#skills").offset().top - 500)) {
-        $("#skills-content").animate({
-          'opacity': '1'
-        }, 1200);
-        barChart();
-      }
-
-      if ($(this).scrollTop() > ($("#about-me").offset().top - 550)) {
-        $("#about-me-content").animate({
-          'opacity': '1'
-        }, 1200);
-      }
-
-      if ($(this).scrollTop() > ($("#contact").offset().top - 550)) {
-        $("#contact-content").animate({
-          'opacity': '1'
-        }, 1200);
-      }
-
-    });
+  function showAllSections(){
+    showSection($("#projects"), $("#projects-content"));
+    showSection($("#skills"), $("#skills-content"));
+    showSection($("#about"), $("#about-content"));
+    showSection($("#contact"), $("#contact-content"));
   }
 
-  function menuSlide() {
-    $("#menu-toggle").click(function() {
-      $mobileNav = true;
-      slideNavMenu();
-    });
+  function showSection(section, content){
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > (section.offset().top - 500)) {
+           content.animate({
+              'opacity': '1'
+            }, 1200);
+            if(section[0].id == "skills"){
+              barChart();
+            }
+          }
+        });
+  }
 
-    $(".close").click(function() {
-      slideNavMenu();
-    });
+  /* ---> NAVBAR Functions <-------------------------- */
 
-    $("#slide-content").click(function() {
-      if ($("#slide-content").hasClass("slideOver")) {
+  function navLinkClick() {
+    $(".nav-link").click(function() {
+      if ($mobileNav) { // close nav menu if on mobile
         slideNavMenu();
       }
     });
+    scrollToSection($(".nav-link"));
   }
+
+    function navMenuClick() {
+      $("#mobile-nav-toggler").click(function() {
+        $mobileNav = true;
+        slideMobileNav();
+      });
+
+      $(".close").click(function() {
+        slideMobileNav();
+      });
+
+      $("#slide-content").click(function() {
+        if ($("#slide-content").hasClass("slideOver")) {
+          slideMobileNav();
+        }
+      });
+    }
+
+    function slideMobileNav() {
+        $mobileNav = true;
+        $("#slide-menu").toggleClass("slideMenuToggle");
+        $("#slide-content").toggleClass("slideOver");
+        $(".navbar").toggleClass("nav-slide");
+    }
+
 
   function transparentNav() {
     // Transition effect for navbar
@@ -89,9 +103,8 @@ qb.App = (function() {
         $(".desktop-link").addClass('darken-link');
         $(".navbar").removeClass('navbar-dark');
         $(".navbar").addClass('navbar-light');
-      }
-       else {
-         $(".navbar").removeClass('solid');
+      } else {
+        $(".navbar").removeClass('solid');
         $(".navbar-brand").removeClass('fadeIn');
         $(".desktop-link").removeClass('darken-link');
         $(".navbar").addClass('navbar-dark');
@@ -100,34 +113,104 @@ qb.App = (function() {
     });
   }
 
-  function openAppInfo() {
-    $("#planets-info").hide();
-    $("#rubiks-info").hide();
-    $("#logos-info").hide();
 
-    $(".planets-toggle").click(function() {
-      checkVisible($("#planets-info"));
-    });
-    $(".rubiks-toggle").click(function() {
-      checkVisible($("#rubiks-info"));
-    });
-    $(".logos-toggle").click(function() {
-      checkVisible($("#logos-info"));
-    });
-  }
 
-  function navClick() {
-    $(".nav-link").click(function() {
-      if ($mobileNav) { // close nav menu if on mobile
-        slideNavMenu();
-      }
-    });
-    scrollToSection($(".nav-link"));
-  }
+  /* ---> SCROLL Functions <-------------------------- */
+
 
   function callToAction() {
     scrollToSection($(".cta-button"));
   }
+
+  function scrollToSection(sourceClick) {
+
+    sourceClick.click(function(event) {
+      // animate scroll
+      $('html, body').animate({
+        scrollTop: ($(this.hash).offset().top - 100)
+      }, 600);
+    });
+  }
+
+
+  /* ---> Project Click Functions <-------------------------- */
+
+
+  function project() {
+    hoverProject($(".planets"), $(".planets-icon"));
+    hoverProject($(".rubiks"), $(".rubiks-icon"));
+    hoverProject($(".logos"), $(".logos-icon"));
+
+    clickProject($("#planets-info"), $(".planets"));
+    clickProject($("#rubiks-info"), $(".rubiks"));
+    clickProject($("#logos-info"), $(".logos"));
+  }
+
+  function hoverProject(project, icon) {
+
+    $(project).hover(
+      function() {
+        $(icon).addClass("app-hover");
+      },
+      function() {
+        $(icon).removeClass("app-hover")
+      }
+    );
+  }
+
+  function clickProject(projectInfo, project) {
+    $(projectInfo).hide();
+    $(project).click(function() {
+      checkVisible($(projectInfo));
+    });
+  }
+
+  function checkVisible(projectInfo) {
+    var $visibleProject;
+
+    if ($("#planets-info").is(":visible")) {
+      $visibleProject = "planets-info";
+    } else if ($("#rubiks-info").is(":visible")) {
+      $visibleProject = "rubiks-info";
+    } else if ($("#logos-info").is(":visible")) {
+      $visibleProject = "logos-info";
+    } else {
+      $visibleProject = "undefined";
+    }
+
+    slideOrHide(projectInfo, $visibleProject);
+  }
+
+  function slideOrHide(clickedProject, visibleProject) {
+
+    if (visibleProject == "undefined") { // no element is visible
+      $(".work-sample").hide();
+      $(".work-sample").fadeIn(1200);
+      clickedProject.slideToggle(400);
+      visibleProject = clickedProject[0].id;
+      $("html, body").animate({ // open clicked element
+        scrollTop: (clickedProject.offset().top - 200)
+      }, 600);
+
+    } else if (visibleProject == clickedProject[0].id) { // or click X clicked element is already open
+      clickedProject.slideToggle(200); // close toggle
+      $("html, body").animate({
+        scrollTop: ($(".bg-img").height() - $(".navbar").height() - 15)
+      }, 600);
+
+    } else { // another element is already visible
+      $("#" + visibleProject).hide();
+      clickedProject.fadeIn(1000);
+      $("html, body").animate({
+        scrollTop: (clickedProject.offset().top - 200)
+      }, 600);
+    }
+  }
+
+
+  /* ---> Helper Functions <-------------------------- */
+
+
 
   function barChart() {
     $('.bar').each(function(i) {
@@ -160,76 +243,6 @@ qb.App = (function() {
   }
 
 
-  /* ---> Helper Functions <-------------------------- */
-
-  function slideNavMenu() {
-    $("#slide-menu").toggleClass("slideMenuToggle");
-    $("#slide-content").toggleClass("slideOver");
-    $(".navbar").toggleClass("nav-slide");
-  }
-
-  function checkVisible(clickedApp) {
-    if ($("#planets-info").is(":visible")) {
-      $visibleApp = "planets-info";
-    } else if ($("#rubiks-info").is(":visible")) {
-      $visibleApp = "rubiks-info";
-    } else if ($("#logos-info").is(":visible")) {
-      $visibleApp = "logos-info";
-    } else {
-      $visibleApp = "undefined";
-    }
-    slideOrHide(clickedApp);
-  }
-
-  function slideOrHide(clickedApp) {
-
-    if ($visibleApp == "undefined") { // no element is visible
-
-      console.log("no visible");
-      workSample();
-      clickedApp.slideToggle(400);
-
-      $visibleApp = clickedApp[0].id;
-      $("html, body").animate({ // open clicked element
-        scrollTop: (clickedApp.offset().top - 200)
-      }, 600);
-
-
-    } else if ($visibleApp == clickedApp[0].id) { // clicked element is already open
-      console.log("nav = " + $(".navbar").height());
-
-      clickedApp.slideToggle(200); // close toggle
-      $("html, body").animate({
-        scrollTop: ($(".bg-img").height() - $(".navbar").height() - 15)
-      }, 600);
-
-      console.log("nav = " + $(".navbar").height());
-
-    } else { // another element is already visible
-      $("#" + $visibleApp).hide();
-      clickedApp.fadeIn(1000);
-
-      $("html, body").animate({
-        scrollTop: (clickedApp.offset().top - 200)
-      }, 600);
-    }
-  }
-
-  function workSample() {
-    $(".work-sample").hide();
-    $(".work-sample").fadeIn(1200);
-  }
-
-
-  function scrollToSection(sourceClick) {
-
-    sourceClick.click(function(event) {
-      // animate scroll
-      $('html, body').animate({
-        scrollTop: ($(this.hash).offset().top - 100)
-      }, 600);
-    });
-  }
 
   /* ------------------------------------------------- */
 
