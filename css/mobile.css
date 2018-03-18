@@ -30,6 +30,9 @@
     font-weight: lighter;
   }
   /* ---> Container & Image Sizing <---------------- */
+	.bg-img {
+		opacity: 0;
+	}
   .overlay {
     opacity: 1;
     background: linear-gradient(to bottom right, #575F9F, #ecf8ec);
@@ -45,6 +48,7 @@
   }
   .header {
     padding: 25% 10% 25% 10%;
+		opacity: 0;
   }
   .app-image {
     max-width: 60%;
@@ -85,6 +89,10 @@
   .nav-close:hover {
     color: #c8bbdd;
   }
+
+	.navbar {
+		opacity: 1;
+	}
   /* ---> Other <-------------------------- */
   .btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
     color: #ffffff;

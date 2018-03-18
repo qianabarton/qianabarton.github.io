@@ -10,15 +10,10 @@ qb.App = (function() {
 
     navLinkClick();
     navMenuClick();
-
-
     transparentNav();
 
     callToAction();
-
-
     project();
-
     purpleLogo();
 
   }
@@ -29,18 +24,27 @@ qb.App = (function() {
     // only on desktop
     $(".bg-img").animate({
       'opacity': '1'
-    }, 1500);
+    }, 2000);
 
-    $(".header").animate({
-      'opacity': '1'
-    }, 4000);
+    setTimeout(function() {
+        $(".navbar").animate({
+          'opacity': '1'
+        }, 1000);
+    }, 2000);
+
+    setTimeout(function() {
+        $(".header").animate({
+          'opacity': '1'
+        }, 2000);
+    }, 1000);
   }
+
 
   function showAllSections() {
     showSection($("#projects"), $("#projects-content"), 500);
     showSection($("#skills"), $("#skills-content"), 850);
-    showSection($("#about"), $("#about-content"), 600);
-    showSection($("#contact"), $("#contact-content"), 700);
+    showSection($("#about"), $("#about-content"), 500);
+    showSection($("#contact"), $("#contact-content"), 600);
 
     barChart();
   }
@@ -121,7 +125,7 @@ qb.App = (function() {
     sourceClick.click(function(event) {
       // animate scroll
       $('html, body').animate({
-        scrollTop: ($(this.hash).offset().top - 100)
+        scrollTop: ($(this.hash).offset().top - $(".navbar").height())
       }, 600);
     });
   }
@@ -146,10 +150,10 @@ qb.App = (function() {
   function hoverProject(project, icon) {
     $(project).hover(
       function() {
-      $(icon).addClass("app-hover");
+        $(icon).addClass("app-hover");
       },
       function() {
-       $(icon).removeClass("app-hover");
+        $(icon).removeClass("app-hover");
       }
     );
   }
@@ -206,22 +210,22 @@ qb.App = (function() {
     }
   }
 
-  function getY(project){
-    if ($(window).width() < 768){
-      return project.offset().top;
+  function getY(project) {
+    if ($(window).width() < 768) {
+      return project.offset().top - 20;
     } else {
-      return project.offset().top - 200;
+      return project.offset().top - 80;
     }
   }
 
-  function slideClose(project){
-    var projectId = project.substring(0, (project.length-5));
+  function slideClose(project) {
+    var projectId = project.substring(0, (project.length - 5));
     console.log("proj = " + projectId);
 
     var projectLocation = $("." + projectId).parent().offset().top;
     $("#" + project).slideToggle(200);
     $("html, body").animate({
-      scrollTop: (projectLocation - $(".navbar").height())
+      scrollTop: (projectLocation - $(".navbar").height() - 20)
     }, 600);
   }
 
