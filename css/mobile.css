@@ -94,16 +94,19 @@
 		opacity: 0;
 	}
   /* ---> Other <-------------------------- */
+
   .btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
     color: #ffffff;
     border-color: #ffffff;
     text-transform: uppercase;
   }
+	
   .btn-no-fill:hover {
     color: #fff;
     background: #5F62A4;
     border-color: #5F62A4;
   }
+
   .btn-fill, .btn-fill:active, .btn-fill:visited {
     color: #5F62A4;
     background: #fff;
