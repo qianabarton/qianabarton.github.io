@@ -138,8 +138,9 @@ qb.App = (function() {
     clickProject($("#logos-info"), $(".logos"));
 
     $(".info-close").click(function() {
-      slideCLose($("#" + checkVisible()));
+      slideClose(checkVisible());
     });
+
   }
 
   function hoverProject(project, icon) {
@@ -154,11 +155,13 @@ qb.App = (function() {
   }
 
   function clickProject(projectInfo, project) {
+
     $(projectInfo).hide();
     $(project).click(function() {
       checkVisible($(projectInfo));
       slideOrHide(projectInfo, checkVisible());
     });
+
   }
 
   function checkVisible() {
@@ -178,31 +181,47 @@ qb.App = (function() {
 
   function slideOrHide(clickedProject, visibleProject) {
 
+    var toggleY = 2000;
+
+
+
     if (visibleProject == "undefined") { // no element is visible
       $(".work-sample").hide();
       $(".work-sample").fadeIn(1200);
       clickedProject.slideToggle(400);
       visibleProject = clickedProject[0].id;
+
       $("html, body").animate({ // open clicked element
-        scrollTop: (clickedProject.offset().top - 200)
+        scrollTop: (getY(clickedProject))
       }, 600);
 
     } else if (visibleProject == clickedProject[0].id) { // or click X clicked element is already open
-      slideCLose(clickedProject);
+      slideClose(clickedProject[0].id);
     } else { // another element is already visible
       $("#" + visibleProject).hide();
       clickedProject.fadeIn(1000);
       $("html, body").animate({
-        scrollTop: (clickedProject.offset().top - 200)
+        scrollTop: (getY(clickedProject))
       }, 600);
     }
   }
 
-  function slideCLose(project){
-    console.log("proj = " + project);
-    project.slideToggle(200); // close toggle
+  function getY(project){
+    if ($(window).width() < 768){
+      return project.offset().top;
+    } else {
+      return project.offset().top - 200;
+    }
+  }
+
+  function slideClose(project){
+    var projectId = project.substring(0, (project.length-5));
+    console.log("proj = " + projectId);
+
+    var projectLocation = $("." + projectId).parent().offset().top;
+    $("#" + project).slideToggle(200);
     $("html, body").animate({
-      scrollTop: ($(".bg-img").height() - $(".navbar").height() - 15)
+      scrollTop: (projectLocation - $(".navbar").height())
     }, 600);
   }
 
