@@ -29,7 +29,7 @@ qb.App = (function() {
         $(".navbar").animate({
           'opacity': '1'
         }, 1000);
-    }, 2000);
+    }, 1700);
 
     setTimeout(function() {
         $(".header").animate({
@@ -62,7 +62,8 @@ qb.App = (function() {
 
   function navLinkClick() {
     $(".nav-link").click(function() {
-      if ($mobileNav) { // close nav menu if on mobile
+      if ($(window).width() <= 768) {
+        // close nav menu if on mobile
         slideMobileNav();
       }
     });
@@ -71,7 +72,6 @@ qb.App = (function() {
 
   function navMenuClick() {
     $("#mobile-nav-toggler").click(function() {
-      $mobileNav = true;
       slideMobileNav();
     });
 
@@ -184,10 +184,6 @@ qb.App = (function() {
 
   function slideOrHide(clickedProject, visibleProject) {
 
-    var toggleY = 2000;
-
-
-
     if (visibleProject == "undefined") { // no element is visible
       $(".work-sample").hide();
       $(".work-sample").fadeIn(1200);
@@ -211,7 +207,7 @@ qb.App = (function() {
 
   function getY(project) {
     if ($(window).width() < 768) {
-      return project.offset().top - 20;
+      return project.offset().top - 40;
     } else {
       return project.offset().top - 80;
     }
