@@ -37,17 +37,17 @@ qb.App = (function() {
   }
 
   function showAllSections() {
-    showSection($("#projects"), $("#projects-content"));
-    showSection($("#skills"), $("#skills-content"));
-    showSection($("#about"), $("#about-content"));
-    showSection($("#contact"), $("#contact-content"));
+    showSection($("#projects"), $("#projects-content"), 500);
+    showSection($("#skills"), $("#skills-content"), 650);
+    showSection($("#about"), $("#about-content"), 600);
+    showSection($("#contact"), $("#contact-content"), 700);
 
     barChart();
   }
 
-  function showSection(section, content) {
+  function showSection(section, content, offset) {
     $(window).scroll(function() {
-      if ($(this).scrollTop() > (section.offset().top - 500)) {
+      if ($(this).scrollTop() > (section.offset().top - offset)) {
         content.animate({
           'opacity': '1'
         }, 1200);
@@ -136,15 +136,20 @@ qb.App = (function() {
     clickProject($("#planets-info"), $(".planets"));
     clickProject($("#rubiks-info"), $(".rubiks"));
     clickProject($("#logos-info"), $(".logos"));
+
+    $(".info-close").click(function() {
+      slideCLose($("#" + checkVisible()));
+    });
   }
 
   function hoverProject(project, icon) {
     $(project).hover(
       function() {
-        $(icon).addClass("app-hover");
+      $(icon).addClass("app-hover");
       },
       function() {
-        $(icon).removeClass("app-hover")
+       $(icon).removeClass("app-hover")
+       //$("#skills").css('position', 'relative');
       }
     );
   }
@@ -153,23 +158,23 @@ qb.App = (function() {
     $(projectInfo).hide();
     $(project).click(function() {
       checkVisible($(projectInfo));
+      slideOrHide(projectInfo, checkVisible());
     });
   }
 
-  function checkVisible(projectInfo) {
-    var $visibleProject;
+  function checkVisible() {
+    var visibleProject;
 
     if ($("#planets-info").is(":visible")) {
-      $visibleProject = "planets-info";
+      visibleProject = "planets-info";
     } else if ($("#rubiks-info").is(":visible")) {
-      $visibleProject = "rubiks-info";
+      visibleProject = "rubiks-info";
     } else if ($("#logos-info").is(":visible")) {
-      $visibleProject = "logos-info";
+      visibleProject = "logos-info";
     } else {
-      $visibleProject = "undefined";
+      visibleProject = "undefined";
     }
-
-    slideOrHide(projectInfo, $visibleProject);
+    return visibleProject;
   }
 
   function slideOrHide(clickedProject, visibleProject) {
@@ -184,11 +189,7 @@ qb.App = (function() {
       }, 600);
 
     } else if (visibleProject == clickedProject[0].id) { // or click X clicked element is already open
-      clickedProject.slideToggle(200); // close toggle
-      $("html, body").animate({
-        scrollTop: ($(".bg-img").height() - $(".navbar").height() - 15)
-      }, 600);
-
+      slideCLose(clickedProject);
     } else { // another element is already visible
       $("#" + visibleProject).hide();
       clickedProject.fadeIn(1000);
@@ -198,19 +199,22 @@ qb.App = (function() {
     }
   }
 
+  function slideCLose(project){
+    console.log("proj = " + project);
+    project.slideToggle(200); // close toggle
+    $("html, body").animate({
+      scrollTop: ($(".bg-img").height() - $(".navbar").height() - 15)
+    }, 600);
+  }
+
   /* ---> Helper Functions <-------------------------- */
 
   function barChart() {
 
-
-
     $(window).scroll(function() {
-
-      var start = $("#skills").offset().top - 500;
+      var start = $("#skills").offset().top - 650;
       var stop = $("#about").offset().top - 500;
-
       if ($(window).scrollTop() >= start && $(window).scrollTop() <= stop) {
-        console.log("entering");
         $('.bar').each(function(i) {
           var $bar = $(this);
           setTimeout(function() {

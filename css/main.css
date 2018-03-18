@@ -78,11 +78,11 @@ a:hover {
 
 .app-image {
   width: 60%;
-  transition: width 0.5s ease-in, 0.1s ease-out;
+  transition: width 0.9s ease-in, 0.5s ease-out;
 }
 
 .app-hover {
-  width: calc(75%);
+  width: calc(65%);
   color: #8080ff  !important;
 }
 
@@ -99,6 +99,15 @@ a:hover {
 
 .grow {
   max-width: 33%;
+}
+
+.info-close {
+  font-size: 45px;
+  color: #adadd2;
+}
+
+.info-close:hover {
+  color: #8080ff  !important;
 }
 
 /* ---> Navbar <------------------------------ */
@@ -328,7 +337,6 @@ hr.star-primary {
   background: #fff;
   width: 0;
   margin: .25em 0;
-  color: #999999;
   position: relative;
   transition: width 1s;
   clear: both;
@@ -339,6 +347,8 @@ hr.star-primary {
   display: inline-block;
   position: relative;
   z-index: 2;
+  color: #8c8c8c;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
+  transition: all 1s;
 }
