@@ -21,7 +21,6 @@ qb.App = (function() {
   /* ---> FADE IN Functions <-------------------------- */
 
   function fadeInHeader() {
-    // only on desktop
     $(".bg-img").animate({
       'opacity': '1'
     }, 2000);
