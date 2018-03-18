@@ -60,7 +60,7 @@ qb.App = (function() {
   function navLinkClick() {
     $(".nav-link").click(function() {
       if ($mobileNav) { // close nav menu if on mobile
-        slideNavMenu();
+        slideMobileNav();
       }
     });
     scrollToSection($(".nav-link"));
@@ -84,7 +84,6 @@ qb.App = (function() {
   }
 
   function slideMobileNav() {
-    $mobileNav = true;
     $("#slide-menu").toggleClass("slideMenuToggle");
     $("#slide-content").toggleClass("slideOver");
     $(".navbar").toggleClass("nav-slide");

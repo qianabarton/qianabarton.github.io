@@ -109,7 +109,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-width: 75px;
+    max-width: 45px;
 }
 
 .fadeIn {
@@ -117,14 +117,14 @@ a:hover {
 }
 
 .navbar {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: transparent;
   transition: all 0.3s linear;
 }
 
 .navbar-nav {
-  padding-top: 15px;
+  padding-top: 0px;
   padding-left: 30px;
 }
 
