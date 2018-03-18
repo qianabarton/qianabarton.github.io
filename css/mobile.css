@@ -28,7 +28,6 @@
   p, ul {
     font-size: 19px;
     font-weight: lighter;
-    color: #8c8c8c;
   }
   /* ---> Container & Image Sizing <---------------- */
   .overlay {
@@ -50,9 +49,7 @@
   .app-image {
     max-width: 60%;
   }
-  .work-sample {
-    max-width: 55%;
-  }
+
   .header-logo {
     max-width: 60%;
   }
@@ -63,7 +60,7 @@
     padding: 45px 0 0 0;
   }
   .work-sample {
-    max-width: 70%;
+    max-width: 100%;
   }
   /* ---> Navbar <---------------------------------- */
   .slide-link {
@@ -152,4 +149,19 @@
   #contact a:hover {
     text-decoration: underline;
   }
+
+	.github-link, .github-link a {
+	padding-top: 10%;
+	font-size: 23px;
+	}
+
+	.github-link img {
+	  max-width: 18%;
+	  padding-right: 10px;
+	}
+
+	.bars {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }

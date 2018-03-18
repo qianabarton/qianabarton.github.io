@@ -83,21 +83,21 @@ a:hover {
 }
 
 .app-hover {
-  width: calc(65%);
+  width: calc(55%);
   color: #d1ccff !important;
 }
 
 .header-logo {
   max-width: 30%;
-  transition: all 0.3s linear;
+  transition: all 0.4s;
 }
 
 .grow {
-  max-width: 33%;
+  max-width: 32%;
 }
 
 .info-close {
-  font-size: 65px;
+  font-size: 55px;
   color: #7171da;
   margin-left: 90%;
   margin-right: 10%;
@@ -287,7 +287,7 @@ hr.star-primary {
 
 #skills-content {
   opacity: 0;
-  font-size: 22px;
+  font-size: 18px;
 }
 
 #projects {
@@ -345,4 +345,14 @@ hr.star-primary {
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   transition: all 1s;
+}
+
+.github-link, .github-link a {
+padding-top: 5%;
+font-size: 27px;
+}
+
+.github-link img {
+  max-width: 5%;
+  padding-right: 10px;
 }
