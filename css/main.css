@@ -33,11 +33,12 @@ p, ul, a {
 }
 
 a, a:active, a:visited {
-  color: #adadd2;
-  transition: all 0.2s ease-in;
+  color: #9999ff;
+  transition: all 0.2s;
 }
 
 a:hover {
+  color: #d1ccff;
   text-decoration: none;
 }
 
@@ -78,23 +79,17 @@ a:hover {
 
 .app-image {
   width: 60%;
-  transition: width 0.9s ease-in, 0.5s ease-out;
+  transition: width 0.9s, 0.5s;
 }
 
 .app-hover {
   width: calc(65%);
-  color: #8080ff  !important;
-}
-
-.img-fluid {
-  margin-top: 0;
-  padding-top: 0;
+  color: #d1ccff !important;
 }
 
 .header-logo {
   max-width: 30%;
   transition: all 0.3s linear;
-
 }
 
 .grow {
@@ -102,12 +97,15 @@ a:hover {
 }
 
 .info-close {
-  font-size: 45px;
-  color: #adadd2;
+  font-size: 65px;
+  color: #7171da;
+  margin-left: 90%;
+  margin-right: 10%;
+  float: none;
 }
 
 .info-close:hover {
-  color: #8080ff  !important;
+  color: #8080ff !important;
 }
 
 /* ---> Navbar <------------------------------ */
@@ -118,7 +116,7 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-width: 45px;
+  max-width: 45px;
 }
 
 .fadeIn {
@@ -153,7 +151,6 @@ a:hover {
 
 .desktop-link:hover {
   color: #b3b3ff;
-  font-size: calc(110%);
 }
 
 .darken-link {
@@ -218,6 +215,7 @@ a.btn, .btn {
   border: 1px solid;
   margin: 0 0.5% 0 0.5%;
   border-radius: 0px;
+  transition: all .5s;
 }
 
 .btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
@@ -271,8 +269,6 @@ hr.star-primary {
   border-color: #999999;
 }
 
-
-
 /* ---> Page Sections <------------------------------- */
 
 #about {
@@ -291,6 +287,7 @@ hr.star-primary {
 
 #skills-content {
   opacity: 0;
+  font-size: 22px;
 }
 
 #projects {
@@ -324,14 +321,11 @@ hr.star-primary {
   color: #dedeed;
 }
 
-#contact a:hover{
+#contact a:hover {
   text-decoration: underline;
 }
 
 /* ---> Skills Bars <------------------------------- */
-
-.bars{
-}
 
 .bar {
   background: #fff;

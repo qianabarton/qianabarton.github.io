@@ -38,7 +38,7 @@ qb.App = (function() {
 
   function showAllSections() {
     showSection($("#projects"), $("#projects-content"), 500);
-    showSection($("#skills"), $("#skills-content"), 650);
+    showSection($("#skills"), $("#skills-content"), 850);
     showSection($("#about"), $("#about-content"), 600);
     showSection($("#contact"), $("#contact-content"), 700);
 
@@ -148,8 +148,7 @@ qb.App = (function() {
       $(icon).addClass("app-hover");
       },
       function() {
-       $(icon).removeClass("app-hover")
-       //$("#skills").css('position', 'relative');
+       $(icon).removeClass("app-hover");
       }
     );
   }
@@ -212,7 +211,7 @@ qb.App = (function() {
   function barChart() {
 
     $(window).scroll(function() {
-      var start = $("#skills").offset().top - 650;
+      var start = $("#skills").offset().top - 850;
       var stop = $("#about").offset().top - 500;
       if ($(window).scrollTop() >= start && $(window).scrollTop() <= stop) {
         $('.bar').each(function(i) {
@@ -235,9 +234,9 @@ qb.App = (function() {
   }
 
   function purpleLogo() {
-    purple = new Image(100, 100);
+    var purple = new Image(100, 100);
     purple.src = "images/logo/qb-4-purple-white.png";
-    white = new Image(100, 100);
+    var white = new Image(100, 100);
     white.src = "images/logo/qb-4-round-new.png";
 
     $(".header-logo").hover(
@@ -245,6 +244,7 @@ qb.App = (function() {
         $(".header-logo").addClass("grow");
         // if !mobile do this
         if ($(window).width() > 768) {
+          $(".header-logo").addClass("grow");
           $(".header-logo").attr("src", purple.src);
         }
       },
