@@ -35,7 +35,7 @@
 	}
   .overlay {
     opacity: 1;
-    background: linear-gradient(to bottom right, #575F9F, #ecf8ec);
+    background: linear-gradient(to bottom right, #575F9F, #e6ffcc);
     /*
 			FFE5A2
 			e6ffcc
@@ -66,12 +66,18 @@
   .work-sample {
     max-width: 100%;
   }
+
+	.app-hover {
+	  width: inherit;
+	  color: #d1ccff !important;
+	}
   /* ---> Navbar <---------------------------------- */
   .slide-link {
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     color: #8c8c8c;
   }
+	
   .slide-link:hover {
     color: #c8bbdd;
   }
@@ -100,7 +106,7 @@
     border-color: #ffffff;
     text-transform: uppercase;
   }
-	
+
   .btn-no-fill:hover {
     color: #fff;
     background: #5F62A4;
