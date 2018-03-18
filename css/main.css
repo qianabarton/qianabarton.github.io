@@ -297,7 +297,6 @@ hr.star-primary {
   display: inline-flex;
 }
 
-
 .info-text {
   margin-top: auto;
   margin-bottom: auto;
@@ -325,15 +324,13 @@ hr.star-primary {
 .bars{
 }
 
-
-
 .bar {
   background: #fff;
   width: 0;
   margin: .25em 0;
   color: #999999;
   position: relative;
-  transition: width 2s, background .2s;
+  transition: width 1s;
   clear: both;
 }
 

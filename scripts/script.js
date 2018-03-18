@@ -36,24 +36,23 @@ qb.App = (function() {
     }, 4000);
   }
 
-  function showAllSections(){
+  function showAllSections() {
     showSection($("#projects"), $("#projects-content"));
     showSection($("#skills"), $("#skills-content"));
     showSection($("#about"), $("#about-content"));
     showSection($("#contact"), $("#contact-content"));
+
+    barChart();
   }
 
-  function showSection(section, content){
-        $(window).scroll(function() {
-          if ($(this).scrollTop() > (section.offset().top - 500)) {
-           content.animate({
-              'opacity': '1'
-            }, 1200);
-            if(section[0].id == "skills"){
-              barChart();
-            }
-          }
-        });
+  function showSection(section, content) {
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > (section.offset().top - 500)) {
+        content.animate({
+          'opacity': '1'
+        }, 1200);
+      }
+    });
   }
 
   /* ---> NAVBAR Functions <-------------------------- */
@@ -67,29 +66,29 @@ qb.App = (function() {
     scrollToSection($(".nav-link"));
   }
 
-    function navMenuClick() {
-      $("#mobile-nav-toggler").click(function() {
-        $mobileNav = true;
+  function navMenuClick() {
+    $("#mobile-nav-toggler").click(function() {
+      $mobileNav = true;
+      slideMobileNav();
+    });
+
+    $(".close").click(function() {
+      slideMobileNav();
+    });
+
+    $("#slide-content").click(function() {
+      if ($("#slide-content").hasClass("slideOver")) {
         slideMobileNav();
-      });
+      }
+    });
+  }
 
-      $(".close").click(function() {
-        slideMobileNav();
-      });
-
-      $("#slide-content").click(function() {
-        if ($("#slide-content").hasClass("slideOver")) {
-          slideMobileNav();
-        }
-      });
-    }
-
-    function slideMobileNav() {
-        $mobileNav = true;
-        $("#slide-menu").toggleClass("slideMenuToggle");
-        $("#slide-content").toggleClass("slideOver");
-        $(".navbar").toggleClass("nav-slide");
-    }
+  function slideMobileNav() {
+    $mobileNav = true;
+    $("#slide-menu").toggleClass("slideMenuToggle");
+    $("#slide-content").toggleClass("slideOver");
+    $(".navbar").toggleClass("nav-slide");
+  }
 
 
   function transparentNav() {
@@ -113,17 +112,13 @@ qb.App = (function() {
     });
   }
 
-
-
   /* ---> SCROLL Functions <-------------------------- */
-
 
   function callToAction() {
     scrollToSection($(".cta-button"));
   }
 
   function scrollToSection(sourceClick) {
-
     sourceClick.click(function(event) {
       // animate scroll
       $('html, body').animate({
@@ -132,9 +127,7 @@ qb.App = (function() {
     });
   }
 
-
   /* ---> Project Click Functions <-------------------------- */
-
 
   function project() {
     hoverProject($(".planets"), $(".planets-icon"));
@@ -147,7 +140,6 @@ qb.App = (function() {
   }
 
   function hoverProject(project, icon) {
-
     $(project).hover(
       function() {
         $(icon).addClass("app-hover");
@@ -207,17 +199,35 @@ qb.App = (function() {
     }
   }
 
-
   /* ---> Helper Functions <-------------------------- */
 
-
-
   function barChart() {
-    $('.bar').each(function(i) {
-      var $bar = $(this);
-      setTimeout(function() {
-        $bar.css('width', $bar.attr('data-percent'));
-      }, i * 100);
+
+
+
+    $(window).scroll(function() {
+
+      var start = $("#skills").offset().top - 500;
+      var stop = $("#about").offset().top - 500;
+
+      if ($(window).scrollTop() >= start && $(window).scrollTop() <= stop) {
+        console.log("entering");
+        $('.bar').each(function(i) {
+          var $bar = $(this);
+          setTimeout(function() {
+            $bar.css('width', $bar.attr('data-percent'));
+            $bar.css('transition', 'width 1s');
+          }, i * 100);
+        });
+      } else {
+        $('.bar').each(function(i) {
+          var $bar = $(this);
+          setTimeout(function() {
+            $bar.css('width', 0);
+            $bar.css('transition', 'width 0.2s');
+          }, i * 100);
+        });
+      }
     });
   }
 
