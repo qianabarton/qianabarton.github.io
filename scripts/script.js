@@ -239,7 +239,7 @@ qb.App = (function() {
   function barChart() {
 
     $(window).scroll(function() {
-      var start = $("#skills").offset().top - 850;
+      var start = $("#skills").offset().top - 650;
       var stop = $("#about").offset().top - 500;
       if ($(window).scrollTop() >= start && $(window).scrollTop() <= stop) {
         $('.bar').each(function(i) {
