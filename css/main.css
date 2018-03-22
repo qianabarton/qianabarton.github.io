@@ -121,6 +121,10 @@ a:hover {
   max-width: 70%;
 }
 
+.design-sample {
+  max-width: 100%;
+}
+
 /* ---> Navbar <------------------------------ */
 
 .navbar-brand {
