@@ -9,7 +9,9 @@ h1 {
   font-family: 'Lato', sans-serif;
   font-size: 56px;
   font-weight: 600;
-  color: #ffffff;
+  color: #8c8c8c;
+  padding: 20px 0 20px 0;
+
 }
 
 h2 {
@@ -54,8 +56,10 @@ a:hover {
 }
 
 .name {
-  padding: 20px 0 20px 0;
+  padding: 15% 0 8% 0;
 }
+
+
 
 /* ---> Image Sizing <------------------------- */
 
@@ -63,7 +67,8 @@ a:hover {
   max-width: 100%;
   height: auto;
   display: block;
-  background-image: url("../images/palm-5-bw.png");
+  background-image: url("../images/splash-purple.png");
+  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -72,12 +77,14 @@ a:hover {
 }
 
 .overlay {
+  /*
   position: relative;
   max-width: 100%;
   height: auto;
   z-index: 0;
   background-color: rgb(33, 40, 45);
   opacity: .7;
+  */
 }
 
 .app-image {
@@ -91,7 +98,7 @@ a:hover {
 }
 
 .header-logo {
-  max-width: 30%;
+  max-width: 25%;
   transition: all 0.4s;
 }
 
@@ -134,7 +141,7 @@ a:hover {
   padding-left: 15px;
   padding-right: 15px;
   background-color: transparent;
-  transition: all 0.3s linear;
+  transition: all 1s;
   opacity: 0;
 }
 
@@ -153,7 +160,7 @@ a:hover {
 
 .desktop-link {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  color: #8c8c8c;
   transition: all 0.2s ease-in;
 }
 
@@ -162,7 +169,7 @@ a:hover {
 }
 
 .darken-link {
-  color: #262626;
+  color: #fff;
 }
 
 .darken-link:hover {
@@ -170,8 +177,8 @@ a:hover {
 }
 
 .solid {
-  background: #d9d9d9;
-  opacity: .7;
+  background: #808080;
+  opacity: 0.7;
 }
 
 #slide-menu {
@@ -226,14 +233,14 @@ a.btn, .btn {
 }
 
 .btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #5F62A4;
+  border-color: #5F62A4;
   text-transform: uppercase;
 }
 
 .btn-no-fill:hover {
-  color: #5F62A4;
-  background: #fff;
+  color: #fff;
+  background: #9ea0c7;
   border-color: #fff;
 }
 
@@ -245,8 +252,8 @@ a.btn, .btn {
 }
 
 .btn-fill:hover {
-  color: #5F62A4;
-  background: #fff;
+  color: #fff;
+  background: #9ea0c7;
   border-color: #fff !important;
 }
 

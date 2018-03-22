@@ -21,13 +21,16 @@ qb.App = (function() {
   /* ---> FADE IN Functions <-------------------------- */
 
   function fadeInHeader() {
+    // run spinner
+
+    // check if page is loaded
     $(".bg-img").animate({
       'opacity': '1'
     }, 2000);
 
     setTimeout(function() {
         $(".navbar").animate({
-          'opacity': '1'
+          'opacity': '0.7'
         }, 1000);
     }, 1700);
 
@@ -97,6 +100,7 @@ qb.App = (function() {
     // Transition effect for navbar
     $(window).scroll(function() {
       // checks if window is scrolled more than x, adds/removes solid class\
+      //
       if ($(this).scrollTop() > $(".bg-img").height() - ($(".navbar").height() * 2)) {
         // scrolls to end of header div
         $(".navbar").addClass('solid');
@@ -135,10 +139,12 @@ qb.App = (function() {
     hoverProject($(".planets"), $(".planets-icon"));
     hoverProject($(".rubiks"), $(".rubiks-icon"));
     hoverProject($(".logos"), $(".logos-icon"));
+    hoverProject($(".design"), $(".logos-icon"));
 
     clickProject($("#planets-info"), $(".planets"));
     clickProject($("#rubiks-info"), $(".rubiks"));
     clickProject($("#logos-info"), $(".logos"));
+    clickProject($("#design-info"), $(".design"));
 
     $(".info-close").click(function() {
       slideClose(checkVisible());
@@ -176,6 +182,8 @@ qb.App = (function() {
       visibleProject = "rubiks-info";
     } else if ($("#logos-info").is(":visible")) {
       visibleProject = "logos-info";
+    } else if ($("#design-info").is(":visible")) {
+      visibleProject = "design-info";
     } else {
       visibleProject = "undefined";
     }
@@ -254,21 +262,24 @@ qb.App = (function() {
   function purpleLogo() {
     var purple = new Image(100, 100);
     purple.src = "images/logo/qb-4-purple-white.png";
-    var white = new Image(100, 100);
-    white.src = "images/logo/qb-4-round-new.png";
+    //var white = new Image(100, 100);
+    //white.src = "images/logo/qb-4-round-new.png";
+    if ($(window).width() > 768) {
+    //$(".header-logo").attr("src", purple.src);
+  }
 
     $(".header-logo").hover(
       function() {
-        $(".header-logo").addClass("grow");
+        //$(".header-logo").addClass("grow");
         // if !mobile do this
         if ($(window).width() > 768) {
-          $(".header-logo").addClass("grow");
-          $(".header-logo").attr("src", purple.src);
+        //  $(".header-logo").addClass("grow");
+        //  $(".header-logo").attr("src", purple.src);
         }
       },
       function() {
-        $(".header-logo").removeClass("grow");
-        $(".header-logo").attr("src", white.src);
+      //  $(".header-logo").removeClass("grow");
+      //  $(".header-logo").attr("src", white.src);
       }
     );
   }
