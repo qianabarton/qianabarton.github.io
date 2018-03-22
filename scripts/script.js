@@ -5,6 +5,8 @@ qb.App = (function() {
   var $mobileNav;
 
   function initApp() {
+    console.log("v2");
+    
     fadeInHeader();
     showAllSections();
 
