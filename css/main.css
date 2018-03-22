@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #fff;
 }
 
 
@@ -66,8 +66,8 @@ a:hover {
   max-width: 100%;
   height: auto;
   display: block;
+  background-color: transparent;
   background-image: url("../images/splash-purple.png");
-  background-color: #fff;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -144,7 +144,7 @@ a:hover {
   padding-left: 15px;
   padding-right: 15px;
   background-color: transparent;
-  transition: all 1s;
+  transition: background 1s;
   opacity: 0;
 }
 
@@ -154,7 +154,6 @@ a:hover {
 }
 
 .navbar-toggler {
-  transition: all 0.3s linear;
 }
 
 .nav-item-desktop {
@@ -176,7 +175,7 @@ a:hover {
 }
 
 .darken-link:hover {
-  color: #8080ff;
+  color: #4f1aff;
 }
 
 .solid {
@@ -298,8 +297,8 @@ hr.star-primary {
 }
 
 #skills {
-  color: #ffffff;
-  background-color: #797db9;
+  color: #8c8c8c;
+  background-color: transparent;
 }
 
 #skills-content {
@@ -308,7 +307,7 @@ hr.star-primary {
 }
 
 #projects {
-  background: #ffffff;
+  background: transparent;
   color: #8c8c8c;
 }
 
@@ -345,7 +344,7 @@ hr.star-primary {
 /* ---> Skills Bars <------------------------------- */
 
 .bar {
-  background: #fff;
+  background: #797db9;
   width: 0;
   margin: .25em 0;
   position: relative;
@@ -358,7 +357,7 @@ hr.star-primary {
   display: inline-block;
   position: relative;
   z-index: 2;
-  color: #8c8c8c;
+  color: #fff;
   font-weight: bold;
   font-family: "Montserrat", sans-serif;
   transition: all 1s;

@@ -189,4 +189,8 @@
 		padding-left: 10px;
 		padding-right: 10px;
 	}
+
+	.bar {
+	  background: #585da7;
+	}
 }

@@ -6,7 +6,7 @@ qb.App = (function() {
 
   function initApp() {
     console.log("v2");
-    
+
     fadeInHeader();
     showAllSections();
 
@@ -141,7 +141,7 @@ qb.App = (function() {
     hoverProject($(".planets"), $(".planets-icon"));
     hoverProject($(".rubiks"), $(".rubiks-icon"));
     hoverProject($(".logos"), $(".logos-icon"));
-    hoverProject($(".design"), $(".logos-icon"));
+    hoverProject($(".design"), $(".design-icon"));
 
     clickProject($("#planets-info"), $(".planets"));
     clickProject($("#rubiks-info"), $(".rubiks"));
