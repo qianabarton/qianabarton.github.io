@@ -51,8 +51,11 @@ a:hover {
 }
 
 .header {
-  padding: 20% 0 20% 0;
   opacity: 0;
+}
+
+.name {
+  padding: 20% 0 20% 0;
 }
 
 
