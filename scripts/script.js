@@ -14,7 +14,6 @@ qb.App = (function() {
 
         callToAction();
         project();
-        purpleLogo();
 
     }
 
@@ -259,30 +258,7 @@ qb.App = (function() {
         });
     }
 
-    function purpleLogo() {
-        var purple = new Image(100, 100);
-        purple.src = "images/logo/qb-4-purple-white.png";
-        //var white = new Image(100, 100);
-        //white.src = "images/logo/qb-4-round-new.png";
-        if ($(window).width() > 768) {
-            //$(".header-logo").attr("src", purple.src);
-        }
 
-        $(".header-logo").hover(
-            function() {
-                //$(".header-logo").addClass("grow");
-                // if !mobile do this
-                if ($(window).width() > 768) {
-                    //  $(".header-logo").addClass("grow");
-                    //  $(".header-logo").attr("src", purple.src);
-                }
-            },
-            function() {
-                //  $(".header-logo").removeClass("grow");
-                //  $(".header-logo").attr("src", white.src);
-            }
-        );
-    }
 
 
 
