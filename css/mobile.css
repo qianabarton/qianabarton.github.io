@@ -1,196 +1,195 @@
 /* ---> Mobile CSS <----------------------------------------------------------- */
 
 .sampleClass {
-  float: left;
+    float: left;
 }
 
 @media only screen and (max-width: 768px) {
-  .sampleClass {
-    float: none;
-  }
+    .sampleClass {
+        float: none;
+    }
 }
 
 @media(max-width:768px) {
-  /* ---> Font Size <----------------------------- */
-  h1 {
-    font-size: 38px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-		  color: #fff;
-  }
-  h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 17px;
-    font-weight: bold;
-  }
-  h3 {
-    font-size: 42px;
-  }
-  p, ul {
-    font-size: 19px;
-    font-weight: lighter;
-  }
-  /* ---> Container & Image Sizing <---------------- */
-	.bg-img {
-		opacity: 0;
-	}
-  .overlay {
-    opacity: 1;
-    background: linear-gradient(to bottom right, #575F9F, #e6ffcc);
-    /*
+    /* ---> Font Size <----------------------------- */
+    h1 {
+        font-size: 38px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 900;
+        color: #fff;
+    }
+    h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 17px;
+        font-weight: bold;
+    }
+    h3 {
+        font-size: 42px;
+    }
+    p,
+    ul {
+        font-size: 19px;
+        font-weight: lighter;
+    }
+    /* ---> Container & Image Sizing <---------------- */
+    .bg-img {
+        opacity: 0;
+    }
+    .overlay {
+        opacity: 1;
+        background: linear-gradient(to bottom right, #575F9F, #e6ffcc);
+        /*
 			FFE5A2
 			e6ffcc
 			*/
-    height: auto;
-    max-width: 100%;
-  }
-  .container {
-    padding: 70px 15px 70px 15px;
-  }
-  .header {
-    padding: 25% 10% 25% 10%;
-		opacity: 0;
-  }
-
-	.name {
-	  padding: 0 0 0 0;
-	}
-
-  .app-image {
-    max-width: 60%;
-  }
-
-  .header-logo {
-    max-width: 60%;
-  }
-  .grow {
-    max-width: 65%;
-  }
-  .info {
-    padding: 45px 0 0 0;
-  }
-  .work-sample {
-    max-width: 100%;
-  }
-
-	.app-hover {
-	  width: inherit;
-	  color: #d1ccff !important;
-	}
-  /* ---> Navbar <---------------------------------- */
-  .slide-link {
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    color: #8c8c8c;
-  }
-
-  .slide-link:hover {
-    color: #c8bbdd;
-  }
-  .solid {
-    /* background: #898CC1; */
-    background: #d9d9d9;
-    opacity: .7;
-  }
-  .nav-close {
-    color: #545792;
-    font-size: 60px;
-    margin-top: 9;
-    margin-left: 80px;
-  }
-  .nav-close:hover {
-    color: #c8bbdd;
-  }
-
-	.navbar {
-		opacity: 0;
-		transition: all 0.4s;
-	}
-  /* ---> Other <-------------------------- */
-
-  .btn-no-fill, .btn-no-fill:active, .btn-no-fill:visited {
-    color: #ffffff;
-    border-color: #ffffff;
-    text-transform: uppercase;
-  }
-
-  .btn-no-fill:hover {
-    color: #fff;
-    background: #5F62A4;
-    border-color: #5F62A4;
-  }
-
-  .btn-fill, .btn-fill:active, .btn-fill:visited {
-    color: #5F62A4;
-    background: #fff;
-    border-color: #fff !important;
-    text-transform: uppercase;
-  }
-  .btn-fill:hover {
-    color: #fff;
-    background: #5F62A4;
-    border-color: #5F62A4 !important;
-  }
-  hr.star-light {
-    background: #fff;
-    background-size: contain;
-    background-position: left;
-    border: none;
-    height: 2px;
-  }
-  hr.star-primary {
-    background: #8c8c8c;
-  }
-  .divider {
-    width: auto;
-    height: 15px;
-  }
-  .info-close {
-    margin-left: 85%;
-    margin-right: 15%;
-    margin-bottom: 20px;
-		font-size: 40px;
-  }
-  /* ---> Page Sections <-------------------------- */
-  #projects {
-    background: #ffffff;
-    color: #8c8c8c;
-  }
-  .app-list {
-    display: block;
-  }
-  #about {
-    background-color: #ffffff;
-    color: #8c8c8c;
-  }
-  #skills, #skills ul, #contact, #contact p {
-    color: #fff;
-    background-color: #8c92c0;
-    /*  9b9dca */
-  }
-  #contact a {
-    color: #dedeed;
-  }
-  #contact a:hover {
-    text-decoration: underline;
-  }
-
-	.github-link, .github-link a {
-	padding-top: 10%;
-	font-size: 23px;
-	}
-
-	.github-link img {
-	  max-width: 18%;
-	  padding-right: 10px;
-	}
-
-	.bars {
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-
-	.bar {
-	  background: #585da7;
-	}
+        height: auto;
+        max-width: 100%;
+    }
+    .container {
+        padding: 70px 15px 70px 15px;
+    }
+    .header {
+        padding: 25% 10% 25% 10%;
+        opacity: 0;
+    }
+    .name {
+        padding: 0 0 0 0;
+    }
+    .app-image {
+        max-width: 60%;
+    }
+    .header-logo {
+        max-width: 60%;
+    }
+    .grow {
+        max-width: 65%;
+    }
+    .info {
+        padding: 45px 0 0 0;
+    }
+    .work-sample {
+        max-width: 100%;
+    }
+    .app-hover {
+        width: inherit;
+        color: #d1ccff !important;
+    }
+    /* ---> Navbar <---------------------------------- */
+    .slide-link {
+        font-family: 'Roboto', sans-serif;
+        font-size: 30px;
+        color: #8c8c8c;
+    }
+    .slide-link:hover {
+        color: #c8bbdd;
+    }
+    .solid {
+        /* background: #898CC1; */
+        background: #d9d9d9;
+        opacity: .7;
+    }
+    .nav-close {
+        color: #545792;
+        font-size: 60px;
+        margin-top: 9;
+        margin-left: 80px;
+    }
+    .nav-close:hover {
+        color: #c8bbdd;
+    }
+    .navbar {
+        opacity: 0;
+        transition: all 0.4s;
+    }
+    .navbar-nav {
+        padding-left: 20px;
+    }
+    /* ---> Other <-------------------------- */
+    .btn-no-fill,
+    .btn-no-fill:active,
+    .btn-no-fill:visited {
+        color: #fff;
+        border-color: #fff;
+        text-transform: uppercase;
+    }
+    .btn-no-fill:hover {
+        color: #bec5f4;
+        background: #fff;
+        border-color: #bec5f4;
+    }
+    .btn-fill,
+    .btn-fill:active,
+    .btn-fill:visited {
+        color: #fff;
+        background: #bec5f4;
+        border-color: #bec5f4 !important;
+        text-transform: uppercase;
+    }
+    .btn-fill:hover {
+        color: #bec5f4;
+        background: #fff;
+        border-color: #fff !important;
+    }
+    hr.star-light {
+        background: #fff;
+        background-size: contain;
+        background-position: left;
+        border: none;
+        height: 2px;
+    }
+    hr.star-primary {
+        background: #8c8c8c;
+    }
+    .divider {
+        width: auto;
+        height: 15px;
+    }
+    .info-close {
+        margin-left: 85%;
+        margin-right: 15%;
+        margin-bottom: 20px;
+        font-size: 40px;
+    }
+    /* ---> Page Sections <-------------------------- */
+    #projects {
+        background: #ffffff;
+        color: #8c8c8c;
+    }
+    .app-list {
+        display: block;
+    }
+    #about {
+        background-color: #ffffff;
+        color: #8c8c8c;
+    }
+    #skills,
+    #skills ul,
+    #contact,
+    #contact p {
+        color: #fff;
+        background-color: #8c92c0;
+        /*  9b9dca */
+    }
+    #contact a {
+        color: #dedeed;
+    }
+    #contact a:hover {
+        text-decoration: underline;
+    }
+    .github-link,
+    .github-link a {
+        padding-top: 10%;
+        font-size: 23px;
+    }
+    .github-link img {
+        max-width: 18%;
+        padding-right: 10px;
+    }
+    .bars {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .bar {
+        background: #585da7;
+    }
 }
