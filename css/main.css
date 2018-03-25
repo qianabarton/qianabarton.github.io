@@ -50,7 +50,7 @@
     
     .header {
         opacity: 0;
-        padding: 20% 10% 20% 10%;
+        padding: 30% 10% 10% 10%;
     }
     
     .container {
@@ -78,8 +78,6 @@
     .content-container {
         width: 100%;
     }
-    
-    #about .content-container {}
     /* ---> Image Sizing <------------------------- */
     
     .bg-img {
@@ -314,7 +312,7 @@
     #skills {
         transition: all 1s;
         color: #fff;
-        background-color: #f4dca4;
+        background-color: #f3dca7;
     }
     
     #skills-content {

@@ -12,14 +12,15 @@
 
 @media(max-width:768px) {
     /* ---> Font Size <----------------------------- */
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
     h1 {
         font-size: 38px;
-        font-family: 'Roboto', sans-serif;
-        font-weight: 900;
+        font-weight: 800;
         color: #fff;
     }
     h2 {
-        font-family: 'Roboto', sans-serif;
         font-size: 17px;
         font-weight: bold;
     }
@@ -54,7 +55,7 @@
         padding: 70px 15px 70px 15px;
     }
     .header {
-        padding: 35% 10% 35% 10%;
+        padding: 45% 10% 15% 10%;
         opacity: 0;
     }
     .container-2 {
@@ -97,7 +98,6 @@
     }
     /* ---> Navbar <---------------------------------- */
     .slide-link {
-        font-family: 'Roboto', sans-serif;
         font-size: 30px;
         color: #8c8c8c;
     }
