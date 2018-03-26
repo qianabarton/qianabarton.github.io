@@ -14,36 +14,49 @@ qb.App = (function() {
 
         callToAction();
         project();
-
     }
 
     /* ---> FADE IN Functions <-------------------------- */
 
     function fadeInHeader() {
         // run spinner
+        makeWaves();
+
 
         // check if page is loaded
-        $(".bg-img").animate({
+        $('.header-container').animate({
             'opacity': '1'
-        }, 2000);
+        }, 0);
 
         setTimeout(function() {
-            $(".navbar").animate({
+            $('.wave').addClass('animated fadeInDown');
+            $('.wave').animate({
+                'opacity': '1'
+            }, 100);
+
+            $('.navbar').addClass('animated fadeInDown');
+            $('.navbar').animate({
                 'opacity': '1'
             }, 1000);
-        }, 1700);
+        }, 500);
+
 
         setTimeout(function() {
-            $(".header").animate({
+            // $('.header').addClass('animated zoomInUp');
+            $('.header').animate({
                 'opacity': '1'
-            }, 2000);
-        }, 1000);
+            }, 2500);
+        }, 1500);
+
+
     }
+
+
 
 
     function showAllSections() {
         showSection($("#projects"), $("#projects-content"), 500);
-        showSection($("#skills"), $("#skills-content"), 850);
+        showSection($("#skills"), $("#skills-content"), 650);
         showSection($("#about"), $("#about-content"), 500);
         showSection($("#contact"), $("#contact-content"), 600);
 
@@ -53,7 +66,7 @@ qb.App = (function() {
     function showSection(section, content, offset) {
         $(window).scroll(function() {
             if ($(this).scrollTop() > (section.offset().top - offset)) {
-                content.animate({
+                section.animate({
                     'opacity': '1'
                 }, 1200);
             }
@@ -63,7 +76,7 @@ qb.App = (function() {
     /* ---> NAVBAR Functions <-------------------------- */
 
     function navLinkClick() {
-        $(".nav-link").click(function() {
+        $('.nav-link').click(function() {
             if ($(window).width() <= 768) {
                 // close nav menu if on mobile
                 slideMobileNav();
@@ -100,7 +113,7 @@ qb.App = (function() {
         $(window).scroll(function() {
             // checks if window is scrolled more than x, adds/removes solid class\
             //
-            if ($(this).scrollTop() > $(".bg-img").height() - ($(".navbar").height() * 2)) {
+            if ($(this).scrollTop() > $(".header-container").height() - ($(".navbar").height() * 2)) {
                 // scrolls to end of header div
                 $(".navbar").addClass('solid');
                 $(".navbar-brand").addClass('fadeIn');
@@ -154,10 +167,7 @@ qb.App = (function() {
     function hoverProject(project, icon) {
         $(project).hover(
             function() {
-                $(icon).addClass("app-hover");
-            },
-            function() {
-                $(icon).removeClass("app-hover");
+                $(icon).addClass("hvr-bounce-in");
             }
         );
     }
@@ -259,7 +269,34 @@ qb.App = (function() {
     }
 
 
+    function makeWaves() {
 
+        var start;
+        var add;
+        var divide;
+
+        if ($(window).width() <= 768) {
+            //if mobile
+            start = -8;
+            add = 13;
+            divide = 1.3;
+            console.log("mobile");
+        } else {
+            start = 53;
+            add = 5;
+            divide = 1;
+        }
+
+        $('.wave').each(function(i) {
+            var $wave = $(this);
+            setTimeout(function() {
+                var newHeight = $wave.attr('wave-height') / divide;
+                $wave.css('height', newHeight + '%');
+                $wave.css('left', start + '%');
+                start = start + add;
+            }, i * 100);
+        });
+    }
 
 
     /* ------------------------------------------------- */

@@ -33,12 +33,12 @@
         font-weight: lighter;
     }
     /* ---> Container & Image Sizing <---------------- */
-    .bg-img {
+    .header-container {
         max-width: 100%;
         height: auto;
         display: block;
         background-color: #7d83a8;
-        background-image: url("../images/waves-mobile.png");
+        /* background-image: url("../images/waves-mobile.png"); */
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover !important;
@@ -186,5 +186,8 @@
     }
     .bars {
         padding-left: 0;
+    }
+    .wave:before {
+        animation: none;
     }
 }

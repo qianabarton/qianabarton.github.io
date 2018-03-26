@@ -12,6 +12,8 @@
 
     <!-- CSS -->
     <link href='css/bootstrap.min.css' rel='stylesheet'>
+    <link href="css/hover.css" rel="stylesheet" media="all">
+    <link href="css/animate.css" rel="stylesheet" media="all">
     <link href='css/main.css' rel='stylesheet'>
     <link href='css/mobile.css' rel='stylesheet'>
 
@@ -81,7 +83,18 @@
     <div id="slide-content">
 
         <!-- Header -->
-        <div class="bg-img">
+        <div class="header-container">
+            <div class="wrap-wave">
+                <span class="wave d-none d-md-block" wave-height="40"></span>
+                <span class="wave d-none d-md-block" wave-height="55"></span>
+                <span class="wave d-none d-md-block" wave-height="40"></span>
+                <span class="wave d-none d-md-block" wave-height="55"></span>
+                <span class="wave d-none d-md-block" wave-height="75"></span>
+                <span class="wave d-block d-md-block" wave-height="55"></span>
+                <span class="wave d-block d-md-block" wave-height="40"></span>
+                <span class="wave d-block d-md-block" wave-height="75"></span>
+                <span class="wave d-none d-md-block" wave-height="55"></span>
+            </div>
             <div class="header">
                 <h1>Qiana</h1>
                 <h1>Barton</h1>
@@ -101,38 +114,31 @@
                         <h2 class="d-none d-md-block">Qiana's</h2>
                         <h3>Portfolio</h3>
                         <h4>A look at some of my current projects</h4>
+
                     </div>
 
                     <div class="content-container">
                         <div class="row text-center justify-content-end">
                             <div class="col-lg-4 col-md-5">
-                                <a class="planets" href="#" onclick="return false;">
-                                    <img class="planets-icon app-image" src="images/work-samples/Planets-icon.png" alt="">
-                                </a>
-                                <p><a class="planets planets-icon" href="#" onclick="return false;">Planets App</a></p>
+                                <a class="sample-link planets" href="#" onclick="return false;">
+                                    <img class="planets-icon app-image" src="images/work-samples/Planets-icon.png" alt="">Planets App</a>
                             </div>
 
                             <div class="col-lg-4 col-md-5">
-                                <a class="design" href="#" onclick="return false;">
-                                    <img class="design-icon app-image" src="images/work-samples/mason-icon.png" alt="">
-                                </a>
-                                <p><a class="design design-icon" href="#" onclick="return false;">Web Design</a></p>
+                                <a class="sample-link design" href="#" onclick="return false;">
+                                    <img class="design-icon app-image" src="images/work-samples/mason-icon.png" alt="">Web Design</a>
                             </div>
                         </div>
 
                         <div class="row text-center justify-content-end">
                             <div class="col-lg-4 col-md-5">
-                                <a class="logos" href="#" onclick="return false;">
-                                    <img class="logos-icon app-image" src="images/work-samples/Upholstery-icon.png" alt="">
-                                </a>
-                                <p><a class="logos logos-icon" href="#" onclick="return false;">Logos</a></p>
+                                <a class="sample-link logos" href="#" onclick="return false;">
+                                    <img class="logos-icon app-image" src="images/work-samples/Upholstery-icon.png" alt="">Logos</a>
                             </div>
 
                             <div class="col-lg-4 col-md-5">
-                                <a class="rubiks" href="#" onclick="return false;">
-                                    <img class="rubiks-icon app-image" src="images/work-samples/Rubiks-icon.png" alt="">
-                                </a>
-                                <p><a class="rubiks rubiks-icon" href="#" onclick="return false;">Rubik's Cube</a></p>
+                                <a class="sample-link rubiks" href="#" onclick="return false;">
+                                    <img class="rubiks-icon app-image" src="images/work-samples/Rubiks-icon.png" alt="">Rubik's Cube</a>
                             </div>
                         </div>
                     </div>
@@ -144,7 +150,7 @@
                     <div class="info row">
                         <button type="button" class="close info-close">
           <span>&times;</span>
-        </button>
+            </button>
                         <div class="info-text col-lg-5 offset-lg-1  col-md-6  ">
                             <p>An interactive 3D Visualization of the planets in our solar system. Created in Xcode using Swift and SceneKit for iOS.
                             </p>
@@ -267,7 +273,7 @@
                 <span><img src="images/envelope.png"></span>
                 <hr class="star-light">
                 <ul class="list-unstyled">
-                    <li><span class="glyphicon glyphicon-envelope"></span> barton.qiana@gmail.com</li>
+                    <li>barton.qiana@gmail.com</li>
                     <li><a href="https://github.com/qianabarton">GitHub</a></li>
                 </ul>
             </div>
@@ -279,5 +285,4 @@
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
-        < /script
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
