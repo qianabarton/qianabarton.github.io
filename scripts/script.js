@@ -28,17 +28,27 @@ qb.App = (function() {
             'opacity': '1'
         }, 0);
 
+
+
         setTimeout(function() {
-            $('.wave').addClass('animated fadeInDown');
+
             $('.wave').animate({
                 'opacity': '1'
             }, 100);
 
-            $('.navbar').addClass('animated fadeInDown');
             $('.navbar').animate({
                 'opacity': '1'
             }, 1000);
+
+            if ($(window).width() <= 768) {
+
+            } else {
+                $('.wave').addClass('animated fadeInDown');
+                $('.navbar').addClass('animated fadeInDown');
+            }
+
         }, 500);
+
 
 
         setTimeout(function() {
@@ -102,6 +112,8 @@ qb.App = (function() {
     }
 
     function slideMobileNav() {
+        $(".wrap-wave").toggleClass("slideGraphic");
+
         $("#slide-menu").toggleClass("slideMenuToggle");
         $("#slide-content").toggleClass("slideOver");
         $(".navbar").toggleClass("nav-slide");
@@ -140,7 +152,7 @@ qb.App = (function() {
         sourceClick.click(function(event) {
             // animate scroll
             $('html, body').animate({
-                scrollTop: ($(this.hash).offset().top)
+                scrollTop: ($(this.hash).offset().top - $(".navbar").height())
             }, 600);
         });
     }
@@ -277,7 +289,7 @@ qb.App = (function() {
 
         if ($(window).width() <= 768) {
             //if mobile
-            start = -8;
+            start = -12;
             add = 13;
             divide = 1.3;
             console.log("mobile");
