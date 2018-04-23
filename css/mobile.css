@@ -58,7 +58,7 @@
         padding: 45% 10% 15% 10%;
         opacity: 0;
     }
-    .container-2 {
+    .container-inline {
         display: block;
         width: 100%;
         padding: 0 5% 0 5%;
@@ -172,6 +172,9 @@
         font-size: 40px;
     }
     /* ---> Page Sections <-------------------------- */
+    #my-links-content a {
+        font-size: 32px;
+    }
     .app-list {
         display: block;
     }

@@ -8,6 +8,8 @@ qb.App = (function() {
         fadeInHeader();
         showAllSections();
 
+        hoverLink();
+
         navLinkClick();
         navMenuClick();
         transparentNav();
@@ -49,23 +51,17 @@ qb.App = (function() {
 
         }, 500);
 
-
-
         setTimeout(function() {
-            // $('.header').addClass('animated zoomInUp');
             $('.header').animate({
                 'opacity': '1'
             }, 2500);
         }, 1500);
-
-
     }
-
-
 
 
     function showAllSections() {
         showSection($("#projects"), $("#projects-content"), 500);
+        showSection($("#my-links"), $("#my-links-content"), 500);
         showSection($("#skills"), $("#skills-content"), 650);
         showSection($("#about"), $("#about-content"), 500);
         showSection($("#contact"), $("#contact-content"), 600);
@@ -79,8 +75,42 @@ qb.App = (function() {
                 section.animate({
                     'opacity': '1'
                 }, 1200);
+                // animate content in for different sections
+                console.log("content= " + content[0].id);
+                switch (content[0].id) {
+                    case "projects-content":
+                    case "contact-content":
+                        content.addClass('animated fadeInUp');
+                        break;
+                    case "my-links-content":
+                        animateLinks();
+                        break;
+                    case "skills-content":
+                        break;
+                    case "about-content":
+                        content.addClass('animated fadeInUp');
+                        break;
+                }
             }
         });
+    }
+
+    function animateLinks() {
+        $('#my-links-content div').each(function(i) {
+            var $div = $(this);
+            setTimeout(function() {
+                $div.css('opacity', 1);
+                $div.addClass('animated fadeInRight');
+            }, i * 150);
+        });
+    }
+
+    function hoverLink() {
+        $('#my-links-content a').hover(
+            function() {
+                $(this).addClass('hvr-shrink');
+            }
+        );
     }
 
     /* ---> NAVBAR Functions <-------------------------- */
@@ -191,7 +221,6 @@ qb.App = (function() {
             checkVisible($(projectInfo));
             slideOrHide(projectInfo, checkVisible());
         });
-
     }
 
     function checkVisible() {
