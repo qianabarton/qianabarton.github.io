@@ -80,7 +80,7 @@ qb.App = (function() {
                 switch (content[0].id) {
                     case "projects-content":
                     case "contact-content":
-                        content.addClass('animated fadeInUp');
+                        //content.addClass('animated fadeInUp');
                         break;
                     case "my-links-content":
                         animateLinks();
@@ -88,7 +88,7 @@ qb.App = (function() {
                     case "skills-content":
                         break;
                     case "about-content":
-                        content.addClass('animated fadeInUp');
+                        //  content.addClass('animated fadeInUp');
                         break;
                 }
             }
