@@ -431,7 +431,7 @@ hr.star-primary {
 .wave:before {
     width: 60px;
     content: "";
-    height: 1500px;
+    height: 1520px;
     position: absolute;
     background: url('../images/new-wave-purple.svg') repeat-y top;
     animation: animateWave 3.5s ease-out;
