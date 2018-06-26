@@ -247,6 +247,7 @@ a.btn,
     border-radius: 0px;
     transition: all .5s;
     font-family: 'Poppins', 'sans-serif';
+    width: 165px;
 }
 
 .btn-no-fill,
