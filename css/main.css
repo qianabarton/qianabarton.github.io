@@ -192,6 +192,7 @@ a {
 .solid {
     background: #fff;
     opacity: 1;
+    border-bottom: #eee 1px solid;
 }
 
 #slide-menu {
