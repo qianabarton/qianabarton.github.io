@@ -11,7 +11,7 @@ qb.App = (function() {
         hoverLink();
 
         navLinkClick();
-        navMenuClick();
+        //navMenuClick();
         transparentNav();
 
         callToAction();
@@ -143,7 +143,7 @@ qb.App = (function() {
         $('.nav-link').click(function() {
             if ($(window).width() <= 768) {
                 // close nav menu if on mobile
-                slideMobileNav();
+                //slideMobileNav();
             }
         });
         scrollToSection($(".nav-link"));

@@ -1,19 +1,24 @@
 {
-  "name": "qianabarton.github.io",
-  "version": "1.0.0",
-  "description": "Qiana's Portfolio",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/qianabarton/qianabarton.github.io.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/qianabarton/qianabarton.github.io/issues"
-  },
-  "homepage": "https://github.com/qianabarton/qianabarton.github.io#readme"
+    "name": "qianabarton.github.io",
+    "version": "1.0.0",
+    "description": "Qiana's Portfolio",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "build-css": "node-sass --include-path scss css/menu.scss   css/output.css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/qianabarton/qianabarton.github.io.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/qianabarton/qianabarton.github.io/issues"
+    },
+    "homepage": "https://github.com/qianabarton/qianabarton.github.io#readme",
+    "devDependencies": {
+        "node-sass": "^4.9.0",
+        "nodemon": "^1.17.5"
+    }
 }
