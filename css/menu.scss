@@ -1,5 +1,5 @@
 ///////////////////////////////////////// button
-$menucolor:#ccc;
+$menucolor:#999;
 .mobile-btn {
     position: absolute;
     text-decoration: none;
@@ -65,10 +65,6 @@ $bg: #f0d38f;
 $grey: #dedede;
 $transform-color: #eac162;
 //Fonts
-$heading: 'PT Sans',
-sans-serif;
-$maintext: 'Open Sans',
-sans-serif;
 // General Pen Styles
 .text {
     max-width: 800px;
@@ -120,6 +116,7 @@ sans-serif;
                 color: $text;
                 font-size: 48px;
                 font-weight: bold;
+                text-transform: uppercase;
                 overflow: hidden;
                 position: relative;
                 &:after {
