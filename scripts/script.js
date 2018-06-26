@@ -16,21 +16,44 @@ qb.App = (function() {
 
         callToAction();
         project();
+        mobileNav();
+    }
+
+    function mobileNav() {
+        //Menu button on click event
+        $('.mobile-nav-button').on('click', function() {
+            // Toggles a class that slides the menu into view on the screen
+            $('.mobile-menu').toggleClass('mobile-menu--open');
+            return false;
+        });
+
+        $('.mobile-btn').click(function(e) {
+            e.preventDefault
+            $(this).toggleClass('cross');
+        });
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if ($('.mobile-menu').hasClass('mobile-menu--open')) {
+                if (event.target != $('.mobile-menu')) {
+                    $('.mobile-menu').toggleClass('mobile-menu--open');
+                    $('.mobile-btn').toggleClass('cross');
+                }
+            }
+        }
     }
 
     /* ---> FADE IN Functions <-------------------------- */
 
     function fadeInHeader() {
-        // run spinner
-        makeWaves();
-
+        $(window).resize(function() {
+            $(".header-container").height($(window).height());
+        });
 
         // check if page is loaded
         $('.header-container').animate({
             'opacity': '1'
         }, 0);
-
-
 
         setTimeout(function() {
 
@@ -56,6 +79,9 @@ qb.App = (function() {
                 'opacity': '1'
             }, 2500);
         }, 1500);
+
+        makeWaves();
+
     }
 
 
