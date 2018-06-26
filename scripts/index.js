@@ -80,6 +80,7 @@ qb.App = (function() {
             }, 2500);
         }, 1500);
 
+        $(window).resize(); //on page load
         makeWaves();
 
     }

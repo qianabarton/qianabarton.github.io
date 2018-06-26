@@ -1,8 +1,9 @@
 ///////////////////////////////////////// button
 $menucolor:#ccc;
 .mobile-btn {
-    position: relative;
+    position: absolute;
     text-decoration: none;
+    top: 0;
     right: 30px;
     height: 30px;
     width: 30px;
