@@ -126,6 +126,10 @@
         padding-left: 20px;
     }
     /* ---> Other <-------------------------- */
+    a.btn,
+    .btn {
+        font-weight: 500;
+    }
     .btn-no-fill,
     .btn-no-fill:active,
     .btn-no-fill:visited {

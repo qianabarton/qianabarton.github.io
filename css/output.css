@@ -13,7 +13,7 @@
     right: 0;
     top: 50%;
     margin-top: -1px;
-    background: #999;
+    background: #fff;
     border-radius: 2px;
     transition: background 0.3s; }
     .mobile-btn span:before {
@@ -23,7 +23,7 @@
       width: 30px;
       top: -10px;
       display: block;
-      background: #999;
+      background: #fff;
       border-radius: 2px;
       transition: transform 0.3s, top 0.3s 0.3s; }
     .mobile-btn span:after {
@@ -33,7 +33,7 @@
       width: 30px;
       top: 10px;
       display: block;
-      background: #999;
+      background: #fff;
       border-radius: 2px;
       transition: transform 0.3s, top 0.3s 0.3s; }
   .mobile-btn.cross span {
