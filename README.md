@@ -1,5 +1,3 @@
-# qianabarton.github.io
+# qbdesign.co
 
 My portfolio webpage.
-
-test test test
