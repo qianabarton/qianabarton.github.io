@@ -27,7 +27,7 @@ class App extends Component {
             <Router>
                 <Switch>
                     <Route exact path="/" component={Home}/>
-                    <Route exact path="/projects" component={Projects}/>
+                    <Route path={process.env.PUBLIC_URL + '/projects'} component={Projects}/>
                     <Route exact path="/contact" component={Contact}/>
 
                     <Route exact path="/projects/swiftui" component={SwiftUI}/>
