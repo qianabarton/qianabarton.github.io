@@ -1,10 +1,6 @@
 import React, {Component} from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
 
-import linkedin from '../img/icons/linkedin.png';
-import behance from '../img/icons/behance.png';
-import github from '../img/icons/github.png';
-import mail from '../img/icons/mail.png';
 
 export default class Contact extends Component {
     render() {

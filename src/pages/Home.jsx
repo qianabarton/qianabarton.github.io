@@ -95,7 +95,7 @@ class Experience extends Component {
                             <br/><br/><span className="bold">I have experience with wireframing, designing mobile UI’s, annotating design documents for developer hand-off, creating dynamic prototypes, micro interactions, using Wordpress, GIT and contributing to the iOS code repositories.</span> 
 
                             <br/><br/>For more details about my work history,
-                            <a className="project-link" href={Resume} target = "_blank"> view my resume.</a>
+                            <a className="project-link" href={Resume} target="_blank"> view my resume.</a>
                             </p>
 
                             <ul>

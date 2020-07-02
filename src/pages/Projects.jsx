@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
 
 // Project Images
-import img1 from '../img/q-logo.svg';
 import sporttrade from '../img/projects/sporttrade.png';
 import flux from '../img/projects/flux.png';
 

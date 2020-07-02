@@ -1,11 +1,6 @@
 import React, {Component} from 'react';
-import {Nav} from "react-bootstrap";
 
 import qlogo from '../img/q-logo.svg';
-import linkedin from '../img/icons/linkedin.png';
-import behance from '../img/icons/behance.png';
-import github from '../img/icons/github.png';
-import mail from '../img/icons/mail.png';
 
 export default class Footer extends Component {
     render() {

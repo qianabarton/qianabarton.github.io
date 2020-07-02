@@ -5,7 +5,8 @@ import './css/App.css';
 import './css/Projects.css';
 import './css/Mobile.css';
 
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter as Router, Route, useRouterHistory} from 'react-router-dom';
+
 
 // Pages
 import Home from './pages/Home';
@@ -21,10 +22,13 @@ import Flux from './pages/Projects/Flux';
 
 // Resume
 
+
 class App extends Component {
+
+
     render() {
         return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <Router>
                     <Route exact path="/" component={Home}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/contact" component={Contact}/>

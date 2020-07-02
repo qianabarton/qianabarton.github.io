@@ -5,7 +5,6 @@ import ProjectHeader from './ProjectHeader';
 
 import flux from '../../img/projects/flux.png';
 
-import flux2 from '../../img/projects/flux/flux.png';
 import ad1 from '../../img/projects/flux/ad1.png';
 import ad2 from '../../img/projects/flux/ad2.png';
 import elevate from '../../img/projects/flux/elevate.png';
