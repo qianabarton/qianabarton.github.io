@@ -24,7 +24,7 @@ import Flux from './pages/Projects/Flux';
 class App extends Component {
     render() {
         return (
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                     <Route exact path="/" component={Home}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/contact" component={Contact}/>
