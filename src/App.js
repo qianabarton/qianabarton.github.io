@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 // CSS
 import './css/App.css';
 import './css/Projects.css';
 import './css/Mobile.css';
 
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home';
@@ -23,41 +23,21 @@ import Flux from './pages/Projects/Flux';
 
 class App extends Component {
     render() {
-        return ( <
-            Router >
-            <
-            Switch >
-            <
-            Route exact path = "/"
-            component = { Home }
-            /> <
-            Route exact path = "/projects"
-            component = { Projects }
-            /> <
-            Route exact path = "/contact"
-            component = { Contact }
-            />
+        return (
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={Home}/>
+                    <Route exact path="/projects" component={Projects}/>
+                    <Route exact path="/contact" component={Contact}/>
 
-            <
-            Route exact path = "/projects/swiftui"
-            component = { SwiftUI }
-            /> <
-            Route exact path = "/projects/cercacor1"
-            component = { Cercacor1 }
-            /> <
-            Route exact path = "/projects/sporttrade"
-            component = { Sporttrade }
-            /> <
-            Route exact path = "/projects/cercacor2"
-            component = { Cercacor2 }
-            /> <
-            Route exact path = "/projects/flux"
-            component = { Flux }
-            />
+                    <Route exact path="/projects/swiftui" component={SwiftUI}/>
+                    <Route exact path="/projects/cercacor1" component={Cercacor1}/>
+                    <Route exact path="/projects/sporttrade" component={Sporttrade}/>
+                    <Route exact path="/projects/cercacor2" component={Cercacor2}/>
+                    <Route exact path="/projects/flux" component={Flux}/>
 
-            <
-            /Switch> <
-            /Router>
+                </Switch>
+            </Router>
         );
     }
 }
