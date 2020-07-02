@@ -23,11 +23,13 @@ import Flux from './pages/Projects/Flux';
 
 class App extends Component {
     render() {
+        console.log("This is the process.env = ", process.env.PUBLIC_URL)
+
         return (
-            <Router>
+            <Router basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path="/" component={Home}/>
-                    <Route path={process.env.PUBLIC_URL + '/projects'} component={Projects}/>
+                    <Route exact path="/projects" component={Projects}/>
                     <Route exact path="/contact" component={Contact}/>
 
                     <Route exact path="/projects/swiftui" component={SwiftUI}/>
