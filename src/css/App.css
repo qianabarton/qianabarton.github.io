@@ -47,7 +47,7 @@ h1 {
 
 h2 {
     font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
+    font-weight: 700 !important;
     font-size: 22px !important;
 }
 
@@ -73,7 +73,7 @@ h5 {
     font-size: 22px !important;
     text-transform: uppercase;
     color: #515153;
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 h6 {
@@ -140,6 +140,19 @@ li {
     color: #FF7169;
 }
 
+.blue-accent {
+    color: #6AB7BE;
+}
+
+.bold {
+    font-weight: 700 !important;
+}
+
+.light {
+    font-size: 13px !important;
+    opacity: 0.8;
+}
+
 .header-button {
     background: #FF7169 !important;
     border-radius: 39px !important;
@@ -186,12 +199,21 @@ li {
     width: 35px;
 }
 
+.contact-row {
+    padding: 0 150px !important;
+}
+
 .contact-details a,
-.contact-details li {
+.contact-details li,
+.contact-details ul {
     display: inline !important;
-    color: #383838;
+    color: #434343;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+}
+
+.contact-details {
+    padding: 0;
 }
 
 
@@ -235,7 +257,7 @@ textarea:focus {
 /* SCREENSHOT */
 
 .comp-bg {
-    height: 50vh;
+    height: 60vh;
     position: relative;
 }
 
@@ -245,13 +267,13 @@ textarea:focus {
     background-size: contain;
 }
 
-.palm1-bg {
+.bottom-bg {
     height: 50vh;
     position: relative;
 }
 
-.palm1-bg::after {
-    background: url("/img/palm-1.jpg") fixed no-repeat;
+.bottom-bg::after {
+    background: url("/img/bg4.png") fixed no-repeat;
     background-size: cover;
 }
 
@@ -262,6 +284,26 @@ textarea:focus {
 
 .palm2-bg::after {
     background: url("/img/palm-2.jpg") fixed no-repeat;
+    background-size: cover;
+}
+
+.projects-bg {
+    height: 50vh;
+    position: relative;
+}
+
+.projects-bg::after {
+    background: url("/img/bg2.png") fixed no-repeat;
+    background-size: cover;
+}
+
+.contact-bg {
+    height: 50vh;
+    position: relative;
+}
+
+.contact-bg::after {
+    background: url("/img/bg3.png") fixed no-repeat;
     background-size: cover;
 }
 

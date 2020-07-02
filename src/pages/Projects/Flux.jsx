@@ -52,10 +52,12 @@ export default class Flux extends Component {
                         </Row>
 
                         <Row className="row-pad-v">
-                            <Col>
+                            <Col sm={12} md={6}>
                                 <img className="project-image" src={ad1} alt=""></img>
+                                <div className="spacer20 d-md-none"/>
                             </Col>
-                            <Col>
+                            <Col sm={12} md={6}>
+                                <div className="spacer20-top d-md-none"/>
                                 <img className="project-image" src={ad2} alt=""></img>
                             </Col>
                         </Row>

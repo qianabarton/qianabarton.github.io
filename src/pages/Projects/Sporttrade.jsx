@@ -41,11 +41,12 @@ export default class Sporttrade extends Component {
                             </Col>
                         </Row>
                         <Row className="row-pad-v">
-                            <Col>
+                            <Col sm={12} md={6}>
                                 <img className="project-image" src={screens1} alt=""></img>
-
+                                <div className="spacer20 d-md-none"/>
                             </Col>
-                            <Col>
+                            <Col sm={12} md={6}>
+                                <div className="spacer20-top d-md-none"/>
                                 <img className="project-image" src={screens3} alt=""></img>
                             </Col>
                         </Row>
@@ -65,31 +66,41 @@ export default class Sporttrade extends Component {
                         </Row>
 
                         <Row className="row-pad-v">
-                            <Col>
-                                <Row>
+                            <Col sm={12} md={6}>
 
+                                <Row>
                                     <Col>
                                         <img className="project-image" src={logo2} alt=""></img>
+                                        <div className="spacer20 d-md-none"/>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col>
+                                        <div className="spacer20-top d-md-none"/>
                                         <img className="project-image" src={logo1} alt=""></img>
+                                        <div className="spacer20 d-md-none"/>
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col>
+                                        <div className="spacer20-top d-md-none"/>
                                         <img className="project-image" src={appstore1} alt=""></img>
+                                        <div className="spacer20 d-md-none"/>
+
                                     </Col>
                                 </Row>
                                 <Row>
                                     <Col>
+                                        <div className="spacer20-top d-md-none"/>
                                         <img className="project-image" src={appstore2} alt=""></img>
+                                        <div className="spacer20 d-md-none"/>
+
                                     </Col>
                                 </Row>
 
                             </Col>
-                            <Col>
+                            <Col sm={12} md={6}>
+                                <div className="spacer20-top d-md-none"/>
                                 <img className="project-image" src={webdesign} alt=""></img>
                             </Col>
                         </Row>

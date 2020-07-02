@@ -6,7 +6,7 @@ import App from './App';
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 
-import './index.css';
+import './css/index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 

@@ -2,43 +2,41 @@ import React, {Component} from 'react';
 import {Nav} from "react-bootstrap";
 
 import qlogo from '../img/q-logo.svg';
-import linkedin from '../img/footer-icons/linkedin.png';
-import behance from '../img/footer-icons/behance.png';
-import github from '../img/footer-icons/github.png';
-import mail from '../img/footer-icons/mail.png';
-
-/*
-const Test = () => (
-    <div>Test</div>
-);
-*/
+import linkedin from '../img/icons/linkedin.png';
+import behance from '../img/icons/behance.png';
+import github from '../img/icons/github.png';
+import mail from '../img/icons/mail.png';
 
 export default class Footer extends Component {
     render() {
         return (
             <div className="footer text-center">
-                <div className="mt-5 mb-4">
-                    <Nav className="justify-content-center">
-                        <Nav.Link
-                            target="_blank"
-                            href="http://www.linkedin.com/in/qiana-barton-484a5793">
-                            <img className="footer-icon" src={linkedin} alt=""></img>
-                        </Nav.Link>
-                        <Nav.Link target="_blank" href="https://www.behance.net/qianabarton">
-                            <img className="footer-icon" src={behance} alt=""></img>
 
-                        </Nav.Link>
-                        <Nav.Link target="_blank" href="https://github.com/qianabarton">
-                            <img className="footer-icon" src={github} alt=""></img>
-                        </Nav.Link>
-                        <Nav.Link href="/contact">
-                            <img className="footer-icon" src={mail} alt=""></img>
-                        </Nav.Link>
-                    </Nav>
+                <div className="mt-5 mb-4">
+                    <ul className="contact-details">
+                    <a className="px-3" target="_blank" href="mailto:barton.qiana@gmail.com">
+                            EMAIL
+                        </a>
+                        <a className="px-3" target="_blank" href="https://www.behance.net/qianabarton">
+                            BEHANCE
+                        </a>
+                        <a className="px-3" target="_blank" href="https://github.com/qianabarton">
+                            GITHUB
+                        </a>
+                        <a className="px-3" target="_blank" href="http://www.linkedin.com/in/qiana-barton-484a5793">
+                            LINKEDIN
+                        </a>
+                    </ul>
                 </div>
-                <ul className="contact-details pl-0">
+
+                <div>
+                    <a href="/">
+                        <img className="footer-icon" src={qlogo} alt=""></img>
+                    </a>
+                </div>
+
+                <ul className="contact-details pl-0 mt-4 mb-5">
                     <li>
-                        
                         <a target="_blank" href="mailto:barton.qiana@gmail.com">barton.qiana@gmail.com</a>
                     </li>
                     <li className="mx-3">
@@ -47,12 +45,7 @@ export default class Footer extends Component {
                     <li>
                         Los Angeles, CA</li>
                 </ul>
-                <div className="mt-4 mb-5">
-                    <a href="/">
-                        <img src={qlogo} alt=""></img>
-                    </a>
 
-                </div>
             </div>
         );
     }

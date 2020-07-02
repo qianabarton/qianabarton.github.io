@@ -1,0 +1,44 @@
+@media only screen and (max-width: 600px) {
+    /* Text */
+    h1 {
+        font-size: 40px !important;
+    }
+    h2 {
+        font-size: 22px !important;
+    }
+    h3 {
+        font-size: 32px !important;
+    }
+    p {
+        font-size: 14px !important;
+    }
+    .center {
+        padding-top: 30px;
+        width: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .header::after {
+        background: url("/img/palm-1.jpg") fixed no-repeat;
+        background-size: 200%;
+        background-position: center top;
+    }
+    .padding80 {
+        padding: 40px 0;
+    }
+    .comp-bg::after {
+        background-size: 200%;
+        background-position: center;
+    }
+    .spacer20-top {
+        margin-top: 20px;
+    }
+    .contact-row {
+        padding: 0 20px !important;
+    }
+    .container {
+        padding: 0 20px !important;
+    }
+}
