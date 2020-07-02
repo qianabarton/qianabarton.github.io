@@ -23,11 +23,8 @@ import Flux from './pages/Projects/Flux';
 
 class App extends Component {
     render() {
-        console.log("This is the process.env = ", process.env.PUBLIC_URL)
-
         return (
-            <Router basename={process.env.PUBLIC_URL}>
-                <Switch>
+            <Router>
                     <Route exact path="/" component={Home}/>
                     <Route path="/projects" component={Projects}/>
                     <Route path="/contact" component={Contact}/>
@@ -38,7 +35,6 @@ class App extends Component {
                     <Route exact path="/projects/cercacor2" component={Cercacor2}/>
                     <Route exact path="/projects/flux" component={Flux}/>
 
-                </Switch>
             </Router>
         );
     }
