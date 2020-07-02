@@ -5,7 +5,7 @@ import './css/App.css';
 import './css/Projects.css';
 import './css/Mobile.css';
 
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import {BrowserRouter, Route, Switch} from 'react-router-dom';
 
 // Pages
 import Home from './pages/Home';
@@ -26,7 +26,7 @@ class App extends Component {
         console.log("This is the process.env = ", process.env.PUBLIC_URL)
 
         return (
-            <Router basename={process.env.PUBLIC_URL}>
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                 <Switch>
                     <Route exact path="/" component={Home}/>
                     <Route exact path="/projects" component={Projects}/>
@@ -39,7 +39,7 @@ class App extends Component {
                     <Route exact path="/projects/flux" component={Flux}/>
 
                 </Switch>
-            </Router>
+            </BrowserRouter>
         );
     }
 }
