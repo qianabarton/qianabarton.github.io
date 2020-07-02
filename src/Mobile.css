@@ -1,0 +1,219 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+h1,
+h2 {
+    color: #383838;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 60px !important;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px !important;
+}
+
+h3 {
+    /* EXPERIENCE */
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px !important;
+    text-transform: uppercase;
+    color: #383838;
+}
+
+h4 {
+    /* JOB TITLE */
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px !important;
+    text-transform: uppercase;
+    color: #383838;
+}
+
+h5 {
+    /* WORK DATES */
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px !important;
+    text-transform: uppercase;
+    color: #515153;
+    opacity: 0.7;
+}
+
+h6 {
+    /* SKILLS */
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px !important;
+    text-transform: uppercase;
+    color: #383838;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px !important;
+    color: #515153;
+}
+
+li {
+    color: #FF7169;
+    font-size: 24px;
+}
+
+
+/* HEADER */
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    height: 80vh;
+    background: url("/img/header-bg.png")fixed no-repeat;
+    background-size: auto 100%;
+}
+
+.heading {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.spacer20 {
+    margin-bottom: 20px;
+}
+
+.accent {
+    color: #FF7169;
+}
+
+.header-button {
+    background: #FF7169 !important;
+    border-radius: 39px !important;
+    padding: 10px 30px !important;
+    border: none !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+    color: #FFFFFF;
+    letter-spacing: 3.4px;
+}
+
+
+/* ABOUT */
+
+.about {
+    margin: 80px 0;
+}
+
+.about-heading {
+    margin-bottom: 20px;
+}
+
+.qiana-pic {
+    width: 100%;
+}
+
+
+/* SCREENSHOT */
+
+.screenshot {
+    height: 50vh;
+    background: url("/img/header-bg.png")fixed no-repeat;
+    background-size: auto 100%;
+}
+
+
+/* EXPERIENCE */
+
+
+/* FOOTER */
+
+.footer {
+    height: 150px;
+    background-color: #FFFFFF;
+    border-top: 0.5px solid #D5D5D5;
+}
+
+.footer-icon {
+    width: 35px;
+}
+
+.contact-details li,
+.contact-details a {
+    display: inline !important;
+    color: #383838;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+/* CONTACT PAGE */
+
+.input {
+    margin: 10px 0;
+}
+
+input,
+textarea {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #383838 !important;
+    padding: 10px;
+    width: 100%;
+    border: 0.5px solid #D8D8D8;
+    transition: all 0.2s;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+textarea:focus,
+input:focus {
+    outline: 2px solid #FF7169;
+}
+
+.submit-button {
+    float: right;
+}
+
+.vertical-margin {
+    margin: 80px 0;
+}

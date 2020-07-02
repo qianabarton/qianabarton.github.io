@@ -1,0 +1,287 @@
+.App {
+    text-align: center;
+}
+
+.App-logo {
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+.App-header {
+    background-color: #222;
+    height: 150px;
+    padding: 20px;
+    color: white;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+h1,
+h2 {
+    color: #fff;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 60px !important;
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 22px !important;
+}
+
+h3 {
+    /* EXPERIENCE */
+    font-family: 'Oswald', sans-serif;
+    font-size: 50px !important;
+    text-transform: uppercase;
+    color: #383838;
+}
+
+h4 {
+    /* JOB TITLE */
+    font-family: 'Oswald', sans-serif;
+    font-size: 28px !important;
+    text-transform: uppercase;
+    color: #383838;
+}
+
+h5 {
+    /* WORK DATES */
+    font-family: 'Oswald', sans-serif;
+    font-size: 22px !important;
+    text-transform: uppercase;
+    color: #515153;
+    opacity: 0.7;
+}
+
+h6 {
+    /* SKILLS */
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px !important;
+    text-transform: uppercase;
+    color: #383838;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px !important;
+    color: #515153;
+}
+
+li {
+    color: #FF7169;
+    font-size: 24px;
+}
+
+.nav {
+    background-color: #fff;
+    z-index: 100;
+    width: 100%;
+    position: fixed !important;
+}
+
+
+/* HEADER */
+
+.header {
+    height: 80vh;
+    position: relative;
+}
+
+.header::after {
+    background: url("/img/palm-1.jpg") fixed no-repeat;
+    background-size: cover;
+}
+
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.heading {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.spacer20 {
+    margin-bottom: 20px;
+}
+
+.padding80 {
+    padding: 80px 0;
+}
+
+.accent {
+    color: #FF7169;
+}
+
+.header-button {
+    background: #FF7169 !important;
+    border-radius: 39px !important;
+    padding: 10px 30px !important;
+    border: none !important;
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 700 !important;
+    color: #FFFFFF;
+    letter-spacing: 3.4px;
+}
+
+
+/* ABOUT */
+
+.about-heading {
+    margin-bottom: 20px;
+}
+
+.qiana-pic {
+    width: 100%;
+}
+
+.about {
+    height: 50vh;
+}
+
+
+/* EXPERIENCE */
+
+.experience {
+    height: 80vh;
+}
+
+
+/* FOOTER */
+
+.footer {
+    height: 150px;
+    background-color: #FFFFFF;
+    border-top: 0.5px solid #D5D5D5;
+}
+
+.footer-icon {
+    width: 35px;
+}
+
+.contact-details a,
+.contact-details li {
+    display: inline !important;
+    color: #383838;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+/* CONTACT PAGE */
+
+.input {
+    margin: 10px 0;
+}
+
+input,
+textarea {
+    font-family: 'Open Sans', sans-serif !important;
+    color: #383838 !important;
+    padding: 10px;
+    width: 100%;
+    border: 0.5px solid #D8D8D8;
+    transition: all 0.2s;
+}
+
+textarea {
+    min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+    outline: 2px solid #FF7169;
+}
+
+.submit-button {
+    float: right;
+}
+
+.vertical-margin {
+    margin: 80px 0;
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+}
+
+
+/* SCREENSHOT */
+
+.comp-bg {
+    height: 50vh;
+    position: relative;
+}
+
+.comp-bg::after {
+    background: url("/img/COMP.png") fixed no-repeat;
+    background-color: #F5F5F5;
+    background-size: contain;
+}
+
+.palm1-bg {
+    height: 50vh;
+    position: relative;
+}
+
+.palm1-bg::after {
+    background: url("/img/palm-1.jpg") fixed no-repeat;
+    background-size: cover;
+}
+
+.palm2-bg {
+    height: 50vh;
+    position: relative;
+}
+
+.palm2-bg::after {
+    background: url("/img/palm-2.jpg") fixed no-repeat;
+    background-size: cover;
+}
+
+.parallax-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.55);
+    z-index: -1;
+}
+
+.parallax-wrapper {
+    perspective: 2.1px;
+}
+
+.static-wrapper {
+    z-index: 2;
+    position: relative;
+    background-color: #fff;
+}

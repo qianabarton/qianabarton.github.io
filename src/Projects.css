@@ -1,0 +1,51 @@
+/*
+font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+*/
+
+
+/* PROJECT LIST PAGE SHORT */
+
+.project-short {
+    padding: 50px 0;
+}
+
+.project-1 {
+    background-color: mistyrose;
+}
+
+.project-2 {
+    background-color: floralwhite;
+}
+
+.project-3 {
+    background-color: antiquewhite;
+}
+
+.project-4 {
+    background-color: seashell;
+}
+
+.project-5 {
+    background-color: honeydew;
+}
+
+.project-image {
+    width: 100%;
+}
+
+.gallery {
+    background-color: #F5F5F5;
+}
+
+.row-pad-v {
+    padding: 20px 0;
+}
+
+.project-link {
+    color: #29828A;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px !important;
+}

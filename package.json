@@ -1,24 +1,25 @@
 {
-    "name": "qianabarton.github.io",
-    "version": "1.0.0",
-    "description": "Qiana's Portfolio",
-    "main": "index.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "build-css": "node-sass --include-path scss css/menu.scss   css/output.css"
+    "homepage": "http://qianabarton.github.io/qbdesign.co",
+    "name": "porfolio-2020",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "bootstrap": "^4.5.0",
+        "react": "^16.13.1",
+        "react-bootstrap": "^1.0.1",
+        "react-dom": "^16.13.1",
+        "react-router-dom": "^5.2.0",
+        "react-scripts": "0.9.x"
     },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/qianabarton/qianabarton.github.io.git"
-    },
-    "author": "",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/qianabarton/qianabarton.github.io/issues"
-    },
-    "homepage": "https://github.com/qianabarton/qianabarton.github.io#readme",
     "devDependencies": {
-        "node-sass": "^4.9.0",
-        "nodemon": "^1.17.5"
+        "gh-pages": "^3.1.0"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "test": "react-scripts test --env=jsdom",
+        "eject": "react-scripts eject",
+        "predeploy": "npm run build",
+        "deploy": "gh-pages -d build"
     }
 }
