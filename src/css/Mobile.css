@@ -12,6 +12,7 @@
     p {
         font-size: 14px !important;
     }
+    /* Spacing */
     .center {
         padding-top: 30px;
         width: 100%;
@@ -20,17 +21,8 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
-    .header::after {
-        background: url("/img/palm-1.jpg") fixed no-repeat;
-        background-size: 200%;
-        background-position: center top;
-    }
-    .padding80 {
+    .padding50 {
         padding: 40px 0;
-    }
-    .comp-bg::after {
-        background-size: 200%;
-        background-position: center;
     }
     .spacer20-top {
         margin-top: 20px;
@@ -39,6 +31,59 @@
         padding: 0 20px !important;
     }
     .container {
-        padding: 0 20px !important;
+        padding: 40px 40px !important;
     }
+    .scrollHack {
+        padding-bottom: 0 !important;
+    }
+    /*
+    *
+    *
+    */
+    /* disable parallax on mobile */
+    .laptop {
+        height: 80vh;
+        background: url("/img/mobile/laptop-4.jpg") fixed no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+    .laptop::after {
+        background: none;
+    }
+    .comp-bg {
+        height: 40vh;
+        background: url("/img/mobile/COMP.png") repeat;
+        background-size: contain;
+        background-position: center center;
+        background-color: #F5F5F5;
+    }
+    .comp-bg::after {
+        background: none;
+    }
+    .bottom-bg {
+        height: 30vh;
+        background: url("/img/mobile/laptop-5.jpg") no-repeat;
+        background-size: 150%;
+        background-position: right top;
+    }
+    .bottom-bg::after {
+        background: none;
+    }
+    .parallax-wrapper::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        z-index: -1;
+    }
+    .parallax-wrapper {
+        perspective: none;
+    }
+    body {
+        transform-style: none;
+    }
+    .contact-details {}
 }

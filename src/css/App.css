@@ -290,7 +290,7 @@ textarea:focus {
 }
 
 .comp-bg::after {
-    background: url("/img/COMP.png") fixed no-repeat;
+    background: url("/img/COMP.png") fixed repeat;
     background-color: #F5F5F5;
     background-size: contain;
 }
@@ -356,6 +356,10 @@ textarea:focus {
     background-color: #fff;
 }
 
+.container {
+    padding: 50px 50px !important;
+}
+
 .scrollHack {
-    padding-bottom: 0;
+    padding-bottom: 0 !important;
 }

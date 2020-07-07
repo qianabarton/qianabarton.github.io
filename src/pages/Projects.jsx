@@ -33,6 +33,11 @@ const ProjectShell = props => (
             <div className={props.class}>
         <Container className="pop-out">
             <Row>
+            <Col sm="6">
+                    <a href={props.link}>
+                        <img className="project-image" src={props.img} alt=""></img>
+                    </a>
+                </Col>
                 <Col sm="6">
                     <h3>{props.title}</h3>
                     <div className="spacer20"/>
@@ -44,11 +49,7 @@ const ProjectShell = props => (
                     </Link>
 
                 </Col>
-                <Col sm="6">
-                    <a href={props.link}>
-                        <img className="project-image" src={props.img} alt=""></img>
-                    </a>
-                </Col>
+
             </Row>
         </Container>
     </div>

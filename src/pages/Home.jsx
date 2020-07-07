@@ -30,8 +30,7 @@ class Header extends Component {
             <div className="parallax-wrapper laptop text-center">
                 <div className="center">
                     <h1 className="mb-4">Hi, I'm
-                        <span className="accent">
-                            Qiana</span>.</h1>
+                        <span className="accent"> Qiana</span>.</h1>
                     <h2>UX Interaction Designer & Developer</h2>
                     <HashLink smooth to="#projects">
                         <Button className="mt-5 header-button">View My Projects</ Button>
@@ -45,13 +44,12 @@ class Header extends Component {
 class About extends Component {
     render() {
         return (
-            <div className="static-wrapper padding50 scrollHack">
-                <Container className="">
+            <div className="static-wrapper">
+                <Container className="scrollHack">
                     <Row>
                         <Col sm={8}>
                             <h3 className="mb-4">Who is
-                                <span className="accent">
-                                    Qiana</span>?</h3>
+                                <span className="accent"> Qiana</span>?</h3>
                             <p>I’m a UX designer that can also code. I think Sketch is the best thing since
                                 sliced bread and I love prototyping. In my free time you can usually find me
                                 helping out friend with their website or logo. I’ve also been working on become
@@ -79,9 +77,7 @@ class About extends Component {
 class Comp extends Component {
     render() {
         return (
-            <a href="/projects">
                 <div className="parallax-wrapper comp-bg"></div>
-            </a>
         );
     }
 }
@@ -97,7 +93,7 @@ class ParallaxBG extends Component {
 class Experience extends Component {
     render() {
         return (
-            <div className="static-wrapper padding50">
+            <div className="static-wrapper">
                 <Container>
                     <Row>
                         <Col sm={7}>
