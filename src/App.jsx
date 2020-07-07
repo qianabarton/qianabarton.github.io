@@ -32,6 +32,8 @@ class App extends Component {
             <Switch>
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/contact" component={Contact}/>
+                <Route exact path="/sporttrade" component={Sporttrade}/>
+                <Route exact path="/flux" component={Flux}/>
                 <Route render={() => (<div><h3>404</h3><h3>404</h3>
                 </div>)} />
             </Switch>

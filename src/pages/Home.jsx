@@ -5,25 +5,20 @@ import qiana from '../img/qiana.png';
 import Resume from '../pdf/Qiana Barton Resume.pdf';
 import Projects from './Projects';
 
-import ReactPageScroller from "react-page-scroller";
-import { Link } from "react-router-dom";
-
-
+import { HashLink } from 'react-router-hash-link';
 
 export default class Home extends Component {
-
     render() {
         return (
 
-                <div className="home-page">
-                    <Header/>
-                    <About/>
-                    <Projects/>
-                    <Comp/>
-                    <Experience/>
-                    <ParallaxBG/>
-                </div>
-
+            <div className="home-page">
+                <Header/>
+                <About/>
+                <Projects/>
+                <Comp/>
+                <Experience/>
+                <ParallaxBG/>
+            </div>
 
         );
     }
@@ -38,11 +33,9 @@ class Header extends Component {
                         <span className="accent">
                             Qiana</span>.</h1>
                     <h2>UX Interaction Designer & Developer</h2>
-                    <div className="link">
-            <Link to="/contact">Full page demo</Link>
-          </div>
-                    <br></br>
-                    <Button className="mt-5 header-button" >View My Projects</ Button>
+                    <HashLink smooth to="#projects">
+                        <Button className="mt-5 header-button">View My Projects</ Button>
+                    </HashLink>
                 </div>
             </div>
         );
@@ -52,7 +45,7 @@ class Header extends Component {
 class About extends Component {
     render() {
         return (
-            <div className="static-wrapper padding80">
+            <div className="static-wrapper padding50 scrollHack">
                 <Container className="">
                     <Row>
                         <Col sm={8}>
@@ -77,6 +70,7 @@ class About extends Component {
                         </Col>
                     </Row>
                 </Container>
+                <div className="spacer50" id="projects"></div>
             </div>
         );
     }
@@ -103,7 +97,7 @@ class ParallaxBG extends Component {
 class Experience extends Component {
     render() {
         return (
-            <div className="static-wrapper padding80">
+            <div className="static-wrapper padding50">
                 <Container>
                     <Row>
                         <Col sm={7}>
@@ -116,7 +110,7 @@ class Experience extends Component {
                                 <br/><br/>
                                 <span className="bold">I have experience with wireframing, designing mobile
                                     UI’s, annotating design documents for developer hand-off, creating dynamic
-                                    prototypes, micro interactions, using Wordpress, GIT and contributing to the iOS
+                                    prototypes, micro interactions, using Wordpress, GIT and contributing to iOS
                                     code repositories.</span>
 
                                 <br/><br/>For more details about my work history,

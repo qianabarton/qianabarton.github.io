@@ -1,5 +1,6 @@
-import React, {Component} from 'react';
-import {Navbar, Nav} from "react-bootstrap";
+import React, { Component } from 'react';
+import { Navbar, Nav } from "react-bootstrap";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 import qlogo from '../img/q-logo.svg';
 
@@ -19,22 +20,13 @@ export default class MyNav extends Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto"></Nav>
                     <Nav className="text-center">
-                        <Nav.Link 
-                        className="px-md-3 nav-link"
-                        href="/projects">
-                            JIII
-                        </Nav.Link>
-                        <Nav.Link 
-                        className="px-md-3 nav-link" 
-                        href="/projects">
-                            Projects
-                            </Nav.Link>
+
                         <Nav.Link
                             className="pl-md-3 nav-link"
                             href="mailto:barton.qiana@gmail.com"
                             target="_blank">
-                                barton.qiana@gmail.com
-                            </Nav.Link>
+                            barton.qiana@gmail.com
+                        </Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

@@ -22,7 +22,7 @@ export default class Flux extends Component {
                     prevlink="project-link"
                     prev="/projects/sporttrade"
                     nextlink="project-link"
-                    next="/projects/flux"/>
+                    next="/flux"/>
 
                 <div className="gallery py-5">
                     <Container>
