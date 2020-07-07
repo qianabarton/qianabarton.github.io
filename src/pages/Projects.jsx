@@ -9,7 +9,7 @@ import flux from '../img/projects/flux.png';
 export default class Projects extends Component {
     render() {
         return (
-            <div class="projects">
+            <div class="projects" id="section1">
                 <ProjectShell
                     title="SPORTTRADE APP DEV & WEB DESIGN"
                     description="I was contracted by Sporttrade as a hybrid UI Designer and Front End iOS Developer but ended up wearing even more hats working with this 4 person startup. I redesigned their iOS app, cleaned up existing code structure and implented the new designs using Swift and Xcode’s Storyboard. I also created branding assets, designing their logo, app store presence and company landing page."
