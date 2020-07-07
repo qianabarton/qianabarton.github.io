@@ -5,7 +5,7 @@ const ProjectHeader = props => (
     <Container className="py-5">
         <Row className="mb-4">
             <Col>
-                <a className="project-link" href="/projects">BACK TO PROJECTS</a>
+                <a className="project-link" href="/">BACK TO PROJECTS</a>
             </Col>
         </Row>
         <Row>

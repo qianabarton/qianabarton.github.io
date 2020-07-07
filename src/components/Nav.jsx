@@ -14,9 +14,8 @@ export default class MyNav extends Component {
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto"></Nav>
                     <Nav className="text-center">
-                        <Nav.Link className="px-md-3" href="/">Home</Nav.Link>
-                        <Nav.Link className="px-md-3" href="/projects">Projects</Nav.Link>
-                        <Nav.Link className="pl-md-3" href="/contact">Contact</Nav.Link>
+                        <Nav.Link className="px-md-3 nav-link" href="/projects">Projects</Nav.Link>
+                        <Nav.Link className="pl-md-3 nav-link" href="mailto:barton.qiana@gmail.com" target="_blank">barton.qiana@gmail.com</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Navbar>

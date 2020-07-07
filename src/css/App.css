@@ -54,7 +54,7 @@ h2 {
 h3 {
     /* EXPERIENCE */
     font-family: 'Oswald', sans-serif;
-    font-size: 50px !important;
+    font-size: 44px !important;
     text-transform: uppercase;
     color: #383838;
 }
@@ -102,8 +102,28 @@ li {
     position: fixed !important;
 }
 
+.nav-link {
+    text-decoration: underline;
+    font-size: 14px;
+}
+
+a:hover {
+    color: #6AB7BE !important;
+    text-decoration: none;
+}
+
 
 /* HEADER */
+
+.laptop {
+    height: 80vh;
+    position: relative;
+}
+
+.laptop::after {
+    background: url("/img/laptop-4.jpg") fixed no-repeat;
+    background-size: cover;
+}
 
 .header {
     height: 80vh;
@@ -162,6 +182,10 @@ li {
     font-weight: 700 !important;
     color: #FFFFFF;
     letter-spacing: 3.4px;
+}
+
+.header-button:hover {
+    color: #fff !important;
 }
 
 

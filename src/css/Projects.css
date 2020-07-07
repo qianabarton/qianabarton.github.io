@@ -7,28 +7,13 @@ font-family: 'Oswald', sans-serif;
 
 /* PROJECT LIST PAGE SHORT */
 
+.projects {
+    background-color: #F5F5F5;
+    padding-bottom: 50px;
+}
+
 .project-short {
-    padding: 50px 0;
-}
-
-.project-1 {
-    background-color: #fff;
-}
-
-.project-2 {
-    background-color: #F1F8FF;
-}
-
-.project-3 {
-    background-color: #F4F4F4;
-}
-
-.project-4 {
-    background-color: #fff;
-}
-
-.project-5 {
-    background-color: #F1F8FF;
+    padding-top: 50px;
 }
 
 .project-image {
@@ -48,4 +33,9 @@ font-family: 'Oswald', sans-serif;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
     font-size: 16px !important;
+}
+
+.pop-out {
+    background-color: #fff;
+    padding: 50px !important;
 }

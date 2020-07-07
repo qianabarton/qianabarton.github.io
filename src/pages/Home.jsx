@@ -5,6 +5,8 @@ import {Row, Col, Container} from 'react-bootstrap';
 
 import qiana from '../img/qiana.png';
 import Resume from '../pdf/Qiana Barton Resume.pdf';
+import Projects from './Projects';
+
 
 
 export default class Home extends Component {
@@ -13,6 +15,7 @@ export default class Home extends Component {
             <div className="home-page">
                 <Header/>
                 <About/>
+                <Projects/>
                 <Comp/>
                 <Experience/>
                 <ParallaxBG/>
@@ -24,7 +27,7 @@ export default class Home extends Component {
 class Header extends Component {
     render() {
         return (
-            <div className="parallax-wrapper header text-center">
+            <div className="parallax-wrapper laptop text-center">
                 <div className="center">
                     <h1 className="mb-4">Hi, I'm
                         <span className="accent"> Qiana</span>.</h1>
@@ -73,6 +76,12 @@ class Comp extends Component {
         );
     }
 }
+
+
+
+
+
+
 
 class ParallaxBG extends Component {
     render() {
