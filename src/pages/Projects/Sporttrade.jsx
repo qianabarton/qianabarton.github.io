@@ -32,7 +32,7 @@ export default class Sporttrade extends Component {
                     nextlink="project-link"
                     next="/flux"/>
 
-                <div className="gallery py-5">
+                <div className="gallery">
                     <Container>
                         <Row>
                             <Col>

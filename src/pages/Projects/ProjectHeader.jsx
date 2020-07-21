@@ -1,5 +1,6 @@
 import React from 'react';
 import {Row, Col, Container} from 'react-bootstrap';
+import {Link} from "react-router-dom";
 
 const ProjectHeader = props => (
     <Container className="py-5">
@@ -21,10 +22,15 @@ const ProjectHeader = props => (
 
         <Row className="mt-4">
             <Col className="text-left">
-                <a className={props.prevlink} href={props.prev}>PREVIOUS</a>
+
+                <Link to={props.prev} className={props.prevlink}>
+                    <a>PREVIOUS</a>
+                </Link>
             </Col>
             <Col className="text-right">
-                <a className={props.nextlink} href={props.next}>NEXT</a>
+                <Link to={props.next} className={props.nextlink}>
+                    <a>NEXT</a>
+                </Link>
             </Col>
         </Row>
     </Container>

@@ -16,19 +16,19 @@ export default class MyNav extends Component {
                         className="d-inline-block align-top"
                         alt=""/>
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-                <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="mr-auto"></Nav>
                     <Nav className="text-center">
 
-                        <Nav.Link
+                    <div className="d-md-block">
+                    <Nav.Link
                             className="pl-md-3 nav-link"
                             href="mailto:barton.qiana@gmail.com"
                             target="_blank">
                             barton.qiana@gmail.com
                         </Nav.Link>
+                    </div>
+
                     </Nav>
-                </Navbar.Collapse>
             </Navbar>
         );
     }

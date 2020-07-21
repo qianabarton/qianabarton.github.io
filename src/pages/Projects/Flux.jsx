@@ -20,11 +20,11 @@ export default class Flux extends Component {
                     description="I was contracted by Relentless Labz and their sister brand, Flux Nutrition, to develop their shopify store sites and design branding assets. "
                     image={flux}
                     prevlink="project-link"
-                    prev="/projects/sporttrade"
+                    prev="sporttrade"
                     nextlink="project-link"
                     next="/flux"/>
 
-                <div className="gallery py-5">
+                <div className="gallery">
                     <Container>
                         <Row>
                             <Col>
@@ -34,7 +34,6 @@ export default class Flux extends Component {
                         <Row className="row-pad-v">
                             <Col>
                                 <img className="project-image" src={activate} alt=""></img>
-
                             </Col>
                         </Row>
                         <Row className="row-pad-v">

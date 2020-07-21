@@ -52,8 +52,8 @@ class About extends Component {
                                 <span className="accent"> Qiana</span>?</h3>
                             <p>I’m a UX designer that can also code. I think Sketch is the best thing since
                                 sliced bread and I love prototyping. In my free time you can usually find me
-                                helping out friend with their website or logo. I’ve also been working on become
-                                a SwiftUI Master to improve upon my iOS dev skills. When I’m not working on one
+                                helping out a friend with their website or logo. I’ve also been working on become
+                                a Swift UI master to improve my iOS dev skills. When I’m not working on one
                                 of my latest project ideas, I’m usually working out, making green smoothies or
                                 gardening. People say that I have too many plants.</p>
 
@@ -102,16 +102,13 @@ class Experience extends Component {
                                 work on personal projects, I was able to land my first two design roles working
                                 full time days at Cercacor and spending my evenings as a contractor for
                                 Sporttrade. I worked as a hybrid designer in both of these roles.
-
                                 <br/><br/>
                                 <span className="bold">I have experience with wireframing, designing mobile
                                     UI’s, annotating design documents for developer hand-off, creating dynamic
                                     prototypes, micro interactions, using Wordpress, GIT and contributing to iOS
                                     code repositories.</span>
-
                                 <br/><br/>For more details about my work history,
-                                <a className="project-link" href={Resume} target="_blank">
-                                    view my resume.</a>
+                                <a className="project-link" href={Resume} target="_blank"> view my resume.</a>
                             </p>
 
                             <ul>

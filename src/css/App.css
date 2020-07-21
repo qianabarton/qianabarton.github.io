@@ -100,6 +100,7 @@ li {
     z-index: 100;
     width: 100%;
     position: fixed !important;
+    border-bottom: 0.5px solid #D5D5D5;
 }
 
 .nav-link {
@@ -185,7 +186,7 @@ a:hover {
     font-family: 'Open Sans', sans-serif !important;
     font-weight: 700 !important;
     color: #FFFFFF;
-    letter-spacing: 3.4px;
+    letter-spacing: 2.4px;
 }
 
 .header-button:hover {

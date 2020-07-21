@@ -12,6 +12,9 @@
     p {
         font-size: 14px !important;
     }
+    .smaller {
+        font-size: 22px !important;
+    }
     /* Spacing */
     .center {
         padding-top: 30px;
@@ -43,7 +46,7 @@
     /* disable parallax on mobile */
     .laptop {
         height: 80vh;
-        background: url("/img/mobile/laptop-4.jpg") fixed no-repeat;
+        background: url("/img/mobile/laptop-4.jpg") no-repeat;
         background-size: cover;
         background-position: center center;
     }
@@ -53,7 +56,7 @@
     .comp-bg {
         height: 40vh;
         background: url("/img/mobile/COMP.png") repeat;
-        background-size: contain;
+        background-size: cover;
         background-position: center center;
         background-color: #F5F5F5;
     }
@@ -85,5 +88,29 @@
     body {
         transform-style: none;
     }
-    .contact-details {}
+    .projects {
+        background: #fff;
+        padding: 0 0;
+    }
+    .h-padding {
+        padding: 0 40px;
+    }
+    .project-top {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+    .project-bottom {
+        padding-top: 0;
+        padding-bottom: 40px;
+    }
+    .pop-out {
+        padding: 0 40px !important;
+    }
+    .header-button {
+        letter-spacing: 1.4px;
+    }
+    .m-center {
+        text-align: center;
+        margin: 30px 0 20px 0;
+    }
 }
