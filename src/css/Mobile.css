@@ -1,5 +1,8 @@
 @media only screen and (max-width: 600px) {
     /* Text */
+    body {
+        padding-bottom: 100px !important;
+    }
     h1 {
         font-size: 40px !important;
     }
