@@ -22,6 +22,8 @@ import Sporttrade from './pages/Projects/Sporttrade';
 import Cercacor2 from './pages/Projects/Cercacor2';
 import Flux from './pages/Projects/Flux';
 
+
+
 // App
 class App extends Component {
     render() {
@@ -32,6 +34,7 @@ class App extends Component {
                         <Switch>
                             <Route exact path="/" component={Home}/>
                             <Route exact path="/contact" component={Contact}/>
+                            <Route exact path="/cercacor1" component={Cercacor1} />
                             <Route exact path="/sporttrade" component={Sporttrade}/>
                             <Route exact path="/flux" component={Flux}/>
                             <Route
