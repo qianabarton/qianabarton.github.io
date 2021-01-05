@@ -3,11 +3,15 @@ import {Row, Col, Container} from 'react-bootstrap';
 import Button from 'react-bootstrap/Button';
 import {Link} from "react-router-dom";
 
-
-
 // Project Images
 import sporttrade from '../img/projects/sporttrade.png';
 import flux from '../img/projects/flux.png';
+import shopify from '../img/projects/shopify.png';
+import cercacor from '../img/projects/cercacor.png';
+import swiftui from '../img/projects/swiftui.png';
+import webdesign from '../img/projects/webdesign.png';
+
+
 
 export default class Projects extends Component {
     render() {
@@ -16,11 +20,25 @@ export default class Projects extends Component {
                 <h3 className="mb-4 d-md-none h-padding">PROJECTS</h3>
                 <ProjectShell
                     class="project-top"
-                    title="CERCACOR"
-                    description="Some description here."
-                    link="/cercacor1"
-                    img={sporttrade}
-                    password="true" />
+                    title="Web DESIGN"
+                    description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcases their venue to their potential customers."
+                    link="/webdesign"
+                    img={webdesign}
+                    password="false"/>
+                <ProjectShell
+                    class="project-middle"
+                    title="CLOTHING BRAND SHOPIFY DEV/DESIGN"
+                    description="I worked with the apparel brand GIVIN Official and a vintage handbag resale company, MILADY. I developed their ecommerce presence on Shopify by creating a design system, brand assets and customizing their storefronts via Shopify’s builder and CSS/liquid code."
+                    link="/shopify"
+                    img={shopify}
+                    password="false"/>
+                <ProjectShell
+                    class="project-middle"
+                    title="SWIFTUI"
+                    description="Coming soon."
+                    link="/swiftui"
+                    img={swiftui}
+                    password="false"/>
                 <ProjectShell
                     class="project-middle"
                     title="SPORTTRADE APP DEV & WEB DESIGN"
@@ -45,8 +63,8 @@ const ProjectShell = props => (
         <Container className="pop-out">
             <Row>
                 <Col sm="6">
-                    <Link to={props.link} >
-                    <img className="project-image" src={props.img} alt=""></img>
+                    <Link to={props.link}>
+                        <img className="project-image" src={props.img} alt=""></img>
                     </Link>
                 </Col>
                 <Col sm="6">
@@ -57,10 +75,9 @@ const ProjectShell = props => (
                     <div className="spacer20"/>
                     <div className="m-center">
 
-
-                    <Link to={props.link} >
-                        <Button className="header-button">Learn More</ Button>
-                    </Link>
+                        <Link to={props.link}>
+                            <Button className="header-button">Learn More</ Button>
+                        </Link>
 
                     </div>
 

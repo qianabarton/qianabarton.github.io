@@ -16,11 +16,13 @@ import Contact from './pages/Contact';
 import ScrollApp from './pages/ScrollApp';
 
 // Projects
-import SwiftUI from './pages/Projects/SwiftUI';
-import Cercacor1 from './pages/Projects/Cercacor1';
+import Shopify from './pages/Projects/Shopify';
 import Sporttrade from './pages/Projects/Sporttrade';
 import Cercacor2 from './pages/Projects/Cercacor2';
 import Flux from './pages/Projects/Flux';
+import SwiftUI from './pages/Projects/SwiftUI';
+import Cercacor1 from './pages/Projects/Cercacor1';
+import WebDesign from './pages/Projects/WebDesign';
 
 
 
@@ -37,6 +39,9 @@ class App extends Component {
                             <Route exact path="/cercacor1" component={Cercacor1} />
                             <Route exact path="/sporttrade" component={Sporttrade}/>
                             <Route exact path="/flux" component={Flux}/>
+                            <Route exact path="/shopify" component={Shopify}/>
+                            <Route exact path="/webdesign" component={WebDesign}/>
+                            <Route exact path="/swiftui" component={SwiftUI}/>
                             <Route
                                 render={() => (
                                 <div>
