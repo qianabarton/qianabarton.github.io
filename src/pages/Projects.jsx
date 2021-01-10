@@ -76,7 +76,7 @@ const ProjectShell = props => (
                     <div className="m-center">
 
                         <Link to={props.link}>
-                            <Button className="header-button">Learn More</ Button>
+                            <Button className="header-button">View Project</ Button>
                         </Link>
 
                     </div>

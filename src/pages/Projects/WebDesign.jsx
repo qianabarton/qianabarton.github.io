@@ -1,42 +1,28 @@
 import React, {Component} from 'react';
-import {Row, Col, Container} from 'react-bootstrap';
 
-import ProjectHeader from './ProjectHeader';
+import ProjectPageComponent from './components/ProjectPageComponent';
 
-import webdesign from '../../img/projects/webdesign.png';
-
-
+const images = [
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign.png?raw=true'
+    }
+];
 
 export default class WebDesign extends Component {
     render() {
         return (
-            <div className="pt-5">
-                <ProjectHeader
+            <div>
+               <ProjectPageComponent
                     title="Venue Rental Web Design"
-                    description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcases their venue rental space to their potential customers."
-                    image={webdesign}
+                    shortdescription="short desc"
+                    tags="tags"
+                    images={images}
+                    description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcased their venue rental space to their potential customers."
                     prevlink="d-none"
                     nextlink="project-link"
-                    next="/Shopify"/>
-
-                <div className="gallery">
-                    <Container>
-                        <Row>
-                            <Col>
-                                <h3>gallery</h3>
-                            </Col>
-                        </Row>
-                        <Row className="row-pad-v">
-                            <Col sm={12} md={9}>
-                                <img className="project-image" src={webdesign} alt=""></img>
-                                <div className="spacer20 d-md-none"/>
-                            </Col>
-                        </Row>
-
-
-
-                    </Container>
-                </div>
+                    next="/shopify"
+               />
             </div>
         );
     }

@@ -28,7 +28,7 @@ class Header extends Component {
     render() {
         return (
             <div className="parallax-wrapper laptop text-center">
-                <div className="center">
+                <div className="header-center">
                     <h1 className="mb-4">Hi, I'm
                         <span className="accent"> Qiana</span>.</h1>
                     <h2>UX Interaction Designer & Developer</h2>
@@ -58,7 +58,7 @@ class About extends Component {
                                 gardening. People say that I have too many plants.</p>
 
                             <p className="light">
-                                Btw, I designed and coded this website myself from scratch using React.
+                                I designed and coded this website myself from scratch using React.
                             </p>
 
                         </Col>
@@ -133,7 +133,11 @@ class Experience extends Component {
                         </Col>
                         <Col sm={5} className="">
                             <div className="spacer20 d-md-none"/>
-
+                            <div className="mb-4">
+                                <h4 className="blue-accent">FREELANCE DEV/DESIGNER</h4>
+                                <h5>JUNE 2020 - PRESENT</h5>
+                                <p>Los Angeles, California</p>
+                            </div>
                             <div className="mb-4">
                                 <h4 className="blue-accent">UX INTERACTION DESIGNER</h4>
                                 <h5>AUGUST 2018 - MAY 2020</h5>

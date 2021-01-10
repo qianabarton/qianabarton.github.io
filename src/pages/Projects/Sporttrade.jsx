@@ -1,7 +1,15 @@
 import React, {Component} from 'react';
-import {Row, Col, Container} from 'react-bootstrap';
 
-import ProjectHeader from './ProjectHeader';
+import ProjectPageComponent from './components/ProjectPageComponent';
+
+const images = [
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttra' +
+            'de.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttra' +
+            'de.png?raw=true'
+    }
+];
 
 import sporttrade from '../../img/projects/sporttrade.png';
 
@@ -18,96 +26,22 @@ import webdesign from '../../img/projects/sporttrade/web design.png';
 export default class Sporttrade extends Component {
     render() {
         return (
-            <div className="pt-5">
-                <ProjectHeader
-                    title="SPORTTRADE APP DEV & WEB DESIGN"
+            <div>
+                <ProjectPageComponent
+                    title="SPORTTRADE"
+                    shortdescription="short desc"
+                    tags="tags"
+                    images={images}
                     description="I was contracted by Sporttrade as a hybrid UI Designer and Front End iOS
                     Developer but ended up wearing even more hats working with this 4 person
                     startup. I redesigned their iOS app, cleaned up existing code structure and
                     implented the new designs using Swift and Xcode’s Storyboard. I also created
                     branding assets, designing their logo, app store presence and company landing
                     page."
-                    image={sporttrade}
                     prevlink="project-link"
                     prev="/swiftui"
                     nextlink="project-link"
                     next="/flux"/>
-
-                <div className="gallery">
-                    <Container>
-                        <Row>
-                            <Col>
-                                <h3>gallery</h3>
-
-                            </Col>
-                        </Row>
-                        <Row className="row-pad-v">
-                            <Col sm={12} md={6}>
-                                <img className="project-image" src={screens1} alt=""></img>
-                                <div className="spacer20 d-md-none"/>
-                            </Col>
-                            <Col sm={12} md={6}>
-                                <div className="spacer20-top d-md-none"/>
-                                <img className="project-image" src={screens3} alt=""></img>
-                            </Col>
-                        </Row>
-
-                        <Row className="row-pad-v">
-                            <Col>
-                                <img className="project-image" src={screens2} alt=""></img>
-
-                            </Col>
-                        </Row>
-
-                        <Row className="row-pad-v">
-                            <Col>
-                                <img className="project-image" src={web1} alt=""></img>
-
-                            </Col>
-                        </Row>
-
-                        <Row className="row-pad-v">
-                            <Col sm={12} md={6}>
-
-                                <Row>
-                                    <Col>
-                                        <img className="project-image" src={logo2} alt=""></img>
-                                        <div className="spacer20 d-md-none"/>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col>
-                                        <div className="spacer20-top d-md-none"/>
-                                        <img className="project-image" src={logo1} alt=""></img>
-                                        <div className="spacer20 d-md-none"/>
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col>
-                                        <div className="spacer20-top d-md-none"/>
-                                        <img className="project-image" src={appstore1} alt=""></img>
-                                        <div className="spacer20 d-md-none"/>
-
-                                    </Col>
-                                </Row>
-                                <Row>
-                                    <Col>
-                                        <div className="spacer20-top d-md-none"/>
-                                        <img className="project-image" src={appstore2} alt=""></img>
-                                        <div className="spacer20 d-md-none"/>
-
-                                    </Col>
-                                </Row>
-
-                            </Col>
-                            <Col sm={12} md={6}>
-                                <div className="spacer20-top d-md-none"/>
-                                <img className="project-image" src={webdesign} alt=""></img>
-                            </Col>
-                        </Row>
-
-                    </Container>
-                </div>
             </div>
         );
     }

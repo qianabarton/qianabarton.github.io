@@ -18,7 +18,6 @@ import ScrollApp from './pages/ScrollApp';
 // Projects
 import Shopify from './pages/Projects/Shopify';
 import Sporttrade from './pages/Projects/Sporttrade';
-import Cercacor2 from './pages/Projects/Cercacor2';
 import Flux from './pages/Projects/Flux';
 import SwiftUI from './pages/Projects/SwiftUI';
 import Cercacor1 from './pages/Projects/Cercacor1';
@@ -45,7 +44,6 @@ class App extends Component {
                             <Route
                                 render={() => (
                                 <div>
-                                    <h3>404</h3>
                                     <h3>404</h3>
                                 </div>
                             )}/>

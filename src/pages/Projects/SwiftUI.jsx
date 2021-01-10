@@ -1,44 +1,29 @@
-
 import React, {Component} from 'react';
-import {Row, Col, Container} from 'react-bootstrap';
 
-import ProjectHeader from './ProjectHeader';
+import ProjectPageComponent from './components/ProjectPageComponent';
 
-import webdesign from '../../img/projects/swiftui.png';
-
-
+const images = [
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/swiftui.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/swiftui.png?raw=true'
+    }
+];
 
 export default class SwiftUI extends Component {
     render() {
         return (
-            <div className="pt-5">
-                <ProjectHeader
+            <div>
+                <ProjectPageComponent
                     title="SwiftUI Apps"
+                    shortdescription="short desc"
+                    tags="tags"
+                    images={images}
                     description="Coming soon."
-                    image={webdesign}
                     prevlink="project-link"
                     prev="shopify"
                     nextlink="project-link"
                     next="/sporttrade"/>
 
-                <div className="gallery">
-                    <Container>
-                        <Row>
-                            <Col>
-                                <h3>gallery</h3>
-                            </Col>
-                        </Row>
-                        <Row className="row-pad-v">
-                            <Col sm={12} md={9}>
-                                <img className="project-image" src={webdesign} alt=""></img>
-                                <div className="spacer20 d-md-none"/>
-                            </Col>
-                        </Row>
-
-
-
-                    </Container>
-                </div>
             </div>
         );
     }
