@@ -4,10 +4,46 @@ import ProjectPageComponent from './components/ProjectPageComponent';
 
 const images = [
     {
-        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttra' +
-            'de.png?raw=true',
-        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttra' +
-            'de.png?raw=true'
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de1.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de1.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de2.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de2.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de3.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de3.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de4.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de4.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de5.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de5.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de6.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de6.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de7.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/sporttrade/sporttra' +
+            'de7.png?raw=true'
     }
 ];
 
