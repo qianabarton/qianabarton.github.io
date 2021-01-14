@@ -5,6 +5,15 @@ font-family: 'Oswald', sans-serif;
 */
 
 @import "~react-image-gallery/styles/css/image-gallery.css";
+.image-gallery-icon {
+    color: #29828A !important;
+    filter: drop-shadow(0 2px 2px #29828A) !important;
+}
+
+.image-gallery-icon:hover {
+    color: #29828A !important;
+}
+
 .image-gallery-thumbnail.active {
     border: none !important;
     opacity: 1;

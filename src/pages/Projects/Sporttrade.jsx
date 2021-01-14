@@ -11,17 +11,7 @@ const images = [
     }
 ];
 
-import sporttrade from '../../img/projects/sporttrade.png';
 
-import screens1 from '../../img/projects/sporttrade/screens 1.png';
-import screens2 from '../../img/projects/sporttrade/screens 2.png';
-import screens3 from '../../img/projects/sporttrade/screens 3.png';
-import web1 from '../../img/projects/sporttrade/web 1.png';
-import logo1 from '../../img/projects/sporttrade/logo 1.png';
-import logo2 from '../../img/projects/sporttrade/logo 2.png';
-import appstore1 from '../../img/projects/sporttrade/app store 1.png';
-import appstore2 from '../../img/projects/sporttrade/app store 2.png';
-import webdesign from '../../img/projects/sporttrade/web design.png';
 
 export default class Sporttrade extends Component {
     render() {
@@ -39,9 +29,9 @@ export default class Sporttrade extends Component {
                     branding assets, designing their logo, app store presence and company landing
                     page."
                     prevlink="project-link"
-                    prev="/swiftui"
+                    prev="/webdesign"
                     nextlink="project-link"
-                    next="/flux"/>
+                    next="/shopify"/>
             </div>
         );
     }

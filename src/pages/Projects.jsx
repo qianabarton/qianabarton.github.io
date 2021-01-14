@@ -7,9 +7,9 @@ import {Link} from "react-router-dom";
 import sporttrade from '../img/projects/sporttrade.png';
 import flux from '../img/projects/flux.png';
 import shopify from '../img/projects/shopify.png';
-import cercacor from '../img/projects/cercacor.png';
 import swiftui from '../img/projects/swiftui.png';
 import webdesign from '../img/projects/webdesign.png';
+import chatadoc from '../img/projects/chatadoc.png';
 
 
 
@@ -20,6 +20,13 @@ export default class Projects extends Component {
                 <h3 className="mb-4 d-md-none h-padding">PROJECTS</h3>
                 <ProjectShell
                     class="project-top"
+                    title="Chat-a-Doc"
+                    description="Chatadoc description"
+                    link="/chatadoc"
+                    img={chatadoc}
+                    password="false"/>
+                <ProjectShell
+                    class="project-middle"
                     title="Web DESIGN"
                     description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcases their venue to their potential customers."
                     link="/webdesign"
@@ -27,8 +34,14 @@ export default class Projects extends Component {
                     password="false"/>
                 <ProjectShell
                     class="project-middle"
+                    title="SPORTTRADE"
+                    description="Short descr"
+                    img={sporttrade}
+                    password="false"/>
+                <ProjectShell
+                    class="project-middle"
                     title="CLOTHING BRAND SHOPIFY DEV/DESIGN"
-                    description="I worked with the apparel brand GIVIN Official and a vintage handbag resale company, MILADY. I developed their ecommerce presence on Shopify by creating a design system, brand assets and customizing their storefronts via Shopify’s builder and CSS/liquid code."
+                    description="Short descr"
                     link="/shopify"
                     img={shopify}
                     password="false"/>
@@ -39,13 +52,7 @@ export default class Projects extends Component {
                     link="/swiftui"
                     img={swiftui}
                     password="false"/>
-                <ProjectShell
-                    class="project-middle"
-                    title="SPORTTRADE APP DEV & WEB DESIGN"
-                    description="I was contracted by Sporttrade as a hybrid UI Designer and Front End iOS Developer but ended up wearing even more hats working with this 4 person startup. I redesigned their iOS app, cleaned up existing code structure and implented the new designs using Swift and Xcode’s Storyboard. I also created branding assets, designing their logo, app store presence and company landing page."
-                    link="/sporttrade"
-                    img={sporttrade}
-                    password="false"/>
+
                 <ProjectShell
                     class="project-bottom"
                     title="SUPPLEMENT BRANDING & ADVERTISEMENT"

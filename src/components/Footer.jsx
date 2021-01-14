@@ -8,9 +8,6 @@ export default class Footer extends Component {
             <div className="footer text-center">
                 <div className="mt-5 mb-4">
                     <ul className="contact-details">
-                    <a className="px-3" target="_blank" href="mailto:barton.qiana@gmail.com">
-                            EMAIL
-                        </a>
                         <a className="px-3" target="_blank" href="https://www.behance.net/qianabarton">
                             BEHANCE
                         </a>

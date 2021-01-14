@@ -20,9 +20,9 @@ export default class SwiftUI extends Component {
                     images={images}
                     description="Coming soon."
                     prevlink="project-link"
-                    prev="shopify"
+                    prev="/shopify"
                     nextlink="project-link"
-                    next="/sporttrade"/>
+                    next="/flux"/>
 
             </div>
         );

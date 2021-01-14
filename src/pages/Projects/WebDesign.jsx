@@ -19,9 +19,10 @@ export default class WebDesign extends Component {
                     tags="tags"
                     images={images}
                     description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcased their venue rental space to their potential customers."
-                    prevlink="d-none"
+                    prevlink="project-link"
+                    prev="/chatadoc"
                     nextlink="project-link"
-                    next="/shopify"
+                    next="/sporttrade"
                />
             </div>
         );

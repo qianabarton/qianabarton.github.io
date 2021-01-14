@@ -11,7 +11,6 @@ import './css/Mobile.css';
 
 // Pages
 import Home from './pages/Home';
-import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ScrollApp from './pages/ScrollApp';
 
@@ -22,15 +21,13 @@ import Flux from './pages/Projects/Flux';
 import SwiftUI from './pages/Projects/SwiftUI';
 import Cercacor1 from './pages/Projects/Cercacor1';
 import WebDesign from './pages/Projects/WebDesign';
-
-
+import Chatadoc from './pages/Projects/Chatadoc';
 
 // App
 class App extends Component {
     render() {
         return (
             <Router>
-
                     <div>
                         <Switch>
                             <Route exact path="/" component={Home}/>
@@ -41,6 +38,7 @@ class App extends Component {
                             <Route exact path="/shopify" component={Shopify}/>
                             <Route exact path="/webdesign" component={WebDesign}/>
                             <Route exact path="/swiftui" component={SwiftUI}/>
+                            <Route exact path="/chatadoc" component={Chatadoc}/>
                             <Route
                                 render={() => (
                                 <div>
