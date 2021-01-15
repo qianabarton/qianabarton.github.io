@@ -4,8 +4,20 @@ import ProjectPageComponent from './components/ProjectPageComponent';
 
 const images = [
     {
-        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify.png?raw=true',
-        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify.png?raw=true'
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify/givin1.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify/givin1.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify/givin2.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify/givin2.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify/givin3.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify/givin3.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify/givin4.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/shopify/givin4.png?raw=true'
     }
 ];
 
@@ -22,7 +34,7 @@ export default class Sporttrade extends Component {
                     prevlink="project-link"
                     prev="/sporttrade"
                     nextlink="project-link"
-                    next="/swiftui"/>
+                    next="/flux"/>
             </div>
         );
     }

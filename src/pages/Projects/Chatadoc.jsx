@@ -25,7 +25,7 @@ export default class Chatadoc extends Component {
                     description="Chatadoc description"
                     prevlink="d-none"
                     nextlink="project-link"
-                    next="/webdesign"
+                    next="/swiftui"
                />
             </div>
         );

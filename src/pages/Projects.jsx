@@ -27,6 +27,13 @@ export default class Projects extends Component {
                     password="false"/>
                 <ProjectShell
                     class="project-middle"
+                    title="SWIFTUI"
+                    description="Coming soon."
+                    link="/swiftui"
+                    img={swiftui}
+                    password="false"/>
+                <ProjectShell
+                    class="project-middle"
                     title="Web DESIGN"
                     description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcases their venue to their potential customers."
                     link="/webdesign"
@@ -45,14 +52,6 @@ export default class Projects extends Component {
                     link="/shopify"
                     img={shopify}
                     password="false"/>
-                <ProjectShell
-                    class="project-middle"
-                    title="SWIFTUI"
-                    description="Coming soon."
-                    link="/swiftui"
-                    img={swiftui}
-                    password="false"/>
-
                 <ProjectShell
                     class="project-bottom"
                     title="SUPPLEMENT BRANDING & ADVERTISEMENT"

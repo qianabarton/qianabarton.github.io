@@ -20,7 +20,7 @@ export default class WebDesign extends Component {
                     images={images}
                     description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcased their venue rental space to their potential customers."
                     prevlink="project-link"
-                    prev="/chatadoc"
+                    prev="/swiftui"
                     nextlink="project-link"
                     next="/sporttrade"
                />

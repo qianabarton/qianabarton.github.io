@@ -65,7 +65,7 @@ export default class Sporttrade extends Component {
                     branding assets, designing their logo, app store presence and company landing
                     page."
                     prevlink="project-link"
-                    prev="/webdesign"
+                    prev="/swiftui"
                     nextlink="project-link"
                     next="/shopify"/>
             </div>
