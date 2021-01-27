@@ -228,6 +228,10 @@ a:hover {
 
 /* FOOTER */
 
+#footer {
+    padding-bottom: 90px;
+}
+
 .footer {
     height: 150px;
     background-color: #FFFFFF;

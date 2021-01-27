@@ -8,9 +8,6 @@ export default class Footer extends Component {
             <div className="footer text-center">
                 <div className="mt-5 mb-4">
                     <ul className="contact-details">
-                        <a className="px-3" target="_blank" href="https://www.behance.net/qianabarton">
-                            BEHANCE
-                        </a>
                         <a className="px-3" target="_blank" href="https://github.com/qianabarton">
                             GITHUB
                         </a>
@@ -27,14 +24,7 @@ export default class Footer extends Component {
                 </div>
 
                 <ul className="contact-details pl-0 mt-4 mb-5">
-                    <li>
-                        <a target="_blank" href="mailto:barton.qiana@gmail.com">barton.qiana@gmail.com</a>
-                    </li>
-                    <li className="mx-3">
-                        |
-                    </li>
-                    <li>
-                        Los Angeles, CA</li>
+                    <li>Los Angeles, CA</li>
                 </ul>
 
             </div>

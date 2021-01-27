@@ -9,12 +9,11 @@ const ProjectHeader = props => (
                 <Col>
                     <h3 class="text-center">{props.title}</h3>
                     <div className="spacer20"/>
-                    <p class="text-center">{props.shortdescription}</p>
-                    <div className="spacer20"/>
                     <p class="text-center">
                         <strong>{props.tags}</strong>
                     </p>
-
+                    <div className="spacer20"/>
+                    <p class="text-center">{props.shortdescription}</p>
                 </Col>
             </Row>
         </Container>

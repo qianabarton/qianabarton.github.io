@@ -21,41 +21,47 @@ export default class Projects extends Component {
                 <ProjectShell
                     class="project-top"
                     title="Chat-a-Doc"
-                    description="Chatadoc description"
+                    tags="UI/UX Design"
+                    description="Chat-A-Doc’s appointment scheduling app redesign"
                     link="/chatadoc"
                     img={chatadoc}
                     password="false"/>
                 <ProjectShell
                     class="project-middle"
-                    title="SWIFTUI"
-                    description="Coming soon."
+                    title="The Plant Shop"
+                    tags="Swift / UI/UX Design"
+                    description="Plant store app design and prototype"
                     link="/swiftui"
                     img={swiftui}
                     password="false"/>
                 <ProjectShell
                     class="project-middle"
-                    title="Web DESIGN"
-                    description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcases their venue to their potential customers."
+                    title="Tryon Closet Creative"
+                    tags="Branding / Web Design"
+                    description="Venue rental web design"
                     link="/webdesign"
                     img={webdesign}
                     password="false"/>
                 <ProjectShell
                     class="project-middle"
                     title="SPORTTRADE"
-                    description="Short descr"
+                    tags="Branding / HTML/CSS / Prototyping / Swift / UI/UX Design / Web Design"
+                    description="Sports betting app redesign and online presence branding"
                     img={sporttrade}
                     password="false"/>
                 <ProjectShell
                     class="project-middle"
-                    title="CLOTHING BRAND SHOPIFY DEV/DESIGN"
-                    description="Short descr"
+                    title="Givin Official"
+                    tags="Branding / HTML/CSS / Shopify / Web Design"
+                    description="Shopify store setup and design"
                     link="/shopify"
                     img={shopify}
                     password="false"/>
                 <ProjectShell
                     class="project-bottom"
-                    title="SUPPLEMENT BRANDING & ADVERTISEMENT"
-                    description="I was contracted by Relentless Labz and their sister brand, Flux Nutrition, to develop shopify store sites and design branding assets."
+                    title="Flux Nutrition"
+                    tags="Branding / HTML/CSS / Product Design / Shopify / Web Design"
+                    description="Shopify redesign and branding"
                     link="/flux"
                     img={flux}
                     password="false"/>
@@ -77,6 +83,11 @@ const ProjectShell = props => (
                     <div className="spacer20 d-md-none"/>
                     <h3 className="smaller">{props.title}</h3>
                     <div className="spacer20"/>
+                    <p>
+                        <strong>{props.tags}</strong>
+                    </p>
+                    <div className="spacer20"/>
+
                     <p>{props.description}</p>
                     <div className="spacer20"/>
                     <div className="m-center">

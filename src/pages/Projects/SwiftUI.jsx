@@ -22,16 +22,15 @@ export default class SwiftUI extends Component {
         return (
             <div>
                 <ProjectPageComponent
-                    title="SwiftUI Apps"
-                    shortdescription="short desc"
-                    tags="tags"
+                    title="The Plant Shop"
+                    shortdescription="Plant store app design and prototype"
+                    tags="Swift / UI/UX Design"
                     images={images}
-                    description="Coming soon."
+                    description="I created a design for a plant shopping app and started an app prototype using Swift UI."
                     prevlink="project-link"
                     prev="/chatadoc"
                     nextlink="project-link"
                     next="/webdesign"/>
-
             </div>
         );
     }

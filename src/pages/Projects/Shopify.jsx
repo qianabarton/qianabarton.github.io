@@ -26,11 +26,11 @@ export default class Sporttrade extends Component {
         return (
             <div>
                 <ProjectPageComponent
-                    title="CLOTHING BRAND SHOPIFY DEV/DESIGN"
-                    shortdescription="short desc"
-                    tags="tags"
+                    title="GIVIN OFFICIAL"
+                    shortdescription="Shopify store setup and design"
+                    tags="Branding / HTML/CSS / Shopify / Web Design"
                     images={images}
-                    description="In additional to Relentless Labz and Flux Nutrition, I also worked with the apparel brand GIVIN Official and a vintage handbag resale company, MILADY. I developed their ecommerce presence on Shopify by creating a design system, brand assets and customizing their storefronts via Shopify’s builder and CSS/liquid code."
+                    description="I worked with the apparel brand GIVIN Official to develop their e-commerce presence on Shopify by creating a design system, brand assets and implementing my designs via Shopify’s builder and CSS/liquid code."
                     prevlink="project-link"
                     prev="/sporttrade"
                     nextlink="project-link"

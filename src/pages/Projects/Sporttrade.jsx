@@ -55,15 +55,10 @@ export default class Sporttrade extends Component {
             <div>
                 <ProjectPageComponent
                     title="SPORTTRADE"
-                    shortdescription="short desc"
-                    tags="tags"
+                    shortdescription="Sports betting app redesign and online presence branding"
+                    tags="Branding / HTML/CSS / Prototyping / Swift / UI/UX Design / Web Design"
                     images={images}
-                    description="I was contracted by Sporttrade as a hybrid UI Designer and Front End iOS
-                    Developer but ended up wearing even more hats working with this 4 person
-                    startup. I redesigned their iOS app, cleaned up existing code structure and
-                    implented the new designs using Swift and Xcode’s Storyboard. I also created
-                    branding assets, designing their logo, app store presence and company landing
-                    page."
+                    description="I was contracted by Sporttrade for a hybrid role as a UI Designer and Front End iOS Developer but ended up wearing even more hats working with this 4 person startup. I redesigned their iOS app, cleaned up existing code structure and implemented my new designs using Swift and Xcode’s Storyboard. I also created branding assets, designed their logo, app store presence and company landing page."
                     prevlink="project-link"
                     prev="/swiftui"
                     nextlink="project-link"

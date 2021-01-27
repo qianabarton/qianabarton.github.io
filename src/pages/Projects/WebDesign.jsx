@@ -14,11 +14,11 @@ export default class WebDesign extends Component {
         return (
             <div>
                <ProjectPageComponent
-                    title="Venue Rental Web Design"
-                    shortdescription="short desc"
-                    tags="tags"
+                    title="Tryon Closet Creative"
+                    shortdescription="Venue rental web design"
+                    tags="Branding / Web Design"
                     images={images}
-                    description="I worked with TryonCloset Creative to design a website to that cleanly and simply showcased their venue rental space to their potential customers."
+                    description="I worked with Tryon Closet Creative to design a website to that cleanly and simply showcased their venue rental space to their potential customers."
                     prevlink="project-link"
                     prev="/swiftui"
                     nextlink="project-link"
