@@ -99,26 +99,31 @@
         padding: 0 40px;
     }
     .project-top {
-        padding-top: 0;
-        padding-bottom: 40px;
+        padding-top: 20px;
+        padding-bottom: 80px;
     }
     .project-middle {
         padding-top: 0;
-        padding-bottom: 40px;
+        padding-bottom: 80px;
     }
     .project-bottom {
         padding-top: 0;
-        padding-bottom: 40px;
+        padding-bottom: 50px;
     }
     .pop-out {
         padding: 0 40px !important;
+    }
+    .header-center {
+        left: 0;
+        -webkit-transform: translate(0, -50%);
+        transform: translate(0, -50%);
     }
     .header-button {
         letter-spacing: 1.4px;
     }
     .m-center {
         text-align: center;
-        margin: 30px 0 20px 0;
+        margin: 10px 0 0px 0;
     }
     .h-container {
         padding: 0px 20px;
@@ -130,5 +135,8 @@
     }
     .image-gallery-thumbnail {
         width: 120px !important;
+    }
+    #footer {
+        padding-bottom: 40px;
     }
 }

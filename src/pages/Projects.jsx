@@ -17,6 +17,7 @@ export default class Projects extends Component {
     render() {
         return (
             <div class="projects">
+                <div className="spacer20 d-md-none"/>
                 <h3 className="mb-4 d-md-none h-padding">PROJECTS</h3>
                 <ProjectShell
                     class="project-top"
@@ -79,7 +80,7 @@ const ProjectShell = props => (
                         <img className="project-image" src={props.img} alt=""></img>
                     </Link>
                 </Col>
-                <Col sm="6">
+                <Col className="m-center" sm="6">
                     <div className="spacer20 d-md-none"/>
                     <h3 className="smaller">{props.title}</h3>
                     <div className="spacer20"/>
@@ -90,14 +91,11 @@ const ProjectShell = props => (
 
                     <p>{props.description}</p>
                     <div className="spacer20"/>
-                    <div className="m-center">
-
+                    <div>
                         <Link to={props.link}>
                             <Button className="header-button">View Project</ Button>
                         </Link>
-
                     </div>
-
                 </Col>
 
             </Row>

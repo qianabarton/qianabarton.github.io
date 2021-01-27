@@ -132,7 +132,7 @@ class Experience extends Component {
 
                         </Col>
                         <Col sm={5} className="">
-                            <div className="spacer20 d-md-none"/>
+                            <div className="spacer50 d-md-none"/>
                             <div className="mb-4">
                                 <h4 className="blue-accent">FREELANCE DEV/DESIGNER</h4>
                                 <h5>JUNE 2020 - PRESENT</h5>

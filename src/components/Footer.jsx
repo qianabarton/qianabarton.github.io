@@ -26,7 +26,6 @@ export default class Footer extends Component {
                 <ul className="contact-details pl-0 mt-4 mb-5">
                     <li>Los Angeles, CA</li>
                 </ul>
-
             </div>
         );
     }
