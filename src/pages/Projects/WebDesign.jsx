@@ -8,12 +8,12 @@ const images = [
         thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign.png?raw=true'
     },
     {
-        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign2.png?raw=true',
-        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign2.png?raw=true'
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign/webdesign2.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign/webdesign2.png?raw=true'
     },
     {
-        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign3.png?raw=true',
-        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign3.png?raw=true'
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign/webdesign3.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign/webdesign3.png?raw=true'
     }
 
 ];
