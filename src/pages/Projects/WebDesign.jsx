@@ -6,7 +6,16 @@ const images = [
     {
         original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign.png?raw=true',
         thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign2.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign2.png?raw=true'
+    },
+    {
+        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign3.png?raw=true',
+        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/webdesign3.png?raw=true'
     }
+
 ];
 
 export default class WebDesign extends Component {
