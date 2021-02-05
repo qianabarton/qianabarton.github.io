@@ -30,7 +30,7 @@ export default class SwiftUI extends Component {
                     prevlink="project-link"
                     prev="/chatadoc"
                     nextlink="project-link"
-                    next="/webdesign"/>
+                    next="/cercacor1"/>
             </div>
         );
     }

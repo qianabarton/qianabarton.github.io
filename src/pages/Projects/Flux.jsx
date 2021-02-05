@@ -3,18 +3,7 @@ import React, {Component} from 'react';
 import ProjectPageComponent from './components/ProjectPageComponent';
 
 const images = [
-    {
-        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/flux/flux1.png?raw=true',
-        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/flux/flux1.png?raw=true'
-    },
-    {
-        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/flux/flux2.png?raw=true',
-        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/flux/flux2.png?raw=true'
-    },
-    {
-        original: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/flux/flux3.png?raw=true',
-        thumbnail: 'https://github.com/qianabarton/qbdesign.co/blob/master/src/img/projects/flux/flux3.png?raw=true'
-    },
+
 ];
 
 export default class Flux extends Component {

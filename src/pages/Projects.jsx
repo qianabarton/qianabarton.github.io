@@ -10,6 +10,8 @@ import shopify from '../img/projects/shopify.png';
 import swiftui from '../img/projects/swiftui.png';
 import webdesign from '../img/projects/webdesign.png';
 import chatadoc from '../img/projects/chatadoc.png';
+import cercacor from '../img/projects/cercacor.png';
+import miscdesign from '../img/projects/misc.png';
 
 
 
@@ -37,11 +39,19 @@ export default class Projects extends Component {
                     password="false"/>
                 <ProjectShell
                     class="project-middle"
-                    title="Tryon Closet Creative"
+                    title="Cercacor"
+                    tags="Prototyping / Wireframing / UI/UX Design"
+                    description="Diabetes lifestyle education app"
+                    link="/cercacor1"
+                    img={cercacor}
+                    password="false"/>
+                <ProjectShell
+                    class="project-middle"
+                    title="Misc. Design Projects"
                     tags="Branding / Web Design"
-                    description="Venue rental web design"
-                    link="/webdesign"
-                    img={webdesign}
+                    description="Something here"
+                    link="/miscdesign"
+                    img={miscdesign}
                     password="false"/>
                 <ProjectShell
                     class="project-middle"

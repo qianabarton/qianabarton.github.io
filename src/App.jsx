@@ -22,6 +22,7 @@ import SwiftUI from './pages/Projects/SwiftUI';
 import Cercacor1 from './pages/Projects/Cercacor1';
 import WebDesign from './pages/Projects/WebDesign';
 import Chatadoc from './pages/Projects/Chatadoc';
+import MiscDesign from './pages/Projects/MiscDesign';
 
 // App
 class App extends Component {
@@ -39,6 +40,7 @@ class App extends Component {
                             <Route exact path="/webdesign" component={WebDesign}/>
                             <Route exact path="/swiftui" component={SwiftUI}/>
                             <Route exact path="/chatadoc" component={Chatadoc}/>
+                            <Route exact path="/miscdesign" component={MiscDesign}/>
                             <Route
                                 render={() => (
                                 <div>
