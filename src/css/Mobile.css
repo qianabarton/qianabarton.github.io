@@ -1,23 +1,30 @@
 @media only screen and (max-width: 600px) {
+
     /* Text */
     body {
         padding-bottom: 200px !important;
     }
+
     h1 {
         font-size: 40px !important;
     }
+
     h2 {
-        font-size: 22px !important;
+        font-size: 16px !important;
     }
+
     h3 {
         font-size: 32px !important;
     }
+
     p {
         font-size: 14px !important;
     }
+
     .smaller {
         font-size: 22px !important;
     }
+
     /* Spacing */
     .center {
         padding-top: 30px;
@@ -27,21 +34,27 @@
         top: 50%;
         transform: translate(-50%, -50%);
     }
+
     .padding50 {
         padding: 40px 0;
     }
+
     .spacer20-top {
         margin-top: 20px;
     }
+
     .contact-row {
         padding: 0 20px !important;
     }
+
     .container {
         padding: 40px 40px !important;
     }
+
     .scrollHack {
         padding-bottom: 0 !important;
     }
+
     /*
     *
     *
@@ -53,9 +66,11 @@
         background-size: cover;
         background-position: center center;
     }
+
     .laptop::after {
         background: none;
     }
+
     .comp-bg {
         height: 40vh;
         background: url("/img/mobile/COMP.png") repeat;
@@ -63,18 +78,22 @@
         background-position: center center;
         background-color: #F5F5F5;
     }
+
     .comp-bg::after {
         background: none;
     }
+
     .bottom-bg {
         height: 30vh;
         background: url("/img/mobile/laptop-5.jpg") no-repeat;
         background-size: 150%;
         background-position: right top;
     }
+
     .bottom-bg::after {
         background: none;
     }
+
     .parallax-wrapper::after {
         content: "";
         position: absolute;
@@ -85,57 +104,77 @@
         transform: none;
         z-index: -1;
     }
+
     .parallax-wrapper {
         perspective: none;
     }
+
     body {
         transform-style: none;
     }
+
     .projects {
         background: #fff;
         padding: 0 0;
     }
+
     .h-padding {
         padding: 0 40px;
     }
+
     .project-top {
         padding-top: 20px;
         padding-bottom: 80px;
     }
+
     .project-middle {
         padding-top: 0;
         padding-bottom: 80px;
     }
+
     .project-bottom {
         padding-top: 0;
         padding-bottom: 50px;
     }
+
     .pop-out {
         padding: 0 40px !important;
     }
+
     .header-center {
         left: 0;
         -webkit-transform: translate(0, -50%);
         transform: translate(0, -50%);
     }
+
     .header-button {
         letter-spacing: 1.4px;
     }
+
+    .header {
+        height: 70vh;
+        padding: 0 40px;
+    }
+
     .m-center {
         text-align: center;
         margin: 10px 0 0px 0;
     }
+
     .h-container {
         padding: 0px 20px;
         padding-bottom: 20px;
         margin-top: -20px;
     }
+
     .image-gallery-thumbnails {
         padding: 20px 0 !important;
     }
+
     .image-gallery-thumbnail {
         width: 120px !important;
     }
+
     #footer {
         padding-bottom: 40px;
     }
